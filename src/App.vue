@@ -1,6 +1,5 @@
 <script setup lang="ts">
-    import Prompts from './components/Prompts.vue'
-
+    import PromptList from './components/PromptList.vue';
 </script>
 
 <template>
@@ -9,7 +8,7 @@
   </header>
 
   <main>
-    <Prompts/>
+    <PromptList />
   </main>
 </template>
 

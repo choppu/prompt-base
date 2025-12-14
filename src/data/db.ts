@@ -1,0 +1,36 @@
+import type { Prompt } from '../types/Prompt'
+import { Dexie, type EntityTable } from 'dexie'
+
+const DB_NAME = 'PromptBaseDB'
+
+let glob_db: Dexie & { prompts: EntityTable<Prompt, 'id'> }
+
+export const openDB = (): void => {
+  glob_db = new Dexie(DB_NAME) as Dexie & {
+    prompts: EntityTable<Prompt, 'id'>
+  }
+
+  glob_db.version(1).stores({
+    prompts: '++id, remoteId, name, naturalPrompt, tagBasedPrompt, *tags',
+  })
+}
+
+export const getDB = (): Dexie => {
+  return glob_db
+}
+
+export const addPrompt = async (prompt: Prompt): Promise<void> => {
+  glob_db.prompts.add(prompt)
+}
+
+export const getPrompts = async (): Promise<Prompt[]> => {
+  return glob_db.prompts.toArray()
+}
+
+export const setRemoteDBVersion = (version: number): void => {
+  localStorage.setItem('remote-db-version', version.toString())
+}
+
+export const getRemoteDBVersion = (): number => {
+  return Number(localStorage.getItem('remote-db-version')) || 1
+}
