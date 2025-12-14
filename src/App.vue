@@ -1,17 +1,30 @@
 <script setup lang="ts">
-    import PromptList from './components/PromptList.vue';
+import PromptList from './components/PromptList.vue'
 </script>
-
 <template>
-  <header>
-  
-  </header>
-
-  <main>
-    <PromptList />
+  <main class="pbase__main-container">
+    <PromptList class="pbase__prompt-list" />
   </main>
 </template>
-
 <style scoped>
+@import './assets/css/base.css';
 
+.pbase__main-container {
+  width: 98%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.pbase__prompt-list {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
 </style>
