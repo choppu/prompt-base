@@ -120,9 +120,11 @@ export default class PNGMetadata {
     return (node["class_type"] == "KSampler") || (node["class_type"] == "KSamplerAdvanced");
   }
 
-  public getGenerationParams = (): GenerationParams | undefined => {
+  public getGenerationParams = (): GenerationParams[] => {
+    let res: GenerationParams[] = [];
+
     if (this.text.prompt === undefined) {
-      return undefined;
+      return res;
     }
 
     const prompt = JSON.parse(this.text.prompt);
@@ -139,11 +141,11 @@ export default class PNGMetadata {
         params.positive_prompt = this.readPromptInput(prompt, key, "positive", ["text", "prompt"], "");
         params.negative_prompt = this.readPromptInput(prompt, key, "negative", ["text", "prompt"], "");
 
-        return params;
+        res.push(params);
       }
     }
 
-    return undefined;
+    return res;
   }
 
   public getWorkflow = (): string | undefined => {
