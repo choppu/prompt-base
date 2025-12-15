@@ -2,7 +2,10 @@
   <div class="pbase__prompt-container">
     <div class="pbase__relative-container">
       <div class="pbase__prompt-context-container">
-        <p>{{ props.prompt.naturalPrompt }}</p>
+        <p ref="prompt-to-copy">{{ props.prompt.naturalPrompt }}</p>
+        <span class="material-symbols-outlined pbase__icon" @click="copyToClipboard()"
+          >content_copy</span
+        >
       </div>
       <img :src="imageDataToURL(prompt.image)" class="pbase__prompt-image" />
     </div>
@@ -22,7 +25,14 @@
   </div>
 </template>
 <script setup lang="ts">
+import { useTemplateRef } from 'vue'
+
 const props = defineProps(['prompt'])
+const promptText = useTemplateRef('prompt-to-copy')
+
+async function copyToClipboard(): Promise<void> {
+  await navigator.clipboard.writeText(promptText.value?.innerText as string)
+}
 
 function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
   return URL.createObjectURL(new Blob([img], { type: 'image/png' }))
@@ -99,7 +109,24 @@ function handleSubTag(tag: string): string[] {
 
 .pbase__prompt-context-container {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
+  background-color: var(--background-color-transparent);
+  bottom: 5px;
+  height: 140px;
+  font-size: var(--text-medium);
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: var(--text-line-heigth-20);
+}
+
+.pbase__icon {
+  font-size: var(--icon-normal);
+  cursor: pointer;
+}
+
+.pbase__icon:active,
+.pbase__icon:focus {
+  color: var(--secondary-color);
 }
 
 .pbase__prompt-image {

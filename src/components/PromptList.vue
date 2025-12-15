@@ -48,6 +48,5 @@ const prompts = useDexieLiveQueryWithDeps(
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
-  justify-content: space-between;
 }
 </style>
