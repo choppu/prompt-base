@@ -27,7 +27,7 @@ export const getPrompts = async (filter?: string): Promise<PromptGroup> => {
   const res: PromptGroup = new Map()
   const groupPrompts = (prompt: Prompt) => {
     const tag = prompt.tags[0] as string
-    
+
     if (res.has(tag)) {
       const arr = res.get(tag)!
 
@@ -53,7 +53,7 @@ export const getPrompts = async (filter?: string): Promise<PromptGroup> => {
 }
 
 export const purgeOutdated = async (ids: number[]): Promise<void> => {
-  glob_db.prompts.bulkDelete(ids)
+  glob_db.prompts.where("remoteId").anyOf(ids).delete()
 }
 
 export const setRemoteDBVersion = (version: number): void => {
