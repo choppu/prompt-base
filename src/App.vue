@@ -3,7 +3,9 @@ import PromptList from './components/PromptList.vue'
 </script>
 <template>
   <main class="pbase__main-container">
-    <PromptList class="pbase__prompt-list" />
+    <div class="pbase__prompt-list">
+      <PromptList />
+    </div>
   </main>
 </template>
 <style scoped>

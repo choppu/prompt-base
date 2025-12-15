@@ -1,4 +1,4 @@
-import type { Prompt } from '../types/Prompt'
+import type { Prompt, PromptGroup } from '../types/Prompt'
 import { Dexie, type EntityTable } from 'dexie'
 
 const DB_NAME = 'PromptBaseDB'
@@ -23,8 +23,23 @@ export const addPrompt = async (prompt: Prompt): Promise<void> => {
   glob_db.prompts.add(prompt)
 }
 
-export const getPrompts = async (): Promise<Prompt[]> => {
-  return glob_db.prompts.toArray()
+export const getPrompts = async (filter?: string): Promise<PromptGroup> => {
+  const res: PromptGroup = new Map()
+  const groupPrompts = (prompt: Prompt) => {
+    const tag = prompt.tags[0] as string
+    if (res.has(tag)) {
+      res.get(tag)!.push(prompt)
+    } else {
+      res.set(tag, [prompt])
+    }
+  }
+
+  const query_res = filter
+    ? await glob_db.prompts.where('name').startsWithIgnoreCase(filter).sortBy('tags')
+    : await glob_db.prompts.orderBy('tags').toArray()
+
+  query_res.forEach(groupPrompts)
+  return res
 }
 
 export const setRemoteDBVersion = (version: number): void => {

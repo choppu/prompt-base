@@ -7,3 +7,5 @@ export interface Prompt {
   tags: string[]
   image: Uint8Array<ArrayBuffer>
 }
+
+export type PromptGroup = Map<string, Prompt[]>
