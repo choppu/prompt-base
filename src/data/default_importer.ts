@@ -25,6 +25,8 @@ export const run = async (): Promise<void> => {
         await DB.addPrompt(data).then(() => DB.setRemoteDBVersion(i + 1))
       }
     }
+
+    await DB.purgeOutdated(dbContext["exclude"]);
   } catch (err) {
     console.log(err)
   }

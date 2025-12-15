@@ -1,4 +1,4 @@
 {
     "version": 405,
-    "exclude": []
+    "exclude": [144, 145, 146]
 }

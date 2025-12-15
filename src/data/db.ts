@@ -42,6 +42,10 @@ export const getPrompts = async (filter?: string): Promise<PromptGroup> => {
   return res
 }
 
+export const purgeOutdated = async (ids: number[]): Promise<void> => {
+  glob_db.prompts.bulkDelete(ids)
+}
+
 export const setRemoteDBVersion = (version: number): void => {
   localStorage.setItem('remote-db-version', version.toString())
 }
