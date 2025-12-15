@@ -3,15 +3,16 @@ import { Dexie, type EntityTable } from 'dexie'
 
 const DB_NAME = 'PromptBaseDB'
 
-let glob_db: Dexie & { prompts: EntityTable<Prompt, 'id'> }
+type PromtBaseDB = Dexie & { prompts: EntityTable<Prompt, 'id'> }
+
+let glob_db: PromtBaseDB
+let glob_tags: Set<string>
 
 export const openDB = (): void => {
-  glob_db = new Dexie(DB_NAME) as Dexie & {
-    prompts: EntityTable<Prompt, 'id'>
-  }
-
+  glob_tags = new Set()
+  glob_db = new Dexie(DB_NAME) as PromtBaseDB
   glob_db.version(1).stores({
-    prompts: '++id, remoteId, name, naturalPrompt, tagBasedPrompt, *tags',
+    prompts: '++id, remoteId, name, *tags',
   })
 }
 
@@ -23,11 +24,30 @@ export const addPrompt = async (prompt: Prompt): Promise<void> => {
   glob_db.prompts.add(prompt)
 }
 
-export const getPrompts = async (filter?: string): Promise<PromptGroup> => {
+const searchTag = (tag: string, searchString: string, sep: string = ":"): boolean => {
+  for (let tagPart of tag.split(sep)) {
+    if (tagPart.toLowerCase().startsWith(searchString.toLowerCase())) {
+      return true;
+    }
+  }
+
+  return false
+}
+
+const searchName = (name: string, searchString: string): boolean => {
+  if (searchString.includes(" ")) {
+    return name.toLowerCase().startsWith(searchString.toLowerCase())
+  } else {
+    return searchTag(name, searchString, " ")
+  }
+}
+
+
+export const getPrompts = async (searchString?: string, filterTags?: string[]): Promise<PromptGroup> => {
   const res: PromptGroup = new Map()
   const groupPrompts = (prompt: Prompt) => {
     const tag = prompt.tags[0] as string
-
+    glob_tags.add(tag)
     if (res.has(tag)) {
       const arr = res.get(tag)!
 
@@ -44,9 +64,29 @@ export const getPrompts = async (filter?: string): Promise<PromptGroup> => {
     }
   }
 
-  const query_res = filter
-    ? await glob_db.prompts.where('name').startsWithIgnoreCase(filter).sortBy('tags')
-    : await glob_db.prompts.orderBy('tags').toArray()
+  const searchByTagsAndName = (prompt: Prompt): boolean => {
+    if (!searchString) {
+      return true
+    }
+
+    for (let tag of glob_tags) {
+      if (searchTag(tag, searchString)) {
+        if (prompt.tags.indexOf(tag) != -1) {
+          return true
+        }
+      }
+    }
+
+    return searchName(prompt.name, searchString)
+  }
+
+  let query_res
+
+  if (filterTags) {
+    query_res = await glob_db.prompts.where('tags').anyOf(filterTags).distinct().filter(searchByTagsAndName).sortBy('tags')
+  } else {
+    query_res = await glob_db.prompts.orderBy('tags').filter(searchByTagsAndName).toArray()
+  }
 
   query_res.forEach(groupPrompts)
   return res
