@@ -3,7 +3,7 @@ import PromptList from './components/PromptList.vue'
 </script>
 <template>
   <main class="pbase__main-container">
-    <div class="pbase__prompt-list">
+    <div class="pbase__prompts-container">
       <PromptList />
     </div>
   </main>
@@ -19,14 +19,13 @@ import PromptList from './components/PromptList.vue'
   flex-wrap: wrap;
 }
 
-.pbase__prompt-list {
+.pbase__prompts-container {
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
   align-items: center;
 }
 </style>

@@ -37,9 +37,12 @@ function handleSubTag(tag: string): string[] {
 .pbase__prompt-container {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  width: 350px;
+  flex-grow: 350px;
   flex-basis: 350px;
   background: var(--background-white);
+  padding: 15px 20px 0 20px;
+  box-sizing: border-box;
 }
 
 .pbase__prompt-bottom {
@@ -101,5 +104,6 @@ function handleSubTag(tag: string): string[] {
 
 .pbase__prompt-image {
   width: 100%;
+  box-shadow: var(--shadow-color) 0px 7px 29px 0px;
 }
 </style>
