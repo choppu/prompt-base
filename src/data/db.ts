@@ -27,8 +27,18 @@ export const getPrompts = async (filter?: string): Promise<PromptGroup> => {
   const res: PromptGroup = new Map()
   const groupPrompts = (prompt: Prompt) => {
     const tag = prompt.tags[0] as string
+    
     if (res.has(tag)) {
-      res.get(tag)!.push(prompt)
+      const arr = res.get(tag)!
+
+      for (let i = 0; i < arr.length; i++) {
+        if (prompt.name <= arr[i]!.name) {
+          arr.splice(i, 0, prompt)
+          return;
+        }
+      }
+
+      arr.push(prompt)
     } else {
       res.set(tag, [prompt])
     }
