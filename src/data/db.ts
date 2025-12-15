@@ -24,6 +24,14 @@ export const addPrompt = async (prompt: Prompt): Promise<void> => {
   glob_db.prompts.add(prompt)
 }
 
+export const putPrompt = async (prompt: Prompt): Promise<void> => {
+  glob_db.prompts.put(prompt)
+}
+
+export const removePrompt = async (toRemove: Prompt | number): Promise<void> => {
+  glob_db.prompts.delete(typeof toRemove == "number" ? toRemove : toRemove.id)
+}
+
 const searchTag = (tag: string, searchString: string, sep: string = ":"): boolean => {
   for (let tagPart of tag.split(sep)) {
     if (tagPart.toLowerCase().startsWith(searchString.toLowerCase())) {
@@ -42,12 +50,11 @@ const searchName = (name: string, searchString: string): boolean => {
   }
 }
 
-
 export const getPrompts = async (searchString?: string, filterTags?: string[]): Promise<PromptGroup> => {
   const res: PromptGroup = new Map()
   const groupPrompts = (prompt: Prompt) => {
     const tag = prompt.tags[0] as string
-    glob_tags.add(tag)
+    prompt.tags.forEach((t) => glob_tags.add(t))
     if (res.has(tag)) {
       const arr = res.get(tag)!
 
