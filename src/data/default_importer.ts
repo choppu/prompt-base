@@ -1,7 +1,7 @@
 import * as DB from './db'
 
-const REMOTE_DB_URL = '/db.json'
-const PROMPTS_URL = '/db/'
+const REMOTE_DB_URL = import.meta.env.BASE_URL + '/db.json'
+const PROMPTS_URL = import.meta.env.BASE_URL + '/db/'
 
 export const run = async (): Promise<void> => {
   try {
@@ -26,7 +26,7 @@ export const run = async (): Promise<void> => {
       }
     }
 
-    await DB.purgeOutdated(dbContext["exclude"]);
+    await DB.purgeOutdated(dbContext['exclude'])
   } catch (err) {
     console.log(err)
   }
