@@ -16,8 +16,8 @@ export const run = async (): Promise<void> => {
         const data = {
           remoteId: i,
           name: prompt['name'],
-          naturalPrompt: prompt['prompt'],
-          tagBasedPrompt: prompt['tag_prompt'] || '',
+          prompts: prompt['prompt'],
+          notes: '',
           tags: prompt['tags'],
           image: Uint8Array.from(atob(prompt['image']), (c) => c.charCodeAt(0)),
         }

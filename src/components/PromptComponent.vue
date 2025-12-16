@@ -2,7 +2,7 @@
   <div class="pbase__prompt-container">
     <div class="pbase__relative-container">
       <div class="pbase__prompt-context-container">
-        <p ref="prompt-to-copy">{{ props.prompt.naturalPrompt }}</p>
+        <p ref="prompt-to-copy">{{ props.prompt.prompts['ZIT'] }}</p>
         <span class="material-symbols-outlined pbase__icon" @click="copyToClipboard()"
           >content_copy</span
         >

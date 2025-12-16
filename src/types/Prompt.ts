@@ -2,10 +2,11 @@ export interface Prompt {
   id?: number
   remoteId: number
   name: string
-  naturalPrompt: string
-  tagBasedPrompt: string
+  prompts: PromptVariant
+  notes: string
   tags: string[]
   image: Uint8Array<ArrayBuffer>
 }
 
 export type PromptGroup = Map<string, Prompt[]>
+export type PromptVariant = { [key: string]: string }
