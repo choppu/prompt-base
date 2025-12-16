@@ -4,7 +4,7 @@
     <h2 class="pbase__pbase__prompt-group-heading">{{ tag }}</h2>
     <div>
       <div class="pbase__prompts-container">
-        <PromptView v-for="(prompt, id) in promptGroup" :key="id" :prompt="prompt" />
+        <Prompt v-for="(prompt, id) in promptGroup" :key="id" :prompt="prompt" />
       </div>
     </div>
   </div>
@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import { useDexieLiveQueryWithDeps } from '@/hooks/useDexieLiveQuery'
 import * as DB from '@/data/db'
-import PromptView from './PromptView.vue'
+import Prompt from './PromptComponent.vue'
 import { ref } from 'vue'
 
 const searchTerm = ref('')
@@ -26,13 +26,14 @@ const prompts = useDexieLiveQueryWithDeps(
 <style scoped>
 @import '../assets/css/base.css';
 .pbase__prompt-group-container {
-  width: 100%;
+  width: 98%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .pbase__pbase__prompt-group-heading {
@@ -47,6 +48,5 @@ const prompts = useDexieLiveQueryWithDeps(
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
 }
 </style>

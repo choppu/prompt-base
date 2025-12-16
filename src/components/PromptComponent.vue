@@ -11,21 +11,15 @@
     </div>
     <div class="pbase__prompt-bottom">
       <h3 class="pbase__prompt-heading">{{ props.prompt.name }}</h3>
-      <ul class="pbase__tags-list">
-        <li v-for="tag in props.prompt.tags" :key="tag" class="pbase__tag">
-          <span
-            v-for="(tEl, i) in handleSubTag(tag)"
-            :key="tEl"
-            :class="'pbase__tag-element-' + i"
-            >{{ tEl }}</span
-          >
-        </li>
-      </ul>
+      <div class="pbase__tags-list">
+        <Tag :tags="props.prompt.tags" />
+      </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { useTemplateRef } from 'vue'
+import Tag from './TagComponent.vue'
 
 const props = defineProps(['prompt'])
 const promptText = useTemplateRef('prompt-to-copy')
@@ -37,22 +31,20 @@ async function copyToClipboard(): Promise<void> {
 function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
   return URL.createObjectURL(new Blob([img], { type: 'image/png' }))
 }
-
-function handleSubTag(tag: string): string[] {
-  return tag.includes(':') ? tag.split(':') : [tag]
-}
 </script>
 <style scoped>
 @import '../assets/css/base.css';
 .pbase__prompt-container {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: calc(20vw - 20px);
+  max-width: 350px;
   flex-grow: 350px;
-  flex-basis: 350px;
+  flex-basis: calc(20vw - 20px);
   background: var(--background-white);
   padding: 15px 20px 0 20px;
   box-sizing: border-box;
+  margin: 8px 4px;
 }
 
 .pbase__prompt-bottom {
@@ -87,22 +79,6 @@ function handleSubTag(tag: string): string[] {
   box-sizing: border-box;
 }
 
-.pbase__tag {
-  border: solid 2px var(--background-color);
-  border-radius: var(--tag-border-radius);
-  box-sizing: border-box;
-  padding: 0;
-  overflow: hidden;
-}
-
-.pbase__tag-element-0 {
-  background: var(--background-color);
-  color: var(--text-color);
-  display: inline-block;
-  padding: 2px 5px;
-  box-sizing: border-box;
-}
-
 .pbase__relative-container {
   position: relative;
 }
@@ -112,11 +88,12 @@ function handleSubTag(tag: string): string[] {
   opacity: 1;
   background-color: var(--background-color-transparent);
   bottom: 5px;
-  height: 140px;
-  font-size: var(--text-medium);
+  height: 170px;
+  font-size: var(--text-small);
   padding: 10px;
   box-sizing: border-box;
   line-height: var(--text-line-heigth-20);
+  width: 100%;
 }
 
 .pbase__icon {
@@ -125,12 +102,13 @@ function handleSubTag(tag: string): string[] {
 }
 
 .pbase__icon:active,
-.pbase__icon:focus {
-  color: var(--secondary-color);
+.pbase__icon:focus,
+.pbase__icon:hover {
+  color: var(--secondary-color-darker);
 }
 
 .pbase__prompt-image {
   width: 100%;
-  box-shadow: var(--shadow-color) 0px 7px 29px 0px;
+  box-shadow: var(--box-shadow);
 }
 </style>
