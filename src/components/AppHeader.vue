@@ -1,7 +1,10 @@
 <template>
   <header class="pbase__header">
     <div class="pbase__logo-container">
-      <img src="../assets/img/logo.png" class="pbase__logo" @click="handleRoot('home')" />
+      <a class="pbase__logo" @click="handleRoot('home')">
+        <img src="../assets/img/logo.png" class="pbase__logo-img" />
+        <span class="pbase__logo-text">PromptBase</span>
+      </a>
     </div>
     <div class="pbase__menu-container">
       <span class="material-symbols-outlined pbase__icon">menu</span>
@@ -30,14 +33,25 @@ const handleRoot = (name: string): void => {
   align-items: center;
   padding: 20px 40px;
   box-sizing: border-box;
+  box-shadow: var(--menu-box-shadow);
 
   .pbase__logo-container {
     width: 20%;
   }
 
   .pbase__logo {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-size: var(--h1-size);
+  }
+
+  .pbase__logo-img {
+    width: 35px;
+    height: 35px;
   }
 
   .pbase__menu-container {
@@ -45,7 +59,7 @@ const handleRoot = (name: string): void => {
     background-color: var(--text-color);
     color: var(--background-color);
     font-family: var(--font-heading);
-    font-size: var(--text-small);
+    font-size: var(--heading-text-small);
     padding: 8px 15px 8px 10px;
     box-sizing: border-box;
     display: flex;
@@ -53,7 +67,7 @@ const handleRoot = (name: string): void => {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border-radius: 50px;
+    border-radius: var(--container-border-radius);
     box-shadow: var(--menu-box-shadow);
   }
 
@@ -62,17 +76,19 @@ const handleRoot = (name: string): void => {
     line-height: 30px;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    width: 30px;
-    height: 30px;
+    width: var(--icon-default-width);
+    height: var(--icon-default-height);
     text-align: center;
-    border-radius: 30px;
+    border-radius: var(--icon-rounded);
   }
 
   .pbase__menu-link {
     padding-bottom: 0.5px;
+    border-bottom: solid 1px transparent;
     box-sizing: border-box;
     cursor: pointer;
     line-height: var(--text-line-heigth-14);
+    font-weight: var(--text-bold);
   }
 
   .pbase__menu-link:hover {

@@ -10,8 +10,7 @@ import AppHeader from './components/AppHeader.vue'
 <style scoped>
 @import './assets/css/base.css';
 .pbase__main-container {
-  width: 98%;
-  margin: 20px auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

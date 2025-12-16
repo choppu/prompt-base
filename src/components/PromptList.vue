@@ -1,5 +1,5 @@
 <template>
-  <input type="search" v-model="searchTerm" />
+  <Search v-model="searchTerm" />
   <div v-for="[tag, promptGroup] of prompts" :key="tag" class="pbase__prompt-group-container">
     <h2 class="pbase__pbase__prompt-group-heading">{{ tag }}</h2>
     <div>
@@ -14,10 +14,12 @@
 import { useDexieLiveQuery, useDexieLiveQueryWithDeps } from '@/hooks/useDexieLiveQuery'
 import * as DB from '@/data/db'
 import Prompt from './PromptComponent.vue'
+import Search from './SearchComponent.vue'
 import { ref } from 'vue'
 
 const searchTerm = ref('')
 const tags = useDexieLiveQuery(DB.getTags)
+console.log(tags)
 const prompts = useDexieLiveQueryWithDeps(
   [searchTerm],
   ([searchTerm]: [string]) => DB.getPrompts(searchTerm),
@@ -27,7 +29,7 @@ const prompts = useDexieLiveQueryWithDeps(
 <style scoped>
 @import '../assets/css/base.css';
 .pbase__prompt-group-container {
-  width: 98%;
+  width: 96%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -41,6 +43,8 @@ const prompts = useDexieLiveQueryWithDeps(
   font-family: var(--font-heading);
   padding: 20px;
   box-sizing: border-box;
+  font-size: var(--logo-text-size);
+  font-weight: var(--text-bold);
 }
 
 .pbase__prompts-container {
