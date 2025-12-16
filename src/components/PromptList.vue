@@ -11,12 +11,13 @@
 </template>
 
 <script setup lang="ts">
-import { useDexieLiveQueryWithDeps } from '@/hooks/useDexieLiveQuery'
+import { useDexieLiveQuery, useDexieLiveQueryWithDeps } from '@/hooks/useDexieLiveQuery'
 import * as DB from '@/data/db'
 import Prompt from './PromptComponent.vue'
 import { ref } from 'vue'
 
 const searchTerm = ref('')
+const tags = useDexieLiveQuery(DB.getTags)
 const prompts = useDexieLiveQueryWithDeps(
   [searchTerm],
   ([searchTerm]: [string]) => DB.getPrompts(searchTerm),

@@ -16,10 +16,6 @@ export const openDB = (): void => {
   })
 }
 
-export const getDB = (): Dexie => {
-  return glob_db
-}
-
 export const addPrompt = async (prompt: Prompt): Promise<void> => {
   glob_db.prompts.add(prompt)
 }
@@ -50,11 +46,22 @@ const searchName = (name: string, searchString: string): boolean => {
   }
 }
 
+export const getTags = async (): Promise<Set<string>> => {
+  await glob_db.prompts.orderBy('tags').uniqueKeys((tags) => {
+    glob_tags.clear()
+
+    for (let tag of tags) {
+      glob_tags.add(tag as string)
+    }
+  })
+
+  return glob_tags
+}
+
 export const getPrompts = async (searchString?: string, filterTags?: string[]): Promise<PromptGroup> => {
   const res: PromptGroup = new Map()
   const groupPrompts = (prompt: Prompt) => {
     const tag = prompt.tags[0] as string
-    prompt.tags.forEach((t) => glob_tags.add(t))
     if (res.has(tag)) {
       const arr = res.get(tag)!
 
