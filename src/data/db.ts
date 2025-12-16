@@ -97,6 +97,14 @@ export const getPrompts = async (
     return searchName(prompt.name, searchString)
   }
 
+  const searchByName = (prompt: Prompt): boolean => {
+    if (!searchString) {
+      return true
+    }
+
+    return searchName(prompt.name, searchString)
+  }
+
   let query_res
 
   if (filterTags.length) {
@@ -104,7 +112,7 @@ export const getPrompts = async (
       .where('tags')
       .anyOf(filterTags)
       .distinct()
-      .filter(searchByTagsAndName)
+      .filter(searchByName)
       .sortBy('tags')
   } else {
     query_res = await glob_db.prompts.orderBy('tags').filter(searchByTagsAndName).toArray()
