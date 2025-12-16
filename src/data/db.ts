@@ -25,13 +25,13 @@ export const putPrompt = async (prompt: Prompt): Promise<void> => {
 }
 
 export const removePrompt = async (toRemove: Prompt | number): Promise<void> => {
-  glob_db.prompts.delete(typeof toRemove == "number" ? toRemove : toRemove.id)
+  glob_db.prompts.delete(typeof toRemove == 'number' ? toRemove : toRemove.id)
 }
 
-const searchTag = (tag: string, searchString: string, sep: string = ":"): boolean => {
+const searchTag = (tag: string, searchString: string, sep: string = ':'): boolean => {
   for (const tagPart of tag.split(sep)) {
     if (tagPart.toLowerCase().startsWith(searchString.toLowerCase())) {
-      return true;
+      return true
     }
   }
 
@@ -39,10 +39,10 @@ const searchTag = (tag: string, searchString: string, sep: string = ":"): boolea
 }
 
 const searchName = (name: string, searchString: string): boolean => {
-  if (searchString.includes(" ")) {
+  if (searchString.includes(' ')) {
     return name.toLowerCase().startsWith(searchString.toLowerCase())
   } else {
-    return searchTag(name, searchString, " ")
+    return searchTag(name, searchString, ' ')
   }
 }
 
@@ -58,7 +58,10 @@ export const getTags = async (): Promise<Set<string>> => {
   return glob_tags
 }
 
-export const getPrompts = async (searchString?: string, filterTags?: string[]): Promise<PromptGroup> => {
+export const getPrompts = async (
+  searchString?: string,
+  filterTags: string[] = [],
+): Promise<PromptGroup> => {
   const res: PromptGroup = new Map()
   const groupPrompts = (prompt: Prompt) => {
     const tag = prompt.tags[0] as string
@@ -68,7 +71,7 @@ export const getPrompts = async (searchString?: string, filterTags?: string[]): 
       for (let i = 0; i < arr.length; i++) {
         if (prompt.name <= arr[i]!.name) {
           arr.splice(i, 0, prompt)
-          return;
+          return
         }
       }
 
@@ -96,8 +99,13 @@ export const getPrompts = async (searchString?: string, filterTags?: string[]): 
 
   let query_res
 
-  if (filterTags) {
-    query_res = await glob_db.prompts.where('tags').anyOf(filterTags).distinct().filter(searchByTagsAndName).sortBy('tags')
+  if (filterTags.length) {
+    query_res = await glob_db.prompts
+      .where('tags')
+      .anyOf(filterTags)
+      .distinct()
+      .filter(searchByTagsAndName)
+      .sortBy('tags')
   } else {
     query_res = await glob_db.prompts.orderBy('tags').filter(searchByTagsAndName).toArray()
   }
@@ -107,7 +115,7 @@ export const getPrompts = async (searchString?: string, filterTags?: string[]): 
 }
 
 export const purgeOutdated = async (ids: number[]): Promise<void> => {
-  glob_db.prompts.where("remoteId").anyOf(ids).delete()
+  glob_db.prompts.where('remoteId').anyOf(ids).delete()
 }
 
 export const setRemoteDBVersion = (version: number): void => {

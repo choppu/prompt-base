@@ -7,7 +7,7 @@
   --background-color-transparent: #0a0a0abb;
   --background-white: #f5f5f5;
   --text-color: #f5f5f5;
-  --text-color-darker: #f5f5f555;
+  --text-color-darker: #f5f5f5cc;
   --secondary-color: #082a45;
   --secondary-color-darker: #082a4533;
   --border-color: var(--background-color);
@@ -17,6 +17,7 @@
   --icon-normal: 16px;
   --text-default-line-heigth: 22px;
   --text-line-heigth-20: 20px;
+  --text-line-heigth-16: 20px;
   --text-line-heigth-14: 14px;
   --text-default-size: 16px;
   --h1-size: 28px;

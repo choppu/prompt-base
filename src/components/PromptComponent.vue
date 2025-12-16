@@ -12,14 +12,14 @@
     <div class="pbase__prompt-bottom">
       <h3 class="pbase__prompt-heading">{{ props.prompt.name }}</h3>
       <div class="pbase__tags-list">
-        <Tag :tags="props.prompt.tags" />
+        <TagList :tags="props.prompt.tags" />
       </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { useTemplateRef } from 'vue'
-import Tag from './TagComponent.vue'
+import TagList from './TagComponent.vue'
 
 const props = defineProps(['prompt'])
 const promptText = useTemplateRef('prompt-to-copy')

@@ -3,17 +3,31 @@
     <div class="pbase__search-input-container">
       <span class="material-symbols-outlined pbase__icon">search</span>
       <input
-        :value="modelValue"
-        @input="$emit('update:modelValue', $event.target.value)"
+        :value="props.modelValue.searchString"
+        @input="
+          emit('update:modelValue', updateSearchString(($event.target as HTMLInputElement).value))
+        "
         class="pbase__search-input"
       />
     </div>
+    <SelectableTagList :tags="props.tags" @tagSelect="handleTagSelect" />
   </div>
 </template>
-<script lang="ts">
-export default {
-  props: ['modelValue'],
-  emits: ['update:modelValue'],
+<script setup lang="ts">
+import type { SearchParams } from '@/types/Search'
+import SelectableTagList from './SelectableTagList.vue'
+const props = defineProps(['modelValue', 'tags'])
+const emit = defineEmits(['update:modelValue'])
+
+const updateSearchString = (searchString: string): SearchParams => {
+  return { searchString: searchString, filterTags: props.modelValue?.filterTags }
+}
+
+const handleTagSelect = (tagsSelected: string[]): void => {
+  emit('update:modelValue', {
+    searchString: props.modelValue?.searchString,
+    filterTags: tagsSelected,
+  })
 }
 </script>
 <style scoped>
@@ -21,11 +35,13 @@ export default {
 .pbase__search-container {
   width: 100%;
   background-color: var(--secondary-color-darker);
-  height: 170px;
+  padding: 40px 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .pbase__search-input-container {
