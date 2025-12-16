@@ -1,6 +1,6 @@
 {
   "name": "Fairycore",
-  "prompt": "(whimsical forests; glowing spores; ethereal wings; mushroom clusters; enchanted flora; pastel glimmers; magical atmosphere)[SUBJECT]",
+  "prompt": { "ZIT": "(whimsical forests; glowing spores; ethereal wings; mushroom clusters; enchanted flora; pastel glimmers; magical atmosphere)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

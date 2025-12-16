@@ -1,6 +1,6 @@
 {
   "name": "Light Academia",
-  "prompt": "(soft scholastic warmth; linen textures; classical charm; ivory-beige palette , studying) [SUBJECT]",
+  "prompt": { "ZIT": "(soft scholastic warmth; linen textures; classical charm; ivory-beige palette , studying) [SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

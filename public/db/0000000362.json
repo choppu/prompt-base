@@ -1,6 +1,6 @@
 {
   "name": "Rule Of Thirds Composition",
-  "prompt": "[SUBJECT](Rule-of-thirds composition: frame divided into 3x3 grid, subject positioned along gridlines or intersections. Creates balanced, natural, visually pleasing arrangement.)",
+  "prompt": { "ZIT": "[SUBJECT](Rule-of-thirds composition: frame divided into 3x3 grid, subject positioned along gridlines or intersections. Creates balanced, natural, visually pleasing arrangement.)" },
   "tags": [
     "Camera:Composition"
   ],

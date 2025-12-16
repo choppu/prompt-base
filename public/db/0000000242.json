@@ -1,6 +1,6 @@
 {
   "name": "Milk-Shaped Subject",
-  "prompt": "Milk shaped like a [SUBJECT], Creamy white liquid 3D realistic, Splashing, Opaque, Smooth, Fluid motion, Droplets, Pure. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Milk shaped like a [SUBJECT], Creamy white liquid 3D realistic, Splashing, Opaque, Smooth, Fluid motion, Droplets, Pure. [ENVIRONMENT]" },
   "tags": [
     "Materials:Liquid / Viscous"
   ],

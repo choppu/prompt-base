@@ -1,6 +1,6 @@
 {
   "name": "Hopeful",
-  "prompt": "(soft rising light; gentle color lift; subtle rebuilding; positive ascent)[SUBJECT]",
+  "prompt": { "ZIT": "(soft rising light; gentle color lift; subtle rebuilding; positive ascent)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

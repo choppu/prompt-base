@@ -1,6 +1,6 @@
 {
   "name": "Cowboy Shot",
-  "prompt": "[SUBJECT](Cowboy shot: camera frames subject from mid-thigh upward, traditionally showing gunbelt in Western films. Emphasizes stance, readiness, and body language.)",
+  "prompt": { "ZIT": "[SUBJECT](Cowboy shot: camera frames subject from mid-thigh upward, traditionally showing gunbelt in Western films. Emphasizes stance, readiness, and body language.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

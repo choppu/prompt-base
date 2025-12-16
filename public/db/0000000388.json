@@ -1,6 +1,6 @@
 {
   "name": "Ultra Wide Shot",
-  "prompt": "[SUBJECT](Ultra-wide lens shot: composition with extremely expanded field of view and pronounced barrel distortion. Creates dramatic spatial exaggeration and immersive perspective.)",
+  "prompt": { "ZIT": "[SUBJECT](Ultra-wide lens shot: composition with extremely expanded field of view and pronounced barrel distortion. Creates dramatic spatial exaggeration and immersive perspective.)" },
   "tags": [
     "Camera:Lens / Perspective"
   ],

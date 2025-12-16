@@ -1,6 +1,6 @@
 {
   "name": "Mosaic",
-  "prompt": "(Image composed entirely of small, individually colored square or irregular tiles (tesserae), deep grouted lines, ancient Byzantine or Roman texture, slightly uneven surface, rich stone colors, highly detailed)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Image composed entirely of small, individually colored square or irregular tiles (tesserae), deep grouted lines, ancient Byzantine or Roman texture, slightly uneven surface, rich stone colors, highly detailed)\n[SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

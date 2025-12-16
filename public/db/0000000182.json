@@ -1,6 +1,6 @@
 {
   "name": "Earth-Shaped Subject",
-  "prompt": "Dirt shaped like a [SUBJECT], Textured 3D realistic, Crumbly, Dense, Organic, Rough, Natural, Soil Particles, Moss Accents. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Dirt shaped like a [SUBJECT], Textured 3D realistic, Crumbly, Dense, Organic, Rough, Natural, Soil Particles, Moss Accents. [ENVIRONMENT]" },
   "tags": [
     "Materials:Elemental"
   ],

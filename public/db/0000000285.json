@@ -1,6 +1,6 @@
 {
   "name": "Melancholy",
-  "prompt": "(soft sorrow; muted colors; hazy distance; quiet reflection; subtle sadness; introspection)[SUBJECT]",
+  "prompt": { "ZIT": "(soft sorrow; muted colors; hazy distance; quiet reflection; subtle sadness; introspection)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

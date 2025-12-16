@@ -1,6 +1,6 @@
 {
   "name": "Leather-Shaped Subject",
-  "prompt": "Leather shaped like a [SUBJECT], Tanned hide texture, Visible grain, Stitched seams, Worn or Polished, Durable, Brown/Black tones. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Leather shaped like a [SUBJECT], Tanned hide texture, Visible grain, Stitched seams, Worn or Polished, Durable, Brown/Black tones. [ENVIRONMENT]" },
   "tags": [
     "Materials:Fabric / Textile"
   ],

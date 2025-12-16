@@ -1,6 +1,6 @@
 {
   "name": "Monochromatic",
-  "prompt": "(entire image in tints/tones/shades of a single hue; unified minimal palette)\n[SUBJECT]",
+  "prompt": { "ZIT": "(entire image in tints/tones/shades of a single hue; unified minimal palette)\n[SUBJECT]" },
   "tags": [
     "Lights:Color Theory & Harmony Effects"
   ],

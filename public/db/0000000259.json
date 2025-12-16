@@ -1,6 +1,6 @@
 {
   "name": "Celestial Angelic Realms",
-  "prompt": "(heavenly worlds; floating temples; radiant skies; divine figures; golden-white illumination)[SUBJECT]",
+  "prompt": { "ZIT": "(heavenly worlds; floating temples; radiant skies; divine figures; golden-white illumination)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

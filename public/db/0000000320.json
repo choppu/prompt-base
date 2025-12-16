@@ -1,6 +1,6 @@
 {
   "name": "Space Opera",
-  "prompt": "(grand interstellar adventure; ornate starships; colorful nebulas; alien civilizations; heroic scale; fleet battles; sweeping cosmic vistas)[SUBJECT]",
+  "prompt": { "ZIT": "(grand interstellar adventure; ornate starships; colorful nebulas; alien civilizations; heroic scale; fleet battles; sweeping cosmic vistas)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

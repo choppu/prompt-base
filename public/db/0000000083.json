@@ -1,6 +1,6 @@
 {
   "name": "Rococo Paint",
-  "prompt": "(Ornate decorative details , soft glowing light, delicate flowing shapes, intricate patterns, graceful , oil painting, soft brushstrokes, visible brush texture, painterly style 1700s-1800s, fine detail, luminous lighting ) [SUBJECT]",
+  "prompt": { "ZIT": "(Ornate decorative details , soft glowing light, delicate flowing shapes, intricate patterns, graceful , oil painting, soft brushstrokes, visible brush texture, painterly style 1700s-1800s, fine detail, luminous lighting ) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

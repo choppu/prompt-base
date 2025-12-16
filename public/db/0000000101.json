@@ -1,6 +1,6 @@
 {
   "name": "Op Art",
-  "prompt": "(High-contrast optical illusions, repetitive patterns, moir\u00e9 effects, geometric distortions in black-and-white) [SUBJECT]",
+  "prompt": { "ZIT": "(High-contrast optical illusions, repetitive patterns, moir\u00e9 effects, geometric distortions in black-and-white) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

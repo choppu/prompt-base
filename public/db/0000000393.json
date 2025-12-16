@@ -1,6 +1,6 @@
 {
   "name": "Tilt Shift Shot",
-  "prompt": "[SUBJECT](Tilt-shift lens shot: composition with selective focus plane, creating miniature effect or corrected perspective. Produces dreamy, toy-like, or architecturally corrected view.)",
+  "prompt": { "ZIT": "[SUBJECT](Tilt-shift lens shot: composition with selective focus plane, creating miniature effect or corrected perspective. Produces dreamy, toy-like, or architecturally corrected view.)" },
   "tags": [
     "Camera:Lens / Perspective"
   ],

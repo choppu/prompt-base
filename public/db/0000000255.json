@@ -1,6 +1,6 @@
 {
   "name": "Lovecraftian Cosmic Horror",
-  "prompt": "(alien horror; non-Euclidean geometry; impossible landscapes; tentacles; fog; oppressive skies)[SUBJECT]",
+  "prompt": { "ZIT": "(alien horror; non-Euclidean geometry; impossible landscapes; tentacles; fog; oppressive skies)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

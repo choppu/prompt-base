@@ -1,6 +1,6 @@
 {
   "name": "Dadaism",
-  "prompt": "(Absurdist collage, anti-art randomness, chaotic composition, satirical and nonsensical elements) [SUBJECT]",
+  "prompt": { "ZIT": "(Absurdist collage, anti-art randomness, chaotic composition, satirical and nonsensical elements) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

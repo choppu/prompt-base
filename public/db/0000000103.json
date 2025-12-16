@@ -1,6 +1,6 @@
 {
   "name": "Watercolor",
-  "prompt": "(Translucent washes, wet-on-wet diffusion, soft gradients, delicate splatter effects, fluid edges) [SUBJECT]",
+  "prompt": { "ZIT": "(Translucent washes, wet-on-wet diffusion, soft gradients, delicate splatter effects, fluid edges) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

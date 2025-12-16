@@ -1,6 +1,6 @@
 {
   "name": "Dark Academia",
-  "prompt": "(gothic intellectualism; aged libraries; mahogany; candlelit solitude; scholarly obsession; muted browns; rainy courtyards; introspection)[SUBJECT]",
+  "prompt": { "ZIT": "(gothic intellectualism; aged libraries; mahogany; candlelit solitude; scholarly obsession; muted browns; rainy courtyards; introspection)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

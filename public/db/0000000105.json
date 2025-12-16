@@ -1,6 +1,6 @@
 {
   "name": "Ink and Wash (Sumi-E)",
-  "prompt": "(Black ink gradients, fluid brush control, minimalist strokes, controlled density variation, negative space emphasis) [SUBJECT]",
+  "prompt": { "ZIT": "(Black ink gradients, fluid brush control, minimalist strokes, controlled density variation, negative space emphasis) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Post Apocalyptic",
-  "prompt": "(civilization in ruins; scavenged survivalism; dust and rust; decayed infrastructure; abandoned vehicles; desolate landscapes; reclaimed nature)[SUBJECT]",
+  "prompt": { "ZIT": "(civilization in ruins; scavenged survivalism; dust and rust; decayed infrastructure; abandoned vehicles; desolate landscapes; reclaimed nature)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

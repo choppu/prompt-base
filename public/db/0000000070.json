@@ -1,6 +1,6 @@
 {
   "name": "Light Painting",
-  "prompt": "(long-exposure glowing streaks; motion trails; drawn-in-air lines; luminous flowing ribbons, kinetic light traces, neon path strokes)\n[it shapes with light a [SUBJECT] ]\n[SUBJECT]",
+  "prompt": { "ZIT": "(long-exposure glowing streaks; motion trails; drawn-in-air lines; luminous flowing ribbons, kinetic light traces, neon path strokes)\n[it shapes with light a [SUBJECT] ]\n[SUBJECT]" },
   "tags": [
     "Lights:Stage, Laser & Artistic Effects"
   ],

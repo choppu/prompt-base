@@ -1,6 +1,6 @@
 {
   "name": "Rembrandt Lighting",
-  "prompt": "\n(triangle of light on shadowed cheek; directional chiaroscuro; dramatic portrait contrast; sculpted face shadows, classic painterly lighting, angled key-light shaping)\n[SUBJECT]",
+  "prompt": { "ZIT": "(triangle of light on shadowed cheek; directional chiaroscuro; dramatic portrait contrast; sculpted face shadows, classic painterly lighting, angled key-light shaping)\n[SUBJECT]" },
   "tags": [
     "Lights:Portrait & Studio Patterns"
   ],

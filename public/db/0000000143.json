@@ -1,6 +1,6 @@
 {
   "name": "Rubber Hose Animation",
-  "prompt": "(Bouncy, limbless limbs, circular forms, exaggerated elastic motion, vintage 1920s\u20131930s cartoon fluidity, simple color palette, whimsical expressive poses) [SUBJECT]",
+  "prompt": { "ZIT": "(Bouncy, limbless limbs, circular forms, exaggerated elastic motion, vintage 1920s\u20131930s cartoon fluidity, simple color palette, whimsical expressive poses) [SUBJECT]" },
   "tags": [
     "Styles:Animation & Comics"
   ],

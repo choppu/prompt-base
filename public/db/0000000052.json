@@ -1,6 +1,6 @@
 {
   "name": "Anamorphic Lens Flare",
-  "prompt": "(static natural blended directional blue/cyan streak flares; widescreen optical compression; elongated blue flare bands; cinematic natural flares, compressed lens geometry, highlight forms, flare sweep , cinematic focus on subject)\n[SUBJECT]",
+  "prompt": { "ZIT": "(static natural blended directional blue/cyan streak flares; widescreen optical compression; elongated blue flare bands; cinematic natural flares, compressed lens geometry, highlight forms, flare sweep , cinematic focus on subject)\n[SUBJECT]" },
   "tags": [
     "Lights:Lens & Optical Artifacts"
   ],

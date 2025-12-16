@@ -1,6 +1,6 @@
 {
   "name": "Medieval Illumination",
-  "prompt": "(Gold leaf accents, ornate borders, parchment texture, flat decorative scenes, marginalia flourishes) [SUBJECT]",
+  "prompt": { "ZIT": "(Gold leaf accents, ornate borders, parchment texture, flat decorative scenes, marginalia flourishes) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Harajuku",
-  "prompt": "(eclectic street fashion; vibrant patterns; layered accessories; whimsical maximalism)[SUBJECT]",
+  "prompt": { "ZIT": "(eclectic street fashion; vibrant patterns; layered accessories; whimsical maximalism)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

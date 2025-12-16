@@ -1,6 +1,6 @@
 {
   "name": "Extreme High Angle",
-  "prompt": "[SUBJECT](Extreme high-angle shot: camera positioned far above subject, looking steeply downward. Creates isolation, vulnerability, or god's-eye perspective. Subject appears tiny within vast environment.)",
+  "prompt": { "ZIT": "[SUBJECT](Extreme high-angle shot: camera positioned far above subject, looking steeply downward. Creates isolation, vulnerability, or god's-eye perspective. Subject appears tiny within vast environment.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

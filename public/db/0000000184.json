@@ -1,6 +1,6 @@
 {
   "name": "Water-Shaped Subject",
-  "prompt": "Water shaped like a [SUBJECT], Transparent 3D realistic, Liquid, Clear, Rippled, Flowing. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Water shaped like a [SUBJECT], Transparent 3D realistic, Liquid, Clear, Rippled, Flowing. [ENVIRONMENT]" },
   "tags": [
     "Materials:Elemental"
   ],

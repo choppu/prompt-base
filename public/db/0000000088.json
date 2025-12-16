@@ -1,6 +1,6 @@
 {
   "name": "Futurism",
-  "prompt": "(Dynamic movement lines, industrial energy, speed, overlapping forms suggesting motion and force) [SUBJECT]",
+  "prompt": { "ZIT": "(Dynamic movement lines, industrial energy, speed, overlapping forms suggesting motion and force) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

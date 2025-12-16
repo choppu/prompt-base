@@ -1,6 +1,6 @@
 {
   "name": "Charcoal Drawing",
-  "prompt": "(Smudged textures, deep blacks, high contrast shading, gritty tonal transitions, expressive strokes) [SUBJECT]",
+  "prompt": { "ZIT": "(Smudged textures, deep blacks, high contrast shading, gritty tonal transitions, expressive strokes) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

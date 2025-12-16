@@ -1,6 +1,6 @@
 {
   "name": "Manga",
-  "prompt": "(Black-and-white ink style, screen tones, dynamic speed lines, stylized anatomy, crisp line weights) [SUBJECT]",
+  "prompt": { "ZIT": "(Black-and-white ink style, screen tones, dynamic speed lines, stylized anatomy, crisp line weights) [SUBJECT]" },
   "tags": [
     "Styles:Animation & Comics"
   ],

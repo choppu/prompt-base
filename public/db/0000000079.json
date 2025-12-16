@@ -1,6 +1,6 @@
 {
   "name": "Lomography (Lomo)",
-  "prompt": "(oversaturated colors; heavy vignette; yellow/green tint; toy-camera imperfections ,vignette edges, oversaturation, color shifts, light leaks, lo-fi film )\n[SUBJECT]",
+  "prompt": { "ZIT": "(oversaturated colors; heavy vignette; yellow/green tint; toy-camera imperfections ,vignette edges, oversaturation, color shifts, light leaks, lo-fi film )\n[SUBJECT]" },
   "tags": [
     "Lights:Vintage & Chemical Processes"
   ],

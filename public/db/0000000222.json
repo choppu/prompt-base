@@ -1,6 +1,6 @@
 {
   "name": "Neon-Shaped Subject",
-  "prompt": "Neon shaped like a [SUBJECT], Luminous realistic, Vibrant, Glowing, Electric, Bright, Futuristic. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Neon shaped like a [SUBJECT], Luminous realistic, Vibrant, Glowing, Electric, Bright, Futuristic. [ENVIRONMENT]" },
   "tags": [
     "Materials:Light-Based / Energy"
   ],

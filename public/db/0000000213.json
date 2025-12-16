@@ -1,6 +1,6 @@
 {
   "name": "Block-Shaped Subject",
-  "prompt": "Plastic bricks shaped like a realistic [SUBJECT], Voxel construction, Studded surface, Modular, Geometric. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Plastic bricks shaped like a realistic [SUBJECT], Voxel construction, Studded surface, Modular, Geometric. [ENVIRONMENT]" },
   "tags": [
     "Materials:Synthetic & Industrial"
   ],

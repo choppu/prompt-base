@@ -1,6 +1,6 @@
 {
   "name": "Foil-Shaped Subject",
-  "prompt": "Aluminium foil shaped like a [SUBJECT], Crinkled silver texture, Highly reflective, Sharp creases, Metallic thin film, Shiny. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Aluminium foil shaped like a [SUBJECT], Crinkled silver texture, Highly reflective, Sharp creases, Metallic thin film, Shiny. [ENVIRONMENT]" },
   "tags": [
     "Materials:Synthetic & Industrial"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Cosmic Horror",
-  "prompt": "(existential dread; non-Euclidean geometry; dark voids; ancient entities; distorted scale; oppressive atmospheres; unknowable vastness)[SUBJECT]",
+  "prompt": { "ZIT": "(existential dread; non-Euclidean geometry; dark voids; ancient entities; distorted scale; oppressive atmospheres; unknowable vastness)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Gobo",
-  "prompt": "\n(stenciled light shapes; hard shadow projections; patterned illumination; crisp cutout shadows, geometric light casting, artistic projection texture)[SHADOW]\n[SUBJECT]",
+  "prompt": { "ZIT": "(stenciled light shapes; hard shadow projections; patterned illumination; crisp cutout shadows, geometric light casting, artistic projection texture)[SHADOW]\n[SUBJECT]" },
   "tags": [
     "Lights:Stage, Laser & Artistic Effects"
   ],

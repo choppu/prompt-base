@@ -1,6 +1,6 @@
 {
   "name": "Crane Shot",
-  "prompt": "[SUBJECT](Crane shot perspective: composition suggesting camera positioned on crane, capable of sweeping vertical and horizontal movement. Creates grand, elevated, cinematic perspective.)",
+  "prompt": { "ZIT": "[SUBJECT](Crane shot perspective: composition suggesting camera positioned on crane, capable of sweeping vertical and horizontal movement. Creates grand, elevated, cinematic perspective.)" },
   "tags": [
     "Camera:Movement"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Chocolate-Shaped Subject",
-  "prompt": "Chocolate shaped like a [SUBJECT], Melting dark chocolate, Matte to satin finish, Smooth, Rich brown, Thick liquid flow. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Chocolate shaped like a [SUBJECT], Melting dark chocolate, Matte to satin finish, Smooth, Rich brown, Thick liquid flow. [ENVIRONMENT]" },
   "tags": [
     "Materials:Liquid / Viscous"
   ],

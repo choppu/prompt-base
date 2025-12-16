@@ -1,6 +1,6 @@
 {
   "name": "Golden Age Cartoon",
-  "prompt": "( highly elastic and bouncy characters, pie-cut eyes, simple circular limbs with white gloves, low detail on backgrounds, black and white or limited color, exaggerated squash and stretch movement)\n[SUBJECT]\n",
+  "prompt": { "ZIT": "( highly elastic and bouncy characters, pie-cut eyes, simple circular limbs with white gloves, low detail on backgrounds, black and white or limited color, exaggerated squash and stretch movement)\n[SUBJECT]"},
   "tags": [
     "Styles:Animation & Comics"
   ],

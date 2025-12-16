@@ -1,6 +1,6 @@
 {
   "name": "Ink-Shaped Subject",
-  "prompt": "Black ink shaped like a [SUBJECT], Fluid simulation 3D realistic, Swirling in water, Dissolving edges, Smoky liquid, High contrast, Abstract flow. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Black ink shaped like a [SUBJECT], Fluid simulation 3D realistic, Swirling in water, Dissolving edges, Smoky liquid, High contrast, Abstract flow. [ENVIRONMENT]" },
   "tags": [
     "Materials:Liquid / Viscous"
   ],

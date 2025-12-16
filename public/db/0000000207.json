@@ -1,6 +1,6 @@
 {
   "name": "Molten Metal-Shaped Subject",
-  "prompt": "Molten metal shaped like a [SUBJECT], Glowing liquid metal, reflective, Hot, Fluid, Bright orange edges. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Molten metal shaped like a [SUBJECT], Glowing liquid metal, reflective, Hot, Fluid, Bright orange edges. [ENVIRONMENT]" },
   "tags": [
     "Materials:Metallic"
   ],

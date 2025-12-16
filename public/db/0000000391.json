@@ -1,6 +1,6 @@
 {
   "name": "Portrait Lens Shot",
-  "prompt": "[SUBJECT](Portrait-lens shot: composition with shallow depth of field, subject sharp against softly blurred background. Creates pleasing bokeh and subject isolation.)",
+  "prompt": { "ZIT": "[SUBJECT](Portrait-lens shot: composition with shallow depth of field, subject sharp against softly blurred background. Creates pleasing bokeh and subject isolation.)" },
   "tags": [
     "Camera:Lens / Perspective"
   ],

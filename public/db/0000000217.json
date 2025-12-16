@@ -1,6 +1,6 @@
 {
   "name": "Tar-Shaped Subject",
-  "prompt": "Tar shaped like a [SUBJECT], Thick 3D realistic, Black, Glossy, Sticky, Viscous, Dripping, Dense. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Tar shaped like a [SUBJECT], Thick 3D realistic, Black, Glossy, Sticky, Viscous, Dripping, Dense. [ENVIRONMENT]" },
   "tags": [
     "Materials:Synthetic & Industrial"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Extreme Wide Shot",
-  "prompt": "[SUBJECT](Extreme wide shot: camera positioned very far from subject, showing vast environment. Subject appears small within expansive landscape, emphasizing scale and context.)",
+  "prompt": { "ZIT": "[SUBJECT](Extreme wide shot: camera positioned very far from subject, showing vast environment. Subject appears small within expansive landscape, emphasizing scale and context.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

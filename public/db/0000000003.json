@@ -1,6 +1,6 @@
 {
   "name": "Color Bleeding (Radiosity)",
-  "prompt": "(surface light spillover; colored bounce glow; soft indirect tinting; diffuse bounce illumination, reflected hue wash, radiant red  color spill)\n[SUBJECT]",
+  "prompt": { "ZIT": "(surface light spillover; colored bounce glow; soft indirect tinting; diffuse bounce illumination, reflected hue wash, radiant red  color spill)\n[SUBJECT]" },
   "tags": [
     "Lights:3D Rendering & CGI Specific"
   ],

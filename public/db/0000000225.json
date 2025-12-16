@@ -1,6 +1,6 @@
 {
   "name": "Bone-Shaped Subject",
-  "prompt": "Bone shaped like a [SUBJECT], Textured 3D realistic, Hard, Organic, Weathered, Pale, Detailed. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Bone shaped like a [SUBJECT], Textured 3D realistic, Hard, Organic, Weathered, Pale, Detailed. [ENVIRONMENT]" },
   "tags": [
     "Materials:Natural Organic"
   ],

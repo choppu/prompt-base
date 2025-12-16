@@ -1,6 +1,6 @@
 {
   "name": "Encaustic Painting",
-  "prompt": "(Layers of heated beeswax mixed with pigments, luminous textured surfaces, warm radiant tones, subtle translucency, rich surface depth, tactile brushstrokes)  \n[SUBJECT]",
+  "prompt": { "ZIT": "(Layers of heated beeswax mixed with pigments, luminous textured surfaces, warm radiant tones, subtle translucency, rich surface depth, tactile brushstrokes)  \n[SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

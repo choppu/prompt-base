@@ -1,6 +1,6 @@
 {
   "name": "Bleach Bypass",
-  "prompt": "(high contrast; very low saturation; metallic highlights; gritty desaturated  colors film look; silver-retention harshness) \n[SUBJECT]",
+  "prompt": { "ZIT": "(high contrast; very low saturation; metallic highlights; gritty desaturated  colors film look; silver-retention harshness) \n[SUBJECT]" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

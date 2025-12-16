@@ -1,6 +1,6 @@
 {
   "name": "Back Angle",
-  "prompt": "[SUBJECT](Back-angle shot: camera positioned behind subject, showing rear view. Creates mystery, anonymity, or shares subject's perspective of what lies ahead.)",
+  "prompt": { "ZIT": "[SUBJECT](Back-angle shot: camera positioned behind subject, showing rear view. Creates mystery, anonymity, or shares subject's perspective of what lies ahead.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

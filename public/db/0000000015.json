@@ -1,6 +1,6 @@
 {
   "name": "Volumetric Fog",
-  "prompt": "(diffused light shafts interacting with fog or mist; soft atmospheric illumination; glowing haze around subject; dreamy and immersive volumetric light)\n[SUBJECT]",
+  "prompt": { "ZIT": "(diffused light shafts interacting with fog or mist; soft atmospheric illumination; glowing haze around subject; dreamy and immersive volumetric light)\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

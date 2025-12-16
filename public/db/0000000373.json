@@ -1,6 +1,6 @@
 {
   "name": "Three Shot",
-  "prompt": "[SUBJECT](Three-shot: camera frames three subjects within composition, showing group dynamic. Creates triangular visual relationship and social interaction.)",
+  "prompt": { "ZIT": "[SUBJECT](Three-shot: camera frames three subjects within composition, showing group dynamic. Creates triangular visual relationship and social interaction.)" },
   "tags": [
     "Camera:Composition"
   ],

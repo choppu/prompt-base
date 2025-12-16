@@ -1,6 +1,6 @@
 {
   "name": "Pull Back Shot",
-  "prompt": "[SUBJECT](Pull-back composition: framing suggesting camera moving away from subject, revealing context. Creates revelation, scope expansion, or isolation.)",
+  "prompt": { "ZIT": "[SUBJECT](Pull-back composition: framing suggesting camera moving away from subject, revealing context. Creates revelation, scope expansion, or isolation.)" },
   "tags": [
     "Camera:Movement"
   ],

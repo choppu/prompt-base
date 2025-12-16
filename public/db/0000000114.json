@@ -1,6 +1,6 @@
 {
   "name": "Fresnel Painting",
-  "prompt": "(Luminous wall-painting technique, mineral pigments, durable surface, soft radiance, fresco-like blending)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Luminous wall-painting technique, mineral pigments, durable surface, soft radiance, fresco-like blending)\n[SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

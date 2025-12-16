@@ -1,6 +1,6 @@
 {
   "name": "Wholesome",
-  "prompt": "(soft joy; comforting warmth; gentle colors; approachable mood)[SUBJECT]",
+  "prompt": { "ZIT": "(soft joy; comforting warmth; gentle colors; approachable mood)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

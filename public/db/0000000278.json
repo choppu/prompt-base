@@ -1,6 +1,6 @@
 {
   "name": "Gothic",
-  "prompt": "(dark romanticism; ornate fabrics; brooding patterns; somber symbols; melancholic elegance)[SUBJECT]",
+  "prompt": { "ZIT": "(dark romanticism; ornate fabrics; brooding patterns; somber symbols; melancholic elegance)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

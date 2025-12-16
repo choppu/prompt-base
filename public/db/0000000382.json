@@ -1,6 +1,6 @@
 {
   "name": "Pan Shot",
-  "prompt": "[SUBJECT](Pan shot style: composition implying horizontal camera rotation across scene. Creates sweeping survey, landscape revelation, or spatial exploration.)",
+  "prompt": { "ZIT": "[SUBJECT](Pan shot style: composition implying horizontal camera rotation across scene. Creates sweeping survey, landscape revelation, or spatial exploration.)" },
   "tags": [
     "Camera:Movement"
   ],

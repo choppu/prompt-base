@@ -1,6 +1,6 @@
 {
   "name": "Banding (Posterization)",
-  "prompt": "(gradient breaks; stepped color regions; tonal discontinuity; discrete color bands, low-bit gradient plateaus, posterized sky tones)\n[SUBJECT]",
+  "prompt": { "ZIT": "(gradient breaks; stepped color regions; tonal discontinuity; discrete color bands, low-bit gradient plateaus, posterized sky tones)\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Sensor & Glitch Artifacts"
   ],

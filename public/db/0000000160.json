@@ -1,6 +1,6 @@
 {
   "name": "Needle Felt",
-  "prompt": "(Fuzzy wool texture, soft sculpted shapes, miniature craft aesthetic with visible fibers)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Fuzzy wool texture, soft sculpted shapes, miniature craft aesthetic with visible fibers)\n[SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

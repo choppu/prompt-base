@@ -1,6 +1,6 @@
 {
   "name": "Prismaticrefraction",
-  "prompt": "(light passing through glass, crystal, or water; rainbow or spectrum highlights; dispersed beams; subtle chromatic splitting; refracted volumetric glow interacting with subject)\n[SUBJECT]",
+  "prompt": { "ZIT": "(light passing through glass, crystal, or water; rainbow or spectrum highlights; dispersed beams; subtle chromatic splitting; refracted volumetric glow interacting with subject)\n[SUBJECT]" },
   "tags": [
     "Lights:3D Rendering & CGI Specific"
   ],

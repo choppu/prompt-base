@@ -1,6 +1,6 @@
 {
   "name": "Memphis",
-  "prompt": "(80s geometric chaos, squiggles, bright neon, asymmetric shapes, playful retro abstraction vector) [SUBJECT]",
+  "prompt": { "ZIT": "(80s geometric chaos, squiggles, bright neon, asymmetric shapes, playful retro abstraction vector) [SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

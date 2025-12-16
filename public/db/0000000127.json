@@ -1,6 +1,6 @@
 {
   "name": "Chalk Art",
-  "prompt": "(Vibrant powdery pastels on rough asphalt, temporary street-art look, soft smudging and grain) [SUBJECT]",
+  "prompt": { "ZIT": "(Vibrant powdery pastels on rough asphalt, temporary street-art look, soft smudging and grain) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

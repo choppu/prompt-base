@@ -1,6 +1,6 @@
 {
   "name": "Concrete-Shaped Subject",
-  "prompt": "Concrete shaped like a [SUBJECT], Rough gray texture, Porous, Heavy, Industrial, cement surface, Solid. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Concrete shaped like a [SUBJECT], Rough gray texture, Porous, Heavy, Industrial, cement surface, Solid. [ENVIRONMENT]" },
   "tags": [
     "Materials:Stone / Mineral"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Solarpunk",
-  "prompt": "(utopian eco-future; nature-technology harmony; solar arrays; lush vegetation; communal optimism; clean white-gold light; regenerative landscapes; radiant natural illumination)[SUBJECT]",
+  "prompt": { "ZIT": "(utopian eco-future; nature-technology harmony; solar arrays; lush vegetation; communal optimism; clean white-gold light; regenerative landscapes; radiant natural illumination)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

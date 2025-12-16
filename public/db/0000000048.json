@@ -1,6 +1,6 @@
 {
   "name": "Bokeh",
-  "prompt": "(creamy out-of-focus background; soft circular/hexagonal bokeh; luminous blur shapes; high-aperture rendering f/1.4\u2013f/2; fairy-light sparkle, circular bokeh spheres, soft blur disks, shallow focus optics, glowing highlights, smooth DOF falloff, cinematic focus )\n[SUBJECT]",
+  "prompt": { "ZIT": "(creamy out-of-focus background; soft circular/hexagonal bokeh; luminous blur shapes; high-aperture rendering f/1.4\u2013f/2; fairy-light sparkle, circular bokeh spheres, soft blur disks, shallow focus optics, glowing highlights, smooth DOF falloff, cinematic focus )\n[SUBJECT]" },
   "tags": [
     "Lights:Lens & Optical Artifacts"
   ],

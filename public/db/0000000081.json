@@ -1,6 +1,6 @@
 {
   "name": "Renaissance",
-  "prompt": "(Classical realism with precision, balanced composition, sfumato transitions, harmonious-proportions, and naturalistic lighting ) [SUBJECT]",
+  "prompt": { "ZIT": "(Classical realism with precision, balanced composition, sfumato transitions, harmonious-proportions, and naturalistic lighting ) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

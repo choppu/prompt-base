@@ -1,6 +1,6 @@
 {
   "name": "Cyanotype",
-  "prompt": "(Blue-and-white photogram appearance, soft silhouettes, sun-print textures, analog exposure softness) [SUBJECT]",
+  "prompt": { "ZIT": "(Blue-and-white photogram appearance, soft silhouettes, sun-print textures, analog exposure softness) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

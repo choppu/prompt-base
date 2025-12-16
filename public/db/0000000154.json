@@ -1,6 +1,6 @@
 {
   "name": "Claymation Aardman",
-  "prompt": "(Plasticine texture, thumbprints visible on surface, rounded bulky shapes, stop-motion lighting, physical set background) [SUBJECT]\n",
+  "prompt": { "ZIT": "(Plasticine texture, thumbprints visible on surface, rounded bulky shapes, stop-motion lighting, physical set background) [SUBJECT]"},
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

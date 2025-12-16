@@ -1,6 +1,6 @@
 {
   "name": "Electricity-Shaped Subject",
-  "prompt": "Electricity shaped like a [SUBJECT], High-voltage arcs, Glowing blue-yellow-white, Crackling energy, Jagged lines, Luminous, Dynamic, Volatile. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Electricity shaped like a [SUBJECT], High-voltage arcs, Glowing blue-yellow-white, Crackling energy, Jagged lines, Luminous, Dynamic, Volatile. [ENVIRONMENT]" },
   "tags": [
     "Materials:Light-Based / Energy"
   ],

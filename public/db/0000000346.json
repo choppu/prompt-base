@@ -1,6 +1,6 @@
 {
   "name": "Wide Shot",
-  "prompt": "[SUBJECT](Wide shot: camera captures subject fully within environment, showing complete body and surrounding space. Establishes location, context, and spatial relationships.)",
+  "prompt": { "ZIT": "[SUBJECT](Wide shot: camera captures subject fully within environment, showing complete body and surrounding space. Establishes location, context, and spatial relationships.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

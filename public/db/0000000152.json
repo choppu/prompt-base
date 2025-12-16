@@ -1,6 +1,6 @@
 {
   "name": "3D Isometric",
-  "prompt": "(Isometric view, objects and characters drawn at a consistent 30-degree angle, precise geometric proportions, clean edges, detailed textures, vibrant but balanced colors, soft lighting and shadows, clear depth perception, minimal perspective distortion, digital 3D render look) [SUBJECT]",
+  "prompt": { "ZIT": "(Isometric view, objects and characters drawn at a consistent 30-degree angle, precise geometric proportions, clean edges, detailed textures, vibrant but balanced colors, soft lighting and shadows, clear depth perception, minimal perspective distortion, digital 3D render look) [SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

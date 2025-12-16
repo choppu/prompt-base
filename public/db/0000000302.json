@@ -1,6 +1,6 @@
 {
   "name": "Chaotic",
-  "prompt": "(disordered geometry; abrupt patterns; high motion intensity; visual instability)[SUBJECT]",
+  "prompt": { "ZIT": "(disordered geometry; abrupt patterns; high motion intensity; visual instability)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

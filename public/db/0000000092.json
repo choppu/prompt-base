@@ -1,6 +1,6 @@
 {
   "name": "Cubism Art",
-  "prompt": "(Fragmented geometry, multiple perspectives at once, abstract planar shapes, analytical structure, faceted construction) [SUBJECT]",
+  "prompt": { "ZIT": "(Fragmented geometry, multiple perspectives at once, abstract planar shapes, analytical structure, faceted construction) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

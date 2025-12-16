@@ -1,6 +1,6 @@
 {
   "name": "Metallic-Shaped Subject",
-  "prompt": "Metal shaped like a [SUBJECT], Shiny 3D realistic, Polished, Reflective, Smooth, Industrial, Brushed, Rusted, Cold, Hard. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Metal shaped like a [SUBJECT], Shiny 3D realistic, Polished, Reflective, Smooth, Industrial, Brushed, Rusted, Cold, Hard. [ENVIRONMENT]" },
   "tags": [
     "Materials:Metallic"
   ],

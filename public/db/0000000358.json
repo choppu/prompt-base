@@ -1,6 +1,6 @@
 {
   "name": "Bust Shot",
-  "prompt": "[SUBJECT](Bust shot: camera frames subject from chest upward, capturing head, neck, and upper torso. Classic portrait framing emphasizing facial expression and upper body.)",
+  "prompt": { "ZIT": "[SUBJECT](Bust shot: camera frames subject from chest upward, capturing head, neck, and upper torso. Classic portrait framing emphasizing facial expression and upper body.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

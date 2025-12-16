@@ -1,6 +1,6 @@
 {
   "name": "Mughal Miniature",
-  "prompt": "(Intricate hand-painted detail, vibrant jewel-toned colors, gold leaf highlights, flat perspective, highly stylized figures and nature, traditional South Asian court art)\n[SUBJECT]\n",
+  "prompt": { "ZIT": "(Intricate hand-painted detail, vibrant jewel-toned colors, gold leaf highlights, flat perspective, highly stylized figures and nature, traditional South Asian court art)\n[SUBJECT]"},
   "tags": [
     "Styles:Extra Styles"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Whimsical",
-  "prompt": "(playful unpredictability; childlike fantasy; colorful eccentricity; buoyant energy)[SUBJECT]",
+  "prompt": { "ZIT": "(playful unpredictability; childlike fantasy; colorful eccentricity; buoyant energy)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

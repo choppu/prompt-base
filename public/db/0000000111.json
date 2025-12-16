@@ -1,6 +1,6 @@
 {
   "name": "Gouache",
-  "prompt": "(Opaque matte pigments, flat multilayered overlaping water colors, chalky texture, crisp edges with occasional brush grain,uncoloared areas gaps, detailed) [SUBJECT]",
+  "prompt": { "ZIT": "(Opaque matte pigments, flat multilayered overlaping water colors, chalky texture, crisp edges with occasional brush grain,uncoloared areas gaps, detailed) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

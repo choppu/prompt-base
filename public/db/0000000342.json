@@ -1,6 +1,6 @@
 {
   "name": "POV Angle",
-  "prompt": "[SUBJECT](Point-of-view shot: camera positioned to replicate exact perspective of a character's eyes. Creates immersive, subjective experience of seeing through character's viewpoint.)",
+  "prompt": { "ZIT": "[SUBJECT](Point-of-view shot: camera positioned to replicate exact perspective of a character's eyes. Creates immersive, subjective experience of seeing through character's viewpoint.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

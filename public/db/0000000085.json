@@ -1,6 +1,6 @@
 {
   "name": "Romanticism",
-  "prompt": "(Emotional intensity, dramatic landscapes, expressive brushwork, sublime nature, stormy lighting, and heightened atmosphere)",
+  "prompt": { "ZIT": "(Emotional intensity, dramatic landscapes, expressive brushwork, sublime nature, stormy lighting, and heightened atmosphere)" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

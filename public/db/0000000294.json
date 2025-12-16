@@ -1,6 +1,6 @@
 {
   "name": "Surreal",
-  "prompt": "(dreamlike distortions; unexpected juxtapositions; altered spatial logic; uncanny elements)[SUBJECT]",
+  "prompt": { "ZIT": "(dreamlike distortions; unexpected juxtapositions; altered spatial logic; uncanny elements)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

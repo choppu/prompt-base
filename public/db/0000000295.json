@@ -1,6 +1,6 @@
 {
   "name": "Ethereal",
-  "prompt": "(soft diffusion; airy light; pale luminous accents; delicate textures; spiritual weightlessness)[SUBJECT]",
+  "prompt": { "ZIT": "(soft diffusion; airy light; pale luminous accents; delicate textures; spiritual weightlessness)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

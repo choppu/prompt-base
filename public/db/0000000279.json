@@ -1,6 +1,6 @@
 {
   "name": "Punk",
-  "prompt": "(DIY urban grit; patched fabrics; spikes; counterculture rebellion; distressed materials)[SUBJECT]",
+  "prompt": { "ZIT": "(DIY urban grit; patched fabrics; spikes; counterculture rebellion; distressed materials)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Negative Space Shot",
-  "prompt": "[SUBJECT](Negative space shot: composition emphasizing empty areas around subject, using emptiness as design element. Creates isolation, focus, or breathing room.)",
+  "prompt": { "ZIT": "[SUBJECT](Negative space shot: composition emphasizing empty areas around subject, using emptiness as design element. Creates isolation, focus, or breathing room.)" },
   "tags": [
     "Camera:Composition"
   ],

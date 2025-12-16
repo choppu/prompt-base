@@ -1,6 +1,6 @@
 {
   "name": "Neon Glow",
-  "prompt": "(vivid colored lighting; bright neon tones; reflective surfaces glowing in saturated hues; urban / cyberpunk aesthetic; subject illuminated by multi-colored light sources)\n[SUBJECT]",
+  "prompt": { "ZIT": "(vivid colored lighting; bright neon tones; reflective surfaces glowing in saturated hues; urban / cyberpunk aesthetic; subject illuminated by multi-colored light sources)\n[SUBJECT]" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

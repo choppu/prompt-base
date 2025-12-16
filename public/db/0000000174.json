@@ -1,6 +1,6 @@
 {
   "name": "Paper Cutout Layered",
-  "prompt": "(Diorama style, stacked layers of paper, depth via drop shadows, simple shapes, craft paper texture, tunnel book aesthetic)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Diorama style, stacked layers of paper, depth via drop shadows, simple shapes, craft paper texture, tunnel book aesthetic)\n[SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

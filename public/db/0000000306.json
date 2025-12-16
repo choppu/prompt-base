@@ -1,6 +1,6 @@
 {
   "name": "Haunting",
-  "prompt": "(ghostly presence; echoing emptiness; spectral traces; somber tension)[SUBJECT]",
+  "prompt": { "ZIT": "(ghostly presence; echoing emptiness; spectral traces; somber tension)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

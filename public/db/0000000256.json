@@ -1,6 +1,6 @@
 {
   "name": "Dragon Lore",
-  "prompt": "(dragons dominate; volcanic landscapes; treasure hoards; flying serpents; smoke and molten rivers)[SUBJECT]",
+  "prompt": { "ZIT": "(dragons dominate; volcanic landscapes; treasure hoards; flying serpents; smoke and molten rivers)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

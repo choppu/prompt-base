@@ -1,6 +1,6 @@
 {
   "name": "3D Render",
-  "prompt": "(Ray-traced reflections, global illumination, Octane/Redshift-like realism, polished CG materials) [SUBJECT]",
+  "prompt": { "ZIT": "(Ray-traced reflections, global illumination, Octane/Redshift-like realism, polished CG materials) [SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

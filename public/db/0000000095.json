@@ -1,6 +1,6 @@
 {
   "name": "Art Nouveau",
-  "prompt": "(Flowing organic lines, decorative floral motifs, graceful curves, soft palettes, flat stylization inspired by Mucha) [SUBJECT]",
+  "prompt": { "ZIT": "(Flowing organic lines, decorative floral motifs, graceful curves, soft palettes, flat stylization inspired by Mucha) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

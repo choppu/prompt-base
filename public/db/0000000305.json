@@ -1,6 +1,6 @@
 {
   "name": "Creepy",
-  "prompt": "(uncanny hints; dim environments; subtle horror cues; emotional discomfort)[SUBJECT]",
+  "prompt": { "ZIT": "(uncanny hints; dim environments; subtle horror cues; emotional discomfort)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

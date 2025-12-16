@@ -1,6 +1,6 @@
 {
   "name": "Overhead Angle",
-  "prompt": "[SUBJECT](Overhead shot: camera positioned directly above subject, pointing straight down. Creates flat, graphic composition showing spatial relationships and patterns from above.)",
+  "prompt": { "ZIT": "[SUBJECT](Overhead shot: camera positioned directly above subject, pointing straight down. Creates flat, graphic composition showing spatial relationships and patterns from above.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Tight Shot",
-  "prompt": "[SUBJECT](Tight shot: camera framed extremely close to subject with minimal surrounding space. Creates claustrophobic, intense, or highly focused composition.)",
+  "prompt": { "ZIT": "[SUBJECT](Tight shot: camera framed extremely close to subject with minimal surrounding space. Creates claustrophobic, intense, or highly focused composition.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

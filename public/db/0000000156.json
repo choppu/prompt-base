@@ -1,6 +1,6 @@
 {
   "name": "Procedural Generation",
-  "prompt": "(Algorithmic patterns, endlessly detailed textures, mathematically driven repetition and structure) [SUBJECT]",
+  "prompt": { "ZIT": "(Algorithmic patterns, endlessly detailed textures, mathematically driven repetition and structure) [SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

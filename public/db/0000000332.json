@@ -1,6 +1,6 @@
 {
   "name": "Top Down Angle",
-  "prompt": "[SUBJECT](Top-down perspective: camera looking directly downward onto subject from above. Emphasizes layout, arrangement, and spatial design with flattened perspective.)",
+  "prompt": { "ZIT": "[SUBJECT](Top-down perspective: camera looking directly downward onto subject from above. Emphasizes layout, arrangement, and spatial design with flattened perspective.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

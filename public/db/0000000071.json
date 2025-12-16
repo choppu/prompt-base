@@ -1,6 +1,6 @@
 {
   "name": "Dappled Light",
-  "prompt": "\n(spotted light patches; leaf-filtered sun pattern; natural broken light; organic shadow play, nature-lit speckles, soft shifting patches)\n[SUBJECT]",
+  "prompt": { "ZIT": "(spotted light patches; leaf-filtered sun pattern; natural broken light; organic shadow play, nature-lit speckles, soft shifting patches)\n[SUBJECT]" },
   "tags": [
     "Lights:Stage, Laser & Artistic Effects"
   ],

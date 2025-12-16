@@ -1,6 +1,6 @@
 {
   "name": "Arthurian Medieval Fantasy",
-  "prompt": "(knights; chivalry; stone castles; lush meadows; armored warriors; banners; candlelit halls)[SUBJECT]",
+  "prompt": { "ZIT": "(knights; chivalry; stone castles; lush meadows; armored warriors; banners; candlelit halls)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

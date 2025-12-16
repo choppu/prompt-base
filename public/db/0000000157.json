@@ -1,6 +1,6 @@
 {
   "name": "Voxel Art",
-  "prompt": "(3D pixel-cube construction, blocky volumetric design, Minecraft-like structure) [SUBJECT]",
+  "prompt": { "ZIT": "(3D pixel-cube construction, blocky volumetric design, Minecraft-like structure) [SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

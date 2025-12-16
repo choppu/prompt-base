@@ -1,6 +1,6 @@
 {
   "name": "Anxiety",
-  "prompt": "(tension; sharp contrasts; unstable framing; restless asymmetry; unease)[SUBJECT]",
+  "prompt": { "ZIT": "(tension; sharp contrasts; unstable framing; restless asymmetry; unease)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Carbon Fiber-Shaped Subject",
-  "prompt": "Carbon fiber shaped like a [SUBJECT], Woven black composite, Glossy resin coat, Lightweight, High-tech, Reflective weave. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Carbon fiber shaped like a [SUBJECT], Woven black composite, Glossy resin coat, Lightweight, High-tech, Reflective weave. [ENVIRONMENT]" },
   "tags": [
     "Materials:Metallic"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "IES Light Profile",
-  "prompt": "\n(realistic bulb projection shapes; textured falloff; non-uniform beam pattern; intricate light geometry, patterned illumination cone, authentic photometric spread)\n[SUBJECT]",
+  "prompt": { "ZIT": "(realistic bulb projection shapes; textured falloff; non-uniform beam pattern; intricate light geometry, patterned illumination cone, authentic photometric spread)\n[SUBJECT]" },
   "tags": [
     "Lights:3D Rendering & CGI Specific"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Chibi",
-  "prompt": "(Super-deformed proportions, oversized heads, tiny bodies, exaggerated cuteness) [SUBJECT]",
+  "prompt": { "ZIT": "(Super-deformed proportions, oversized heads, tiny bodies, exaggerated cuteness) [SUBJECT]" },
   "tags": [
     "Styles:Animation & Comics"
   ],

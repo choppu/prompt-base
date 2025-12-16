@@ -1,6 +1,6 @@
 {
   "name": "High Fantasy",
-  "prompt": "(epic magical worlds; kingdoms; enchanted forests; mythical ; grand castles; glowing magic; vast landscapes)[SUBJECT]",
+  "prompt": { "ZIT": "(epic magical worlds; kingdoms; enchanted forests; mythical ; grand castles; glowing magic; vast landscapes)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

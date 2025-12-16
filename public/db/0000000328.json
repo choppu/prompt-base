@@ -1,6 +1,6 @@
 {
   "name": "Dutch Angle",
-  "prompt": "[SUBJECT](Mild Dutch camera angle: the camera is intentionally tilted off-balance on the roll axis, giving the composition a diagonal, dynamic feel, but with only a small tilt\u2014not a full rotation.)",
+  "prompt": { "ZIT": "[SUBJECT](Mild Dutch camera angle: the camera is intentionally tilted off-balance on the roll axis, giving the composition a diagonal, dynamic feel, but with only a small tilt\u2014not a full rotation.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

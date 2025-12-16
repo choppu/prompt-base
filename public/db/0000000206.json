@@ -1,6 +1,6 @@
 {
   "name": "Bronze-Shaped Subject",
-  "prompt": "Bronze shaped like a [SUBJECT], Metallic brown-gold, Aged patina, Sculpted, Heavy, Classic alloy shine. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Bronze shaped like a [SUBJECT], Metallic brown-gold, Aged patina, Sculpted, Heavy, Classic alloy shine. [ENVIRONMENT]" },
   "tags": [
     "Materials:Metallic"
   ],

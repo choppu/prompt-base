@@ -1,6 +1,6 @@
 {
   "name": "Light Beam",
-  "prompt": "(direct beams of light on the subject , light line)\n[SUBJECT]",
+  "prompt": { "ZIT": "(direct beams of light on the subject , light line)\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

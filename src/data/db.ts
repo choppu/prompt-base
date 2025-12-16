@@ -29,7 +29,7 @@ export const removePrompt = async (toRemove: Prompt | number): Promise<void> => 
 }
 
 const searchTag = (tag: string, searchString: string, sep: string = ":"): boolean => {
-  for (let tagPart of tag.split(sep)) {
+  for (const tagPart of tag.split(sep)) {
     if (tagPart.toLowerCase().startsWith(searchString.toLowerCase())) {
       return true;
     }
@@ -50,7 +50,7 @@ export const getTags = async (): Promise<Set<string>> => {
   await glob_db.prompts.orderBy('tags').uniqueKeys((tags) => {
     glob_tags.clear()
 
-    for (let tag of tags) {
+    for (const tag of tags) {
       glob_tags.add(tag as string)
     }
   })
@@ -83,7 +83,7 @@ export const getPrompts = async (searchString?: string, filterTags?: string[]): 
       return true
     }
 
-    for (let tag of glob_tags) {
+    for (const tag of glob_tags) {
       if (searchTag(tag, searchString)) {
         if (prompt.tags.indexOf(tag) != -1) {
           return true

@@ -1,6 +1,6 @@
 {
   "name": "Anamorphic Shot",
-  "prompt": "[SUBJECT](Anamorphic lens shot: composition with characteristic wide aspect ratio, horizontal lens flares, and oval bokeh. Creates cinematic, premium visual aesthetic.)",
+  "prompt": { "ZIT": "[SUBJECT](Anamorphic lens shot: composition with characteristic wide aspect ratio, horizontal lens flares, and oval bokeh. Creates cinematic, premium visual aesthetic.)" },
   "tags": [
     "Camera:Lens / Perspective"
   ],

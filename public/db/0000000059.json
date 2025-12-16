@@ -1,6 +1,6 @@
 {
   "name": "BTFL",
-  "prompt": "(symmetrical light and shadow; equal nose shadow in left and right and eyes shadow; smooth highlight, equal frontal shadow and light , facial symmetrical shadows )\n[SUBJECT]",
+  "prompt": { "ZIT": "(symmetrical light and shadow; equal nose shadow in left and right and eyes shadow; smooth highlight, equal frontal shadow and light , facial symmetrical shadows )\n[SUBJECT]" },
   "tags": [
     "Lights:Portrait & Studio Patterns"
   ],

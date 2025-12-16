@@ -1,6 +1,6 @@
 {
   "name": "Rubber-Shaped Subject",
-  "prompt": "Rubber shaped like a [SUBJECT], Smooth 3D realistic, Flexible, Matte or Glossy, Synthetic, Durable. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Rubber shaped like a [SUBJECT], Smooth 3D realistic, Flexible, Matte or Glossy, Synthetic, Durable. [ENVIRONMENT]" },
   "tags": [
     "Materials:Synthetic & Industrial"
   ],

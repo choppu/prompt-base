@@ -1,6 +1,6 @@
 {
   "name": "Demonic Infernal Realms",
-  "prompt": "(hellish landscapes; lava rivers; horned creatures; scorched terrain; red-black hues)[SUBJECT]",
+  "prompt": { "ZIT": "(hellish landscapes; lava rivers; horned creatures; scorched terrain; red-black hues)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

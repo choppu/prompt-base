@@ -1,6 +1,6 @@
 {
   "name": "Hanna Barbera",
-  "prompt": "(Limited animation technique, repeated backgrounds, simplified character designs with bold colors, thick outlines, often used for adventure or Scooby-Doo-esque mystery genres)\n[SUBJECT]\n",
+  "prompt": { "ZIT": "(Limited animation technique, repeated backgrounds, simplified character designs with bold colors, thick outlines, often used for adventure or Scooby-Doo-esque mystery genres)\n[SUBJECT]"},
   "tags": [
     "Styles:Animation & Comics"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Surrealism Art",
-  "prompt": "(Dreamlike surreal realistic painting, chromatic, intricate, bizarre paradoxical, illogical and symbolic, abstracted, metaphorical, impossible bizarre scenarios, morphing, melting, floating, levitating, twisting perspectives, juxtaposed enigmatic objects, mismatched improbable situations, fully shaped drawing = complete, clean spaces composition)\n[SUBJECT]\n[ENVIROMENT]",
+  "prompt": { "ZIT": "(Dreamlike surreal realistic painting, chromatic, intricate, bizarre paradoxical, illogical and symbolic, abstracted, metaphorical, impossible bizarre scenarios, morphing, melting, floating, levitating, twisting perspectives, juxtaposed enigmatic objects, mismatched improbable situations, fully shaped drawing = complete, clean spaces composition)\n[SUBJECT]\n[ENVIROMENT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

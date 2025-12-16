@@ -1,6 +1,6 @@
 {
   "name": "Microscope",
-  "prompt": "[SUBJECT](Microscope viewpoint: extreme magnification showing microscopic details with circular vignette. Creates scientific, detailed perspective of tiny subjects.)",
+  "prompt": { "ZIT": "[SUBJECT](Microscope viewpoint: extreme magnification showing microscopic details with circular vignette. Creates scientific, detailed perspective of tiny subjects.)" },
   "tags": [
     "Camera:Point Of View"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Minimalist Shot",
-  "prompt": "[SUBJECT](Minimalist shot: composition with minimal elements, abundant empty space, simple forms. Emphasizes subject through reduction and negative space.)",
+  "prompt": { "ZIT": "[SUBJECT](Minimalist shot: composition with minimal elements, abundant empty space, simple forms. Emphasizes subject through reduction and negative space.)" },
   "tags": [
     "Camera:Composition"
   ],

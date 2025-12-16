@@ -1,6 +1,6 @@
 {
   "name": "Sticker Art",
-  "prompt": "(Thick white outlines, die-cut silhouette, flat bold colors, clean graphic cutout style) [SUBJECT]",
+  "prompt": { "ZIT": "(Thick white outlines, die-cut silhouette, flat bold colors, clean graphic cutout style) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

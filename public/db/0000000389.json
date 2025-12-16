@@ -1,6 +1,6 @@
 {
   "name": "Fisheye Shot",
-  "prompt": "[SUBJECT](Fisheye lens shot: composition with spherical distortion creating circular, bulging perspective. Dramatically warps space, creating surreal, immersive viewpoint.)",
+  "prompt": { "ZIT": "[SUBJECT](Fisheye lens shot: composition with spherical distortion creating circular, bulging perspective. Dramatically warps space, creating surreal, immersive viewpoint.)" },
   "tags": [
     "Camera:Lens / Perspective"
   ],

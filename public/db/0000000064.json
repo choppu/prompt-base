@@ -1,6 +1,6 @@
 {
   "name": "Cross Lighting",
-  "prompt": "(Illumination coming from two different angles, one side brighter and the other creating opposing highlights; strong contrast shaping; textured appearance enhanced by cross-directional light; layered shadows adding depth; dynamic and edgy lighting atmosphere)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Illumination coming from two different angles, one side brighter and the other creating opposing highlights; strong contrast shaping; textured appearance enhanced by cross-directional light; layered shadows adding depth; dynamic and edgy lighting atmosphere)\n[SUBJECT]" },
   "tags": [
     "Lights:Portrait & Studio Patterns"
   ],

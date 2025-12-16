@@ -1,6 +1,6 @@
 {
   "name": "Barbiecore",
-  "prompt": "(hyper-glossy plastic toy shaped fantasy; saturated pinks; dollhouse perfection; playful extravagance; 90s glam elements) [SUBJECT]",
+  "prompt": { "ZIT": "(hyper-glossy plastic toy shaped fantasy; saturated pinks; dollhouse perfection; playful extravagance; 90s glam elements) [SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

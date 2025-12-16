@@ -1,6 +1,6 @@
 {
   "name": "Pixel Art",
-  "prompt": "(dense pixel detail, 1px clean edging, micro-dither shading, small-palette color control, sharp geometric pixel shapes, layered tile-sprite construction)\n[SUBJECT]",
+  "prompt": { "ZIT": "(dense pixel detail, 1px clean edging, micro-dither shading, small-palette color control, sharp geometric pixel shapes, layered tile-sprite construction)\n[SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

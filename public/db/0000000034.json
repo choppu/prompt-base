@@ -1,6 +1,6 @@
 {
   "name": "Smearing (CCD)",
-  "prompt": "(vertical bright streak; continuous line from light source; strong CCD artifact; column smear trail, elongated pixel streaks, vertical luminance drag)\n[SUBJECT]",
+  "prompt": { "ZIT": "(vertical bright streak; continuous line from light source; strong CCD artifact; column smear trail, elongated pixel streaks, vertical luminance drag)\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Sensor & Glitch Artifacts"
   ],

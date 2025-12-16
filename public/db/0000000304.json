@@ -1,6 +1,6 @@
 {
   "name": "Maximalist",
-  "prompt": "(dense layering; bold saturation; ornamental excess; overwhelming detail)[SUBJECT]",
+  "prompt": { "ZIT": "(dense layering; bold saturation; ornamental excess; overwhelming detail)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

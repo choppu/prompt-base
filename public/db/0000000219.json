@@ -1,6 +1,6 @@
 {
   "name": "Plasma-Shaped Subject",
-  "prompt": "Plasma shaped like a [SUBJECT], Electrified energy arcs, Glowing, Vibrational, Chaotic light patterns. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Plasma shaped like a [SUBJECT], Electrified energy arcs, Glowing, Vibrational, Chaotic light patterns. [ENVIRONMENT]" },
   "tags": [
     "Materials:Light-Based / Energy"
   ],

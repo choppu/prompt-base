@@ -1,6 +1,6 @@
 {
   "name": "Swirly Bokeh (Petzval)",
-  "prompt": "(swirling background blur; circular twist around subject; Helios-style spin; rotating bokeh field, optical swirl motion, curved depth distortion, center-weighted focus clarity, analog lens character, dreamy rotational blur )\n[SUBJECT]",
+  "prompt": { "ZIT": "(swirling background blur; circular twist around subject; Helios-style spin; rotating bokeh field, optical swirl motion, curved depth distortion, center-weighted focus clarity, analog lens character, dreamy rotational blur )\n[SUBJECT]" },
   "tags": [
     "Lights:Lens & Optical Artifacts"
   ],

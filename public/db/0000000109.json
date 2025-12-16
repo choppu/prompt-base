@@ -1,6 +1,6 @@
 {
   "name": "Scratchboard",
-  "prompt": "(White lines carved from black surface, crisp highlights, dramatic contrast, engraved illustration style) [SUBJECT]",
+  "prompt": { "ZIT": "(White lines carved from black surface, crisp highlights, dramatic contrast, engraved illustration style) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Heiligenschein",
-  "prompt": "(white around head shadow; dewy reflection glow; retroreflection effect; bright localized backscatter, halo-point highlight )\n[SUBJECT]",
+  "prompt": { "ZIT": "(white around head shadow; dewy reflection glow; retroreflection effect; bright localized backscatter, halo-point highlight )\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

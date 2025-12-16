@@ -1,6 +1,6 @@
 {
   "name": "Cyanotype",
-  "prompt": "\nCyanotype Style (Prussian-blue monochrome; white highlights; blueprint aesthetic) \u2014 Keywords: deep blue tone, cyan monochrome, blueprint look, high-contrast blue\n[SUBJECT]",
+  "prompt": { "ZIT": "Cyanotype Style (Prussian-blue monochrome; white highlights; blueprint aesthetic) \u2014 Keywords: deep blue tone, cyan monochrome, blueprint look, high-contrast blue\n[SUBJECT]" },
   "tags": [
     "Lights:Vintage & Chemical Processes"
   ],

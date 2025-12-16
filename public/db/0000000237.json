@@ -1,6 +1,6 @@
 {
   "name": "Cork-Shaped Subject",
-  "prompt": "Cork shaped like a [SUBJECT], Compressed wood particles, Porous, Matte tan color, Natural, Lightweight, Vintage. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Cork shaped like a [SUBJECT], Compressed wood particles, Porous, Matte tan color, Natural, Lightweight, Vintage. [ENVIRONMENT]" },
   "tags": [
     "Materials:Soft / Porous"
   ],

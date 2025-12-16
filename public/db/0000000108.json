@@ -1,6 +1,6 @@
 {
   "name": "Linocut Woodcut",
-  "prompt": "(Bold carved shapes, thick black outlines, high contrast, stamping-like irregularities, wood-block-print texture) [SUBJECT]",
+  "prompt": { "ZIT": "(Bold carved shapes, thick black outlines, high contrast, stamping-like irregularities, wood-block-print texture) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

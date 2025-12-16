@@ -1,6 +1,6 @@
 {
   "name": "Symmetrical Shot",
-  "prompt": "[SUBJECT](Symmetrical shot: composition with balanced elements mirrored on either side of central axis. Creates harmony, formality, and aesthetic perfection.)",
+  "prompt": { "ZIT": "[SUBJECT](Symmetrical shot: composition with balanced elements mirrored on either side of central axis. Creates harmony, formality, and aesthetic perfection.)" },
   "tags": [
     "Camera:Composition"
   ],

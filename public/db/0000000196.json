@@ -1,6 +1,6 @@
 {
   "name": "Obsidian-Shaped Subject",
-  "prompt": "Obsidian shaped like a [SUBJECT], Glassy 3D realistic, Black volcanic stone, Razor-sharp reflections, Polished, Iridescent edges. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Obsidian shaped like a [SUBJECT], Glassy 3D realistic, Black volcanic stone, Razor-sharp reflections, Polished, Iridescent edges. [ENVIRONMENT]" },
   "tags": [
     "Materials:Stone / Mineral"
   ],

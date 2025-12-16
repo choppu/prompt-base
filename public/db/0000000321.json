@@ -1,6 +1,6 @@
 {
   "name": "Low Angle",
-  "prompt": "[SUBJECT](Low-angle shot: camera positioned below eye level, looking up at the subject. Creates a sense of power, dominance, and monumentality. appears larger, more imposing against the background.)",
+  "prompt": { "ZIT": "[SUBJECT](Low-angle shot: camera positioned below eye level, looking up at the subject. Creates a sense of power, dominance, and monumentality. appears larger, more imposing against the background.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "90S Nickelodeon Cartoon",
-  "prompt": "(Quirky, often grotesque or exaggerated character designs, vibrant and sometimes jarring color palettes, slightly grungy or \"ugly\" aesthetic, bold outlines, highly expressive and non-traditional animation)\n[SUBJECT]\n",
+  "prompt": { "ZIT": "(Quirky, often grotesque or exaggerated character designs, vibrant and sometimes jarring color palettes, slightly grungy or \"ugly\" aesthetic, bold outlines, highly expressive and non-traditional animation)\n[SUBJECT]"},
   "tags": [
     "Styles:Animation & Comics"
   ],

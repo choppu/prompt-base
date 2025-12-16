@@ -1,6 +1,6 @@
 {
   "name": "Macabre",
-  "prompt": "(dark presence; decayed textures; death motifs; grim atmosphere)[SUBJECT]",
+  "prompt": { "ZIT": "(dark presence; decayed textures; death motifs; grim atmosphere)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

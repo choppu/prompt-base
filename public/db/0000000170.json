@@ -1,6 +1,6 @@
 {
   "name": "Scribble Art",
-  "prompt": "(Loose spontaneous linework, continuous overlapping strokes, chaotic energetic contours, sketchy hand-drawn texture, abstract or semi-representational forms, dynamic movement, visible pressure variation, raw expressive mark-making with no clean outlines) [SUBJECT]",
+  "prompt": { "ZIT": "(Loose spontaneous linework, continuous overlapping strokes, chaotic energetic contours, sketchy hand-drawn texture, abstract or semi-representational forms, dynamic movement, visible pressure variation, raw expressive mark-making with no clean outlines) [SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

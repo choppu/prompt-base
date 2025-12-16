@@ -1,6 +1,6 @@
 {
   "name": "Oblique Angle",
-  "prompt": "[SUBJECT](Oblique angle shot: camera positioned at diagonal angle to subject, neither parallel nor perpendicular. Creates depth, dimension, and dynamic three-dimensional perspective.)",
+  "prompt": { "ZIT": "[SUBJECT](Oblique angle shot: camera positioned at diagonal angle to subject, neither parallel nor perpendicular. Creates depth, dimension, and dynamic three-dimensional perspective.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

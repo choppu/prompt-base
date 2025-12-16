@@ -1,6 +1,6 @@
 {
   "name": "Nebula-Shaped Subject",
-  "prompt": "Plasma shaped like a [SUBJECT], Ionized gas, Purple and pink hues, Soft glow, Energy field, Stellar texture, Gaseous. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Plasma shaped like a [SUBJECT], Ionized gas, Purple and pink hues, Soft glow, Energy field, Stellar texture, Gaseous. [ENVIRONMENT]" },
   "tags": [
     "Materials:Light-Based / Energy"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Urban Fantasy",
-  "prompt": "(fantasy cityscapes with glowing magic elements around; neon ;)[SUBJECT]",
+  "prompt": { "ZIT": "(fantasy cityscapes with glowing magic elements around; neon ;)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

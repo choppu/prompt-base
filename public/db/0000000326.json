@@ -1,6 +1,6 @@
 {
   "name": "Worm Eye View",
-  "prompt": "[SUBJECT](View from below the subject, worm's-eye perspective, camera close to ground, looking up. Exaggerated scale, low-angle composition, emphasizing height and dominance of the subject.)",
+  "prompt": { "ZIT": "[SUBJECT](View from below the subject, worm's-eye perspective, camera close to ground, looking up. Exaggerated scale, low-angle composition, emphasizing height and dominance of the subject.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

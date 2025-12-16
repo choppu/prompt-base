@@ -1,6 +1,6 @@
 {
   "name": "Asymmetrical Shot",
-  "prompt": "[SUBJECT](Asymmetrical shot: composition with unbalanced element distribution, creating visual tension. Generates dynamic interest through intentional imbalance.)",
+  "prompt": { "ZIT": "[SUBJECT](Asymmetrical shot: composition with unbalanced element distribution, creating visual tension. Generates dynamic interest through intentional imbalance.)" },
   "tags": [
     "Camera:Composition"
   ],

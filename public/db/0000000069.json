@@ -1,6 +1,6 @@
 {
   "name": "Volumetric Light",
-  "prompt": "\n(visible glowing light-beam; thick illuminated air; fog-defined cone; dense atmospheric rays, cinematic volumetric scatter, beam-through-fog glow)\n[SUBJECT]",
+  "prompt": { "ZIT": "(visible glowing light-beam; thick illuminated air; fog-defined cone; dense atmospheric rays, cinematic volumetric scatter, beam-through-fog glow)\n[SUBJECT]" },
   "tags": [
     "Lights:Stage, Laser & Artistic Effects"
   ],

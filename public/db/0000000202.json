@@ -1,6 +1,6 @@
 {
   "name": "Opal-Shaped Subject",
-  "prompt": "Opal shaped like a [SUBJECT], Iridescent 3D realistic, Glossy, Smooth, Color-shifting, Radiant. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Opal shaped like a [SUBJECT], Iridescent 3D realistic, Glossy, Smooth, Color-shifting, Radiant. [ENVIRONMENT]" },
   "tags": [
     "Materials:Precious"
   ],

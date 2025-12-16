@@ -1,6 +1,6 @@
 {
   "name": "Analogous Colors",
-  "prompt": "(adjacent, harmonious, natural; gentle gradient from yellow to green, seamless color flow, soft and smooth transitions, unified frame, natural aesthetic)\n[SUBJECT]",
+  "prompt": { "ZIT": "(adjacent, harmonious, natural; gentle gradient from yellow to green, seamless color flow, soft and smooth transitions, unified frame, natural aesthetic)\n[SUBJECT]" },
   "tags": [
     "Lights:Color Theory & Harmony Effects"
   ],

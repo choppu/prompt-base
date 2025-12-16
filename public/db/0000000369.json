@@ -1,6 +1,6 @@
 {
   "name": "Foreground Framing Shot",
-  "prompt": "[SUBJECT](Foreground framing shot: elements in foreground create natural frame around subject. Adds depth, context, and directs attention to main subject.)",
+  "prompt": { "ZIT": "[SUBJECT](Foreground framing shot: elements in foreground create natural frame around subject. Adds depth, context, and directs attention to main subject.)" },
   "tags": [
     "Camera:Composition"
   ],

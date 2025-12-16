@@ -1,6 +1,6 @@
 {
   "name": "Broad Lighting",
-  "prompt": "\n(front-facing side lit; widening effect; bright turned face plane; open-side illumination, expansive facial highlight, portrait broadness emphasis)\n[SUBJECT]",
+  "prompt": { "ZIT": "(front-facing side lit; widening effect; bright turned face plane; open-side illumination, expansive facial highlight, portrait broadness emphasis)\n[SUBJECT]" },
   "tags": [
     "Lights:Portrait & Studio Patterns"
   ],

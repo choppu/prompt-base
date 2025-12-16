@@ -1,6 +1,6 @@
 {
   "name": "Ash-Shaped Subject",
-  "prompt": "Ash shaped like a [SUBJECT], Powdery ,wood heat chalky 3D realistic,  grey black , Dusty, Charred, Soft, Smoke residue, Dispersed particles burnt ashen. [ENVIRONMENT ]",
+  "prompt": { "ZIT": "Ash shaped like a [SUBJECT], Powdery ,wood heat chalky 3D realistic,  grey black , Dusty, Charred, Soft, Smoke residue, Dispersed particles burnt ashen. [ENVIRONMENT ]" },
   "tags": [
     "Materials:Elemental"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Static Shot",
-  "prompt": "[SUBJECT](Static shot: camera fixed in single position without movement. Creates stability, observation, and deliberate, contemplative framing.)",
+  "prompt": { "ZIT": "[SUBJECT](Static shot: camera fixed in single position without movement. Creates stability, observation, and deliberate, contemplative framing.)" },
   "tags": [
     "Camera:Movement"
   ],

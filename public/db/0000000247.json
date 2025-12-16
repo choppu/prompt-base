@@ -1,6 +1,6 @@
 {
   "name": "Blood-Shaped Subject",
-  "prompt": "Blood shaped like a [SUBJECT], Deep crimson liquid, Glossy, Viscous, Splattered, Droplets, Organic fluid, High contrast. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Blood shaped like a [SUBJECT], Deep crimson liquid, Glossy, Viscous, Splattered, Droplets, Organic fluid, High contrast. [ENVIRONMENT]" },
   "tags": [
     "Materials:Liquid / Viscous"
   ],

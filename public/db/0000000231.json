@@ -1,6 +1,6 @@
 {
   "name": "Fabric-Shaped Subject",
-  "prompt": "Fabric shaped like a [SUBJECT], Soft 3D realistic, Flowing, Draped, Smooth, Woven, Textured. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Fabric shaped like a [SUBJECT], Soft 3D realistic, Flowing, Draped, Smooth, Woven, Textured. [ENVIRONMENT]" },
   "tags": [
     "Materials:Fabric / Textile"
   ],

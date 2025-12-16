@@ -1,6 +1,6 @@
 {
   "name": "Dystopian",
-  "prompt": "(structural oppression; muted metallic palette; societal collapse; bleak uniformity)[SUBJECT]",
+  "prompt": { "ZIT": "(structural oppression; muted metallic palette; societal collapse; bleak uniformity)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

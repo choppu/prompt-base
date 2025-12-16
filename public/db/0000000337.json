@@ -1,6 +1,6 @@
 {
   "name": "Three Quarter Angle",
-  "prompt": "[SUBJECT](Three-quarter angle shot: camera positioned at 45-degree angle to subject, showing both front and side. Creates depth, dimensionality, and natural, flattering perspective.)",
+  "prompt": { "ZIT": "[SUBJECT](Three-quarter angle shot: camera positioned at 45-degree angle to subject, showing both front and side. Creates depth, dimensionality, and natural, flattering perspective.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

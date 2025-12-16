@@ -1,6 +1,6 @@
 {
   "name": "Snow-Shaped Subject",
-  "prompt": "Snow shaped like a [SUBJECT], 3D realistic, White, Frosted, Soft, Crystalline, Sparkling. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Snow shaped like a [SUBJECT], 3D realistic, White, Frosted, Soft, Crystalline, Sparkling. [ENVIRONMENT]" },
   "tags": [
     "Materials:Elemental"
   ],

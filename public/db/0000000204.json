@@ -1,6 +1,6 @@
 {
   "name": "Mercury-Shaped Subject",
-  "prompt": "Mercury shaped like a [SUBJECT], Liquid metal, Heavy fluid, High surface tension, Silver droplets, Mirror-like reflection, Smooth, Beading. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Mercury shaped like a [SUBJECT], Liquid metal, Heavy fluid, High surface tension, Silver droplets, Mirror-like reflection, Smooth, Beading. [ENVIRONMENT]" },
   "tags": [
     "Materials:Metallic"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Weirdcore",
-  "prompt": "(uncanny surrealism; extreme distorted pixelated spaces; intense big pixelation background; liminal oddities; dreamlike wrongness; emotional displacement realistic) [SUBJECT]",
+  "prompt": { "ZIT": "(uncanny surrealism; extreme distorted pixelated spaces; intense big pixelation background; liminal oddities; dreamlike wrongness; emotional displacement realistic) [SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

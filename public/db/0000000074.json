@@ -1,6 +1,6 @@
 {
   "name": "Color Banding",
-  "prompt": "(visible stepped transitions between tones; broken and segmented gradients; low bit-depth appearance; 8-bit photography look; banded color tones; digital artifacting; sharp gradient steps; retro digital aesthetic; pixel-level color separation; intentionally imperfect color blending)\n[SUBJECT]",
+  "prompt": { "ZIT": "(visible stepped transitions between tones; broken and segmented gradients; low bit-depth appearance; 8-bit photography look; banded color tones; digital artifacting; sharp gradient steps; retro digital aesthetic; pixel-level color separation; intentionally imperfect color blending)\n[SUBJECT]" },
   "tags": [
     "Lights:Technical & Glitch Artifacts"
   ],

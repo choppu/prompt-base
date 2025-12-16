@@ -1,6 +1,6 @@
 {
   "name": "Lightning Strobe Atmosphere",
-  "prompt": "(momentary intense flashes; dramatic illumination of subject and surroundings; high-contrast highlights and shadows; dynamic natural light effect)\n[SUBJECT]",
+  "prompt": { "ZIT": "(momentary intense flashes; dramatic illumination of subject and surroundings; high-contrast highlights and shadows; dynamic natural light effect)\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

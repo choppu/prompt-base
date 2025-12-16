@@ -1,6 +1,6 @@
 {
   "name": "Dieselpunk",
-  "prompt": "(1930s-40s industrial dystopia; riveted metal; war machinery; deep reds and browns; zeppelins; authoritarian undertones; mechanical mass)[SUBJECT]",
+  "prompt": { "ZIT": "(1930s-40s industrial dystopia; riveted metal; war machinery; deep reds and browns; zeppelins; authoritarian undertones; mechanical mass)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

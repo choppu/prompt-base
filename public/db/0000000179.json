@@ -1,6 +1,6 @@
 {
   "name": "Newspaper Comic Strip",
-  "prompt": "(Simple, ink-drawn figures, often with thick black lines, minimal use of color (often only four-color process or black and white), small panel composition, focus on dialogue and gag setup)\n[MAIN SUBJECT]\n\"text\"\n\"text\" \n\"text\"\n[SUBJECT]\n",
+  "prompt": { "ZIT": "(Simple, ink-drawn figures, often with thick black lines, minimal use of color (often only four-color process or black and white), small panel composition, focus on dialogue and gag setup)\n[MAIN SUBJECT]\n\"text\"\n\"text\" \n\"text\"\n[SUBJECT]"},
   "tags": [
     "Styles:Extra Styles"
   ],

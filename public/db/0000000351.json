@@ -1,6 +1,6 @@
 {
   "name": "Medium Close-Up",
-  "prompt": "[SUBJECT](Medium close-up shot: camera frames subject from chest upward, emphasizing face while including shoulders. Intimate yet maintaining some physical context.)",
+  "prompt": { "ZIT": "[SUBJECT](Medium close-up shot: camera frames subject from chest upward, emphasizing face while including shoulders. Intimate yet maintaining some physical context.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

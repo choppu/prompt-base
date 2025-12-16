@@ -1,6 +1,6 @@
 {
   "name": "Caustics",
-  "prompt": "\n(dancing refracted patterns; concentrated light webs; water/glass light distortion; bright ripple clusters, liquid-light geometry, shimmering focus patterns)\n[SUBJECT]",
+  "prompt": { "ZIT": "(dancing refracted patterns; concentrated light webs; water/glass light distortion; bright ripple clusters, liquid-light geometry, shimmering focus patterns)\n[SUBJECT]" },
   "tags": [
     "Lights:3D Rendering & CGI Specific"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Subsurface Scattering",
-  "prompt": "(light penetrating translucent skin; glowing interior diffusion; soft internal radiance; warm red edge glow, translucent lighting, internal light bleed, organic scattering softness)\n[SUBJECT]",
+  "prompt": { "ZIT": "(light penetrating translucent skin; glowing interior diffusion; soft internal radiance; warm red edge glow, translucent lighting, internal light bleed, organic scattering softness)\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

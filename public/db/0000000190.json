@@ -1,6 +1,6 @@
 {
   "name": "Brick-Shaped Subject",
-  "prompt": "Brick shaped like a [SUBJECT], Rough 3D realistic, Textured, Heavy, Mortar-lined, Weathered, Solid, Structural. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Brick shaped like a [SUBJECT], Rough 3D realistic, Textured, Heavy, Mortar-lined, Weathered, Solid, Structural. [ENVIRONMENT]" },
   "tags": [
     "Materials:Stone / Mineral"
   ],

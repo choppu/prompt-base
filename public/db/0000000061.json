@@ -1,6 +1,6 @@
 {
   "name": "Split Lighting",
-  "prompt": "\n(one side lit, one side dark; 50/50 contrast; dramatic tonal divide; high-contrast portrait splitting, bold shadow plane, sculptural face separation)\n[SUBJECT]",
+  "prompt": { "ZIT": "(one side lit, one side dark; 50/50 contrast; dramatic tonal divide; high-contrast portrait splitting, bold shadow plane, sculptural face separation)\n[SUBJECT]" },
   "tags": [
     "Lights:Portrait & Studio Patterns"
   ],

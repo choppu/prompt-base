@@ -1,6 +1,6 @@
 {
   "name": "Line Art",
-  "prompt": "(Clean uniform outlines, no shading, flat cartoon-like contour emphasis, coloring-book simplicity) [SUBJECT]",
+  "prompt": { "ZIT": "(Clean uniform outlines, no shading, flat cartoon-like contour emphasis, coloring-book simplicity) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

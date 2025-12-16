@@ -1,6 +1,6 @@
 {
   "name": "Neoclassical Paint",
-  "prompt": "(Austere compositions inspired by Roman and Greek art, heroic poses, moral seriousness, strong contour lines, balanced composition, oil painting, fine brushstrokes, visible brush texture, muted color palette, soft but precise lighting, painterly style 18th-19th century, realistic details) [SUBJECT]\n",
+  "prompt": { "ZIT": "(Austere compositions inspired by Roman and Greek art, heroic poses, moral seriousness, strong contour lines, balanced composition, oil painting, fine brushstrokes, visible brush texture, muted color palette, soft but precise lighting, painterly style 18th-19th century, realistic details) [SUBJECT]"},
   "tags": [
     "Styles:Historical Art Movements"
   ],

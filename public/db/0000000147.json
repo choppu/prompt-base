@@ -1,6 +1,6 @@
 {
   "name": "AAA Game Realism",
-  "prompt": "(3D High-texture PBR materials, complex cgi lighting)\n[SUBJECT]",
+  "prompt": { "ZIT": "(3D High-texture PBR materials, complex cgi lighting)\n[SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

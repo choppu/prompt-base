@@ -1,6 +1,6 @@
 {
   "name": "Embroidery Cross Stitch",
-  "prompt": "(Thread-based image with stitched patterns, woven texture, pixel-like handmade appearance)[SUBJECT]",
+  "prompt": { "ZIT": "(Thread-based image with stitched patterns, woven texture, pixel-like handmade appearance)[SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Vintage Botanical",
-  "prompt": "(Scientific illustration style, high detail, thin ink lines, watercolor tint, isolated on white) [SUBJECT]",
+  "prompt": { "ZIT": "(Scientific illustration style, high detail, thin ink lines, watercolor tint, isolated on white) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

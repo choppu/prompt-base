@@ -1,6 +1,6 @@
 {
   "name": "Cyberpunk",
-  "prompt": "(neon megacities; high-tech/low-life; holographic signage; surveillance culture; chrome textures; rainy streets; dense urban sprawl; digital noise; nocturnal glow)[SUBJECT]",
+  "prompt": { "ZIT": "(neon megacities; high-tech/low-life; holographic signage; surveillance culture; chrome textures; rainy streets; dense urban sprawl; digital noise; nocturnal glow)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

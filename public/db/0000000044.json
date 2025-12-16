@@ -1,6 +1,6 @@
 {
   "name": "Duotone Tritone",
-  "prompt": "(full image mapped to two or three ink-like hues; uniformgraphic tonal structure; no natural colors ,duotone ink, uniform palette, graphic colors, poster style, limited hues )\n[COLOR]\n[COLOR]\n[COLOR]\n[SUBJECT]",
+  "prompt": { "ZIT": "(full image mapped to two or three ink-like hues; uniformgraphic tonal structure; no natural colors ,duotone ink, uniform palette, graphic colors, poster style, limited hues )\n[COLOR]\n[COLOR]\n[COLOR]\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Grading & Post-Processing"
   ],

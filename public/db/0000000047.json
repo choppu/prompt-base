@@ -1,6 +1,6 @@
 {
   "name": "Color Grading (Mood)",
-  "prompt": "(global hue shift; emotional palette; warm/cool/green tonal atmospheres, warm sepia, cool blue, green matrix tint, mood color shift, emotional palette)\n[COLOR]\n[SUBJECT]",
+  "prompt": { "ZIT": "(global hue shift; emotional palette; warm/cool/green tonal atmospheres, warm sepia, cool blue, green matrix tint, mood color shift, emotional palette)\n[COLOR]\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Grading & Post-Processing"
   ],

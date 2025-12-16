@@ -1,6 +1,6 @@
 {
   "name": "Clay-Shaped Subject",
-  "prompt": "Clay shaped like a [SUBJECT], Soft 3D realistic, Moldable, Earthy, Wet or Dry, Textured, Hand-shaped appearance. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Clay shaped like a [SUBJECT], Soft 3D realistic, Moldable, Earthy, Wet or Dry, Textured, Hand-shaped appearance. [ENVIRONMENT]" },
   "tags": [
     "Materials:Stone / Mineral"
   ],

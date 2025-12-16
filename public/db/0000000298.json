@@ -1,6 +1,6 @@
 {
   "name": "Utopian",
-  "prompt": "(orderly harmony; bright equilibrium; serene conceptual clarity; gentle futurism)[SUBJECT]",
+  "prompt": { "ZIT": "(orderly harmony; bright equilibrium; serene conceptual clarity; gentle futurism)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Western Comic Book",
-  "prompt": "(Bold inks, vivid colors, dynamic poses, Ben-Day dots, heroic exaggerated action) [SUBJECT]",
+  "prompt": { "ZIT": "(Bold inks, vivid colors, dynamic poses, Ben-Day dots, heroic exaggerated action) [SUBJECT]" },
   "tags": [
     "Styles:Animation & Comics"
   ],

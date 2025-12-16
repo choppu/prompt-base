@@ -1,6 +1,6 @@
 {
   "name": "Chromatic Aberration (Fringing)",
-  "prompt": "Overlapping radiant edges in green and purple, translucent spectral outlines, high-contrast color-fringe separation, pronounced halo streaks, optical dispersion with RGB offset, streaked luminous edges, with green pushed left and purple pushed right, blending together in a balanced, shifting chromatic glow.\n[SUBJECT]",
+  "prompt": { "ZIT": "Overlapping radiant edges in green and purple, translucent spectral outlines, high-contrast color-fringe separation, pronounced halo streaks, optical dispersion with RGB offset, streaked luminous edges, with green pushed left and purple pushed right, blending together in a balanced, shifting chromatic glow.\n[SUBJECT]" },
   "tags": [
     "Lights:Lens & Optical Artifacts"
   ],

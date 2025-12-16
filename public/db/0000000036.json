@@ -1,6 +1,6 @@
 {
   "name": "Hot Pixels",
-  "prompt": "(tiny single red/green/blue dots; all-locations defects; pixel anomalies; random bright speckles, sensor noise defects, static like points)\n[SUBJECT]",
+  "prompt": { "ZIT": "(tiny single red/green/blue dots; all-locations defects; pixel anomalies; random bright speckles, sensor noise defects, static like points)\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Sensor & Glitch Artifacts"
   ],

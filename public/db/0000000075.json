@@ -1,6 +1,6 @@
 {
   "name": "Chromatic Aberration",
-  "prompt": "(Chromatic aberration style; pink, cyan, and green fringing along edges; misaligned lens colors; RGB separation on outlines; retro digital lens flaw; edge halos; color fringing; slight lens distortion; intentional optical imperfection; subtle RGB misalignment creating a glitchy or retro photographic effect)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Chromatic aberration style; pink, cyan, and green fringing along edges; misaligned lens colors; RGB separation on outlines; retro digital lens flaw; edge halos; color fringing; slight lens distortion; intentional optical imperfection; subtle RGB misalignment creating a glitchy or retro photographic effect)\n[SUBJECT]" },
   "tags": [
     "Lights:Technical & Glitch Artifacts"
   ],

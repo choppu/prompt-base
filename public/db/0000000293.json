@@ -1,6 +1,6 @@
 {
   "name": "Mystical",
-  "prompt": "(hidden symbolism; veiled knowledge; subtle glow; ritual quiet; transcendent ambiguity)[SUBJECT]",
+  "prompt": { "ZIT": "(hidden symbolism; veiled knowledge; subtle glow; ritual quiet; transcendent ambiguity)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

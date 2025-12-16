@@ -1,6 +1,6 @@
 {
   "name": "Steampunk",
-  "prompt": "(brass machinery; steam-powered tech; leather straps; exposed gears; Victorian-industrial fantasy; ornate craftsmanship; airships; retro-futurist optimism)[SUBJECT]",
+  "prompt": { "ZIT": "(brass machinery; steam-powered tech; leather straps; exposed gears; Victorian-industrial fantasy; ornate craftsmanship; airships; retro-futurist optimism)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

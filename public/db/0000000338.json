@@ -1,6 +1,6 @@
 {
   "name": "Profile Angle",
-  "prompt": "[SUBJECT](Profile shot: camera capturing subject from pure side view, showing complete silhouette. Emphasizes facial features, body contour, and outline against background.)",
+  "prompt": { "ZIT": "[SUBJECT](Profile shot: camera capturing subject from pure side view, showing complete silhouette. Emphasizes facial features, body contour, and outline against background.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

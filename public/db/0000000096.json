@@ -1,6 +1,6 @@
 {
   "name": "Art Deco",
-  "prompt": "(Geometric symmetry, flat , metallic accents, gold tones, streamlined elegance, luxury shapes, 1920s decorative styling) [SUBJECT]",
+  "prompt": { "ZIT": "(Geometric symmetry, flat , metallic accents, gold tones, streamlined elegance, luxury shapes, 1920s decorative styling) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

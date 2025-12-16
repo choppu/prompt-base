@@ -1,6 +1,6 @@
 {
   "name": "Kirigami Paper Art",
-  "prompt": "(pop-up book style, cut and folded paper, paper-lace silhouette) [SUBJECT]",
+  "prompt": { "ZIT": "(pop-up book style, cut and folded paper, paper-lace silhouette) [SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

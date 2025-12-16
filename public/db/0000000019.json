@@ -1,6 +1,6 @@
 {
   "name": "Teal and Orange (Hollywood Blockbuster)",
-  "prompt": "(cool teal shadows; warm orange skin tones; high separation between background and subject; cinematic contrast) \u2014 Keywords: teal shadows, orange highlights, blockbuster palette, warm skin tones, cool background, cinematic grade\n[SUBJECT]",
+  "prompt": { "ZIT": "(cool teal shadows; warm orange skin tones; high separation between background and subject; cinematic contrast) \u2014 Keywords: teal shadows, orange highlights, blockbuster palette, warm skin tones, cool background, cinematic grade\n[SUBJECT]" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

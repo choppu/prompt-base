@@ -1,6 +1,6 @@
 {
   "name": "Desaturated Muted",
-  "prompt": "(lowered saturation; washed-out tones; somber palette; subdued mood ,low saturation, washed palette, soft contrast, muted tones, subdued look)\n[COLOR]-[COLOR]\n[SUBJECT]",
+  "prompt": { "ZIT": "(lowered saturation; washed-out tones; somber palette; subdued mood ,low saturation, washed palette, soft contrast, muted tones, subdued look)\n[COLOR]-[COLOR]\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Grading & Post-Processing"
   ],

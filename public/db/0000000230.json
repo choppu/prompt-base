@@ -1,6 +1,6 @@
 {
   "name": "Linen-Shaped Subject",
-  "prompt": "Linen shaped like a [SUBJECT] 3D, Woven natural fibers, Soft matte texture, Light and breathable, Subtle cross-thread pattern, Organic and lightweight. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Linen shaped like a [SUBJECT] 3D, Woven natural fibers, Soft matte texture, Light and breathable, Subtle cross-thread pattern, Organic and lightweight. [ENVIRONMENT]" },
   "tags": [
     "Materials:Fabric / Textile"
   ],

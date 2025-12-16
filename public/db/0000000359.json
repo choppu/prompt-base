@@ -1,6 +1,6 @@
 {
   "name": "Headshot",
-  "prompt": "[SUBJECT](Headshot: camera tightly frames subject's head and face, filling frame from top of head to just below chin. Maximum facial detail and emotional intimacy.)",
+  "prompt": { "ZIT": "[SUBJECT](Headshot: camera tightly frames subject's head and face, filling frame from top of head to just below chin. Maximum facial detail and emotional intimacy.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

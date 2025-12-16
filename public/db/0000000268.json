@@ -1,6 +1,6 @@
 {
   "name": "Angelcore",
-  "prompt": "(heavenly purity; feathers; clouds; halos; radiant light; soft white-pastels; serene figures)[SUBJECT]",
+  "prompt": { "ZIT": "(heavenly purity; feathers; clouds; halos; radiant light; soft white-pastels; serene figures)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

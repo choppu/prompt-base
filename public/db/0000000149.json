@@ -1,6 +1,6 @@
 {
   "name": "3D Disney",
-  "prompt": "(3D pixar rendering, textures,volumetric depth, natural colors,  visible, detailed  materials, realistic anatomy / object proportions) \n[SUBJECT]",
+  "prompt": { "ZIT": "(3D pixar rendering, textures,volumetric depth, natural colors,  visible, detailed  materials, realistic anatomy / object proportions) \n[SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

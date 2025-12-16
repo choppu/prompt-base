@@ -1,6 +1,6 @@
 {
   "name": "Liquid Sky (Laser)",
-  "prompt": "(above the subject far away a [green] uniform Laser tails )\n[SUBJECT]",
+  "prompt": { "ZIT": "(above the subject far away a [green] uniform Laser tails )\n[SUBJECT]" },
   "tags": [
     "Lights:Stage, Laser & Artistic Effects"
   ],

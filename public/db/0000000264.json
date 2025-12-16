@@ -1,6 +1,6 @@
 {
   "name": "Cottagecore",
-  "prompt": "( pastoral simplicity; meadows; rustic homesteads backgrounds;  florals; cozy domesticity; earth tones) [SUBJECT]",
+  "prompt": { "ZIT": "( pastoral simplicity; meadows; rustic homesteads backgrounds;  florals; cozy domesticity; earth tones) [SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

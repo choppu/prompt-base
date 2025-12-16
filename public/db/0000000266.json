@@ -1,6 +1,6 @@
 {
   "name": "Goblincore",
-  "prompt": "(earthy chaos; moss, roots, and stones; natural clutter; shiny trinkets; feral charm; wild textures)[SUBJECT]",
+  "prompt": { "ZIT": "(earthy chaos; moss, roots, and stones; natural clutter; shiny trinkets; feral charm; wild textures)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Posterization",
-  "prompt": "\nPosterized Style (reduced color steps; banded gradients; flat color planes; graphic simplification) \u2014 Keywords: limited palette, color bands, flat gradients, digital reduction\n[SUBJECT]",
+  "prompt": { "ZIT": "Posterized Style (reduced color steps; banded gradients; flat color planes; graphic simplification) \u2014 Keywords: limited palette, color bands, flat gradients, digital reduction\n[SUBJECT]" },
   "tags": [
     "Lights:Technical & Glitch Artifacts"
   ],

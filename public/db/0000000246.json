@@ -1,6 +1,6 @@
 {
   "name": "Paint-Shaped Subject",
-  "prompt": "Thick paint shaped like a [SUBJECT], Acrylic texture 3D realistic, Brush strokes, Wet gloss, Colorful, Heavy blend, Artistic. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Thick paint shaped like a [SUBJECT], Acrylic texture 3D realistic, Brush strokes, Wet gloss, Colorful, Heavy blend, Artistic. [ENVIRONMENT]" },
   "tags": [
     "Materials:Liquid / Viscous"
   ],

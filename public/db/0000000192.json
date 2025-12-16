@@ -1,6 +1,6 @@
 {
   "name": "Stone-Shaped Subject",
-  "prompt": "Stone shaped like a [SUBJECT], Rough 3D realistic, Weathered, Cracked, Heavy, Textured, Natural minerals. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Stone shaped like a [SUBJECT], Rough 3D realistic, Weathered, Cracked, Heavy, Textured, Natural minerals. [ENVIRONMENT]" },
   "tags": [
     "Materials:Stone / Mineral"
   ],

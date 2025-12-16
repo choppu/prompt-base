@@ -1,6 +1,6 @@
 {
   "name": "Arc Shot",
-  "prompt": "[SUBJECT](Arc shot composition: framing suggesting camera moving in curved path around subject. Creates dimensional reveal, dynamic perspective, and circular motion.)",
+  "prompt": { "ZIT": "[SUBJECT](Arc shot composition: framing suggesting camera moving in curved path around subject. Creates dimensional reveal, dynamic perspective, and circular motion.)" },
   "tags": [
     "Camera:Movement"
   ],

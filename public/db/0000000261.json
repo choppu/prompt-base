@@ -1,6 +1,6 @@
 {
   "name": "Otherworld Parallel Dimensions",
-  "prompt": "(alien planes; floating landmasses; warped physics; impossible structures; surreal lighting)[SUBJECT]",
+  "prompt": { "ZIT": "(alien planes; floating landmasses; warped physics; impossible structures; surreal lighting)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

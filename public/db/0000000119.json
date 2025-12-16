@@ -1,6 +1,6 @@
 {
   "name": "Risograph",
-  "prompt": "(rough ink grain texture, vibrant spot inks, translucent ink overlays, misaligned dual-color overprint, overlapping plates/blocks, layered screen-print aesthetic, halftone dot/grain texture, uneven ink coverage, slight smudging,illustration,made with shapes that overlap)\n[SUBJECT]",
+  "prompt": { "ZIT": "(rough ink grain texture, vibrant spot inks, translucent ink overlays, misaligned dual-color overprint, overlapping plates/blocks, layered screen-print aesthetic, halftone dot/grain texture, uneven ink coverage, slight smudging,illustration,made with shapes that overlap)\n[SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

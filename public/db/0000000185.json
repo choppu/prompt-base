@@ -1,6 +1,6 @@
 {
   "name": "Ice-Shaped Subject",
-  "prompt": "Ice shaped like a [SUBJECT], Transparent 3D realistic, Frosted, Crystalline, Cold, Smooth, Glimmering. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Ice shaped like a [SUBJECT], Transparent 3D realistic, Frosted, Crystalline, Cold, Smooth, Glimmering. [ENVIRONMENT]" },
   "tags": [
     "Materials:Elemental"
   ],

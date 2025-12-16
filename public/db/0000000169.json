@@ -1,6 +1,6 @@
 {
   "name": "Ukiyo-E Inspired",
-  "prompt": "(Bold woodblock outlines, flat areas of color, dynamic Japanese print composition, stylized figures, ornamental patterns, Edo-period aesthetic, narrative storytelling)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Bold woodblock outlines, flat areas of color, dynamic Japanese print composition, stylized figures, ornamental patterns, Edo-period aesthetic, narrative storytelling)\n[SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Makoto Shinkai",
-  "prompt": "(Hyper-detailed backgrounds, photorealistic environments, glowing skies, dramatic lens flare, soft golden-hour or sunset lighting, vibrant color saturation, deep feeling of nostalgia/longing)\n[SUBJECT]\n",
+  "prompt": { "ZIT": "(Hyper-detailed backgrounds, photorealistic environments, glowing skies, dramatic lens flare, soft golden-hour or sunset lighting, vibrant color saturation, deep feeling of nostalgia/longing)\n[SUBJECT]"},
   "tags": [
     "Styles:Animation & Comics"
   ],

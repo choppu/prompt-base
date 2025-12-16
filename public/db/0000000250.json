@@ -1,6 +1,6 @@
 {
   "name": "Sorcery",
-  "prompt": "(rugged landscapes; dark forests; with armor; magical glowing enchanted artifacts)[SUBJECT]",
+  "prompt": { "ZIT": "(rugged landscapes; dark forests; with armor; magical glowing enchanted artifacts)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

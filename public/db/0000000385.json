@@ -1,6 +1,6 @@
 {
   "name": "360 Degree Shot",
-  "prompt": "[SUBJECT](360-degree perspective: composition implying complete circular camera path around subject. Creates comprehensive spatial understanding and dynamic rotation.)",
+  "prompt": { "ZIT": "[SUBJECT](360-degree perspective: composition implying complete circular camera path around subject. Creates comprehensive spatial understanding and dynamic rotation.)" },
   "tags": [
     "Camera:Movement"
   ],

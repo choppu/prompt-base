@@ -1,6 +1,6 @@
 {
   "name": "80S Retro Anime",
-  "prompt": "(Classic OVA aesthetic, cel-shaded with visible film grain, vibrant but limited color palette, heavy outlines, character designs often feature high contrast hair and large, glossy eyes, Akira or Macross inspired) [SUBJECT]\n",
+  "prompt": { "ZIT": "(Classic OVA aesthetic, cel-shaded with visible film grain, vibrant but limited color palette, heavy outlines, character designs often feature high contrast hair and large, glossy eyes, Akira or Macross inspired) [SUBJECT]"},
   "tags": [
     "Styles:Animation & Comics"
   ],

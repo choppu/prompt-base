@@ -1,6 +1,6 @@
 {
   "name": "Chroma Noise",
-  "prompt": " (magenta/green speckles in shadows; digital grain; noisy low-light texture, color speckle noise, high ISO artifacts, digital shadow noise )\n[SUBJECT]",
+  "prompt": { "ZIT": "(magenta/green speckles in shadows; digital grain; noisy low-light texture, color speckle noise, high ISO artifacts, digital shadow noise )\n[SUBJECT]" },
   "tags": [
     "Lights:Technical & Glitch Artifacts"
   ],

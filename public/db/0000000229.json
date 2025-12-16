@@ -1,6 +1,6 @@
 {
   "name": "Clamshell-Shaped Subject",
-  "prompt": "Many Clamshells shaped like a [SUBJECT], Textured ridges, Pearlescent interior, Rough outer shell, Coastal, Organic. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Many Clamshells shaped like a [SUBJECT], Textured ridges, Pearlescent interior, Rough outer shell, Coastal, Organic. [ENVIRONMENT]" },
   "tags": [
     "Materials:Natural Organic"
   ],

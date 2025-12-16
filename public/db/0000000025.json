@@ -1,6 +1,6 @@
 {
   "name": "High Key",
-  "prompt": "(very bright, minimal shadows; soft even illumination; light-filled scene; subject brightly lit with low contrast; airy and clean visual tone)\n[SUBJECT]",
+  "prompt": { "ZIT": "(very bright, minimal shadows; soft even illumination; light-filled scene; subject brightly lit with low contrast; airy and clean visual tone)\n[SUBJECT]" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

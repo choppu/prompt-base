@@ -1,6 +1,6 @@
 {
   "name": "Split Toning",
-  "prompt": "([COLOR] color in shadows and [COLOR] in highlights; stylized only two-hue mood cast; non-natural palette, dual tone, colored shadows, colored highlights, mood tinting, stylized palette)\n[SUBJECT]",
+  "prompt": { "ZIT": "([COLOR] color in shadows and [COLOR] in highlights; stylized only two-hue mood cast; non-natural palette, dual tone, colored shadows, colored highlights, mood tinting, stylized palette)\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Grading & Post-Processing"
   ],

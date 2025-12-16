@@ -1,6 +1,6 @@
 {
   "name": "Spotlight",
-  "prompt": "(focused directional light; hard-edged beam; high contrast between subject and background; stage or theatrical illumination; dramatic center of attention)\n[SUBJECT]",
+  "prompt": { "ZIT": "(focused directional light; hard-edged beam; high contrast between subject and background; stage or theatrical illumination; dramatic center of attention)\n[SUBJECT]" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

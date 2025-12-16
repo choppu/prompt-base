@@ -1,6 +1,6 @@
 {
   "name": "Amigurumi Doll",
-  "prompt": "[crocheted toy, yarn texture, visible stitching, chibi plushie] [SUBJECT]",
+  "prompt": { "ZIT": "[crocheted toy, yarn texture, visible stitching, chibi plushie] [SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

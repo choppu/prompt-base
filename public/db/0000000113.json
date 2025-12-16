@@ -1,6 +1,6 @@
 {
   "name": "Tempera Painting",
-  "prompt": "(Mattemed pigments bound with egg yolk, precise small strokes, bright long-lasting coloration)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Mattemed pigments bound with egg yolk, precise small strokes, bright long-lasting coloration)\n[SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

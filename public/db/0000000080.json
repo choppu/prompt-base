@@ -1,6 +1,6 @@
 {
   "name": "Polaroid Instant Film",
-  "prompt": "(soft contrast; faded blacks; slight green or magenta color cast; dreamy instant-film texture; retro softness; soft shadows; muted highlights; subtle film grain; nostalgic aesthetic; subject integrated into faded, vintage tones)\n[SUBJECT]",
+  "prompt": { "ZIT": "(soft contrast; faded blacks; slight green or magenta color cast; dreamy instant-film texture; retro softness; soft shadows; muted highlights; subtle film grain; nostalgic aesthetic; subject integrated into faded, vintage tones)\n[SUBJECT]" },
   "tags": [
     "Lights:Vintage & Chemical Processes"
   ],

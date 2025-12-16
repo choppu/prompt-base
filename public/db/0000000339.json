@@ -1,6 +1,6 @@
 {
   "name": "Diagonal Angle",
-  "prompt": "[SUBJECT](Strong diagonal layout: the composition positions the subject along a bold diagonal path, enhancing energy and flow within the frame.)",
+  "prompt": { "ZIT": "[SUBJECT](Strong diagonal layout: the composition positions the subject along a bold diagonal path, enhancing energy and flow within the frame.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Sensor Blooming",
-  "prompt": "\n(light overflow; bleeding highlights; bright objects lose shape; pixel-spill glow, overexposed bloom bleed, radiant highlight washout, sensor inundation effect)\n[SUBJECT]",
+  "prompt": { "ZIT": "(light overflow; bleeding highlights; bright objects lose shape; pixel-spill glow, overexposed bloom bleed, radiant highlight washout, sensor inundation effect)\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Sensor & Glitch Artifacts"
   ],

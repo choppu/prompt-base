@@ -1,6 +1,6 @@
 {
   "name": "Tilt Down Angle",
-  "prompt": "[SUBJECT](Tilt-down composition: camera angled downward from higher position, showing subject from top descending. Creates survey, assessment, or descending perspective.)",
+  "prompt": { "ZIT": "[SUBJECT](Tilt-down composition: camera angled downward from higher position, showing subject from top descending. Creates survey, assessment, or descending perspective.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

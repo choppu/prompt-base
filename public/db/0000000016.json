@@ -1,6 +1,6 @@
 {
   "name": "Prismatic Rainbow Light",
-  "prompt": "(subtle spectrum dispersion; light refracted through water, glass, or crystal; soft rainbow fringes around edges; dreamlike or ethereal glow; subject interacting with refracted light)\n[SUBJECT]",
+  "prompt": { "ZIT": "(subtle spectrum dispersion; light refracted through water, glass, or crystal; soft rainbow fringes around edges; dreamlike or ethereal glow; subject interacting with refracted light)\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

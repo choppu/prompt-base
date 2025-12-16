@@ -1,6 +1,6 @@
 {
   "name": "Pcb-Shaped Subject",
-  "prompt": "Electronic chips shaped like a [SUBJECT], Green circuit texture, Gold traces, Soldered components, Capacitors, High-tech, Intricate details. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Electronic chips shaped like a [SUBJECT], Green circuit texture, Gold traces, Soldered components, Capacitors, High-tech, Intricate details. [ENVIRONMENT]" },
   "tags": [
     "Materials:Synthetic & Industrial"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Loop Lighting",
-  "prompt": "(light source moved about 30\u00b0 to the side and 20\u201330\u00b0 above eye level, causing the nose shadow to fall sideways and form a small loop; brighter illumination on the light-facing side of the face; smooth gradient of shadow on the opposite cheek; subject facing straight toward the camera with no change in pose, only the light repositioned)\n[SUBJECT]",
+  "prompt": { "ZIT": "(light source moved about 30\u00b0 to the side and 20\u201330\u00b0 above eye level, causing the nose shadow to fall sideways and form a small loop; brighter illumination on the light-facing side of the face; smooth gradient of shadow on the opposite cheek; subject facing straight toward the camera with no change in pose, only the light repositioned)\n[SUBJECT]" },
   "tags": [
     "Lights:Portrait & Studio Patterns"
   ],

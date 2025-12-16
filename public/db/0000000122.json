@@ -1,6 +1,6 @@
 {
   "name": "Fantasy Storybook",
-  "prompt": "(Whimsical linework, antique muted palette, intricate details, Arthur Rackham fairy-tale aesthetic) [SUBJECT]",
+  "prompt": { "ZIT": "(Whimsical linework, antique muted palette, intricate details, Arthur Rackham fairy-tale aesthetic) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

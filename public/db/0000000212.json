@@ -1,6 +1,6 @@
 {
   "name": "Plastic Wrap-Shaped Subject",
-  "prompt": "Empty Bubble wrap shaped like a sculpted [SUBJECT] invisible and hollow , Clear texture, Air pockets, transparency. [ENVIRONMENT] \n",
+  "prompt": { "ZIT": "Empty Bubble wrap shaped like a sculpted [SUBJECT] invisible and hollow , Clear texture, Air pockets, transparency. [ENVIRONMENT] "},
   "tags": [
     "Materials:Synthetic & Industrial"
   ],

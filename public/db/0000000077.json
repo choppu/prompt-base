@@ -1,6 +1,6 @@
 {
   "name": "Sepia Tone",
-  "prompt": "( warm brown and orange monochrome; creamy highlights; soft contrast; antique aesthetic; vintage look; nostalgic and classic atmosphere warm sepia tones)\n[SUBJECT]",
+  "prompt": { "ZIT": "( warm brown and orange monochrome; creamy highlights; soft contrast; antique aesthetic; vintage look; nostalgic and classic atmosphere warm sepia tones)\n[SUBJECT]" },
   "tags": [
     "Lights:Vintage & Chemical Processes"
   ],

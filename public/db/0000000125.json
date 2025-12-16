@@ -1,6 +1,6 @@
 {
   "name": "Graffiti Street Art",
-  "prompt": "(Spray-paint textures, bold tagging, drips, stencils, urban wall aesthetic, vivid street colors) [SUBJECT]",
+  "prompt": { "ZIT": "(Spray-paint textures, bold tagging, drips, stencils, urban wall aesthetic, vivid street colors) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

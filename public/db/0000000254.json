@@ -1,6 +1,6 @@
 {
   "name": "Dark Fantasy",
-  "prompt": "(morally ambiguous; gothic forests; crumbling castles; muted colors; sinister atmospheres)[SUBJECT]",
+  "prompt": { "ZIT": "(morally ambiguous; gothic forests; crumbling castles; muted colors; sinister atmospheres)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

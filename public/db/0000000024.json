@@ -1,6 +1,6 @@
 {
   "name": "Low Key",
-  "prompt": "(dramatic contrast; deep shadows; limited illumination; moody and mysterious atmosphere; subject highlighted by selective lighting; emphasis on shadow shapes)",
+  "prompt": { "ZIT": "(dramatic contrast; deep shadows; limited illumination; moody and mysterious atmosphere; subject highlighted by selective lighting; emphasis on shadow shapes)" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

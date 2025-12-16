@@ -1,6 +1,6 @@
 {
   "name": "Over The Shoulder Shot",
-  "prompt": "[SUBJECT](Over-the-shoulder shot: camera positioned behind one subject's shoulder, looking toward another. Creates conversational perspective and spatial relationship.)",
+  "prompt": { "ZIT": "[SUBJECT](Over-the-shoulder shot: camera positioned behind one subject's shoulder, looking toward another. Creates conversational perspective and spatial relationship.)" },
   "tags": [
     "Camera:Composition"
   ],

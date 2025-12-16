@@ -1,6 +1,6 @@
 {
   "name": "Baroque",
-  "prompt": "(Dramatic chiaroscuro, dynamic poses, rich detail, theatrical emotions, heavy contrast, and a sense of grandeur and movement) [SUBJECT]",
+  "prompt": { "ZIT": "(Dramatic chiaroscuro, dynamic poses, rich detail, theatrical emotions, heavy contrast, and a sense of grandeur and movement) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

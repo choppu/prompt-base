@@ -1,6 +1,6 @@
 {
   "name": "Red Clay Brick-Shaped Subject",
-  "prompt": "Red clay brick shaped like a [SUBJECT], Terracotta tone, Porous, Rough, Fired ceramic, Industrial texture. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Red clay brick shaped like a [SUBJECT], Terracotta tone, Porous, Rough, Fired ceramic, Industrial texture. [ENVIRONMENT]" },
   "tags": [
     "Materials:Stone / Mineral"
   ],

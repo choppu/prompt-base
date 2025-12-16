@@ -1,6 +1,6 @@
 {
   "name": "Brass-Shaped Subject",
-  "prompt": "Brass shaped like a [SUBJECT], Yellow metallic alloy, Polished shine, Warm tone, Engraved or smooth. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Brass shaped like a [SUBJECT], Yellow metallic alloy, Polished shine, Warm tone, Engraved or smooth. [ENVIRONMENT]" },
   "tags": [
     "Materials:Metallic"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Grunge",
-  "prompt": "(raw imperfection; worn fabrics; muted neutrals; urban decay cues; angsty authenticity)[SUBJECT]",
+  "prompt": { "ZIT": "(raw imperfection; worn fabrics; muted neutrals; urban decay cues; angsty authenticity)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

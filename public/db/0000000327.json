@@ -1,6 +1,6 @@
 {
   "name": "Bird Eye View",
-  "prompt": "[SUBJECT](Mild aerial viewpoint: the camera is placed above the subject, angled downward to create a clear bird's-eye view without distortion.)",
+  "prompt": { "ZIT": "[SUBJECT](Mild aerial viewpoint: the camera is placed above the subject, angled downward to create a clear bird's-eye view without distortion.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Ligne Claire",
-  "prompt": "(tintin-cartoon-clear linework, thick uniform outlines, bright flat coloring, no gradients, tidy composition, sharp details, simplified geometry)\n[SUBJECT]",
+  "prompt": { "ZIT": "(tintin-cartoon-clear linework, thick uniform outlines, bright flat coloring, no gradients, tidy composition, sharp details, simplified geometry)\n[SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Aquarelle",
-  "prompt": "(French watercolor style with luminous washes, flowing light, airy transparency, delicate hue shifts)\n[SUBJECT]",
+  "prompt": { "ZIT": "(French watercolor style with luminous washes, flowing light, airy transparency, delicate hue shifts)\n[SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

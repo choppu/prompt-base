@@ -1,6 +1,6 @@
 {
   "name": "Back To Camera Angle",
-  "prompt": "[SUBJECT](Back-to-camera shot: subject positioned with back toward camera, facing away. Creates anonymity, contemplation, or shares subject's forward-looking perspective.)",
+  "prompt": { "ZIT": "[SUBJECT](Back-to-camera shot: subject positioned with back toward camera, facing away. Creates anonymity, contemplation, or shares subject's forward-looking perspective.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

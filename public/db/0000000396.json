@@ -1,6 +1,6 @@
 {
   "name": "Third Person Shot",
-  "prompt": "[SUBJECT](Third-person perspective: camera observing subject from outside their body. Creates objective viewpoint watching character from external position.)",
+  "prompt": { "ZIT": "[SUBJECT](Third-person perspective: camera observing subject from outside their body. Creates objective viewpoint watching character from external position.)" },
   "tags": [
     "Camera:Point Of View"
   ],

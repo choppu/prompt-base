@@ -1,6 +1,6 @@
 {
   "name": "Marble-Shaped Subject",
-  "prompt": "Marble shaped like a [SUBJECT], Polished 3D realistic, Veined, Smooth, Reflective, Elegant, Stone-textured, Weighty. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Marble shaped like a [SUBJECT], Polished 3D realistic, Veined, Smooth, Reflective, Elegant, Stone-textured, Weighty. [ENVIRONMENT]" },
   "tags": [
     "Materials:Stone / Mineral"
   ],

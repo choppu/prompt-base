@@ -1,6 +1,6 @@
 {
   "name": "Diamond-Shaped Subject",
-  "prompt": "Diamond shaped like a [SUBJECT], Sparkling 3D realistic, Faceted, Clear, Prismatic, Reflective, Hard, Gem-like, Radiant. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Diamond shaped like a [SUBJECT], Sparkling 3D realistic, Faceted, Clear, Prismatic, Reflective, Hard, Gem-like, Radiant. [ENVIRONMENT]" },
   "tags": [
     "Materials:Precious"
   ],

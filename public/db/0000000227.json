@@ -1,6 +1,6 @@
 {
   "name": "Coral-Shaped Subject",
-  "prompt": "Coral shaped like a [SUBJECT], Porous texture, Marine organic, Calcified, Colorful details, Reef-like structure, Rough. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Coral shaped like a [SUBJECT], Porous texture, Marine organic, Calcified, Colorful details, Reef-like structure, Rough. [ENVIRONMENT]" },
   "tags": [
     "Materials:Natural Organic"
   ],

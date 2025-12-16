@@ -1,6 +1,6 @@
 {
   "name": "Zoom Shot",
-  "prompt": "[SUBJECT](Zoom shot aesthetic: composition suggesting focal length change, appearing to move closer or farther. Creates intensity increase or dramatic distance change.)",
+  "prompt": { "ZIT": "[SUBJECT](Zoom shot aesthetic: composition suggesting focal length change, appearing to move closer or farther. Creates intensity increase or dramatic distance change.)" },
   "tags": [
     "Camera:Movement"
   ],

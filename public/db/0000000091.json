@@ -1,6 +1,6 @@
 {
   "name": "Fauvism Art",
-  "prompt": "(Vivid unnatural colors, simplified forms, expressive painterly marks, raw emotional color fields) [SUBJECT]",
+  "prompt": { "ZIT": "(Vivid unnatural colors, simplified forms, expressive painterly marks, raw emotional color fields) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

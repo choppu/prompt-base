@@ -1,6 +1,6 @@
 {
   "name": "Clamshell Lighting",
-  "prompt": "(Light coming above the subject angled downward, second light or reflection of light coming below angled upward; soft, even illumination across the subject; minimal downward shadows; smooth, balanced highlights; symmetrical lighting that produces a gentle glow and clean, flattering tones)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Light coming above the subject angled downward, second light or reflection of light coming below angled upward; soft, even illumination across the subject; minimal downward shadows; smooth, balanced highlights; symmetrical lighting that produces a gentle glow and clean, flattering tones)\n[SUBJECT]" },
   "tags": [
     "Lights:Portrait & Studio Patterns"
   ],

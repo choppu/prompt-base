@@ -1,6 +1,6 @@
 {
   "name": "Dragoncore",
-  "prompt": "(draconic majesty; volcanic landscapes; hoards; flying dragons; smoke and ember; mythical power)[SUBJECT]",
+  "prompt": { "ZIT": "(draconic majesty; volcanic landscapes; hoards; flying dragons; smoke and ember; mythical power)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

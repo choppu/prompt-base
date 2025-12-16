@@ -1,6 +1,6 @@
 {
   "name": "Technicolor",
-  "prompt": "(hyper-saturated reds and greens; creamy whites; painted-looking skin tones; vintage film richness, saturated primaries, lush reds, vintage greens, creamy whites, retro film look )\n[SUBJECT]",
+  "prompt": { "ZIT": "(hyper-saturated reds and greens; creamy whites; painted-looking skin tones; vintage film richness, saturated primaries, lush reds, vintage greens, creamy whites, retro film look )\n[SUBJECT]" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

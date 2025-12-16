@@ -1,6 +1,6 @@
 {
   "name": "Vintage Film Filter",
-  "prompt": "[SUBJECT](subtle warm tones, soft grain, gentle contrast, slightly faded colors, classic analog film look)\n",
+  "prompt": { "ZIT": "[SUBJECT](subtle warm tones, soft grain, gentle contrast, slightly faded colors, classic analog film look)"},
   "tags": [
     "Camera:Point Of View"
   ],

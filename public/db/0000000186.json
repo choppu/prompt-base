@@ -1,6 +1,6 @@
 {
   "name": "Mist-Shaped Subject",
-  "prompt": "foggy 3D shaped transparent Mist forming a [SUBJECT], foggy, Floating smoke-shaped , vapor , ghostly, diffuse, haze . [ENVIRONMENT]",
+  "prompt": { "ZIT": "foggy 3D shaped transparent Mist forming a [SUBJECT], foggy, Floating smoke-shaped , vapor , ghostly, diffuse, haze . [ENVIRONMENT]" },
   "tags": [
     "Materials:Elemental"
   ],

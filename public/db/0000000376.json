@@ -1,6 +1,6 @@
 {
   "name": "Dolly Shot",
-  "prompt": "[SUBJECT](Dolly shot style: composition implying camera physically moving toward or away from subject on track. Creates smooth approach or retreat with depth change.)",
+  "prompt": { "ZIT": "[SUBJECT](Dolly shot style: composition implying camera physically moving toward or away from subject on track. Creates smooth approach or retreat with depth change.)" },
   "tags": [
     "Camera:Movement"
   ],

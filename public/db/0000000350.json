@@ -1,6 +1,6 @@
 {
   "name": "Medium Shot",
-  "prompt": "[SUBJECT](Medium shot: camera frames subject from waist up, showing torso, arms, and head. Balances facial expression with body language and gestures.)",
+  "prompt": { "ZIT": "[SUBJECT](Medium shot: camera frames subject from waist up, showing torso, arms, and head. Balances facial expression with body language and gestures.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

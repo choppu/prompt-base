@@ -1,6 +1,6 @@
 {
   "name": "Photorealistic Pencil Drawing",
-  "prompt": "(Extreme level of graphite detail that mimics a photograph, smooth shading with almost no visible pencil texture, hyperrealism in monochrome, fine, precise rendering)\n[SUBJECT]\n",
+  "prompt": { "ZIT": "(Extreme level of graphite detail that mimics a photograph, smooth shading with almost no visible pencil texture, hyperrealism in monochrome, fine, precise rendering)\n[SUBJECT]"},
   "tags": [
     "Styles:Extra Styles"
   ],

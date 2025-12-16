@@ -1,6 +1,6 @@
 {
   "name": "Pastel Art",
-  "prompt": "(Soft powdery pigment, visible grain, vibrant matte colors, gentle blending, velvety surface, big pastel strokes)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Soft powdery pigment, visible grain, vibrant matte colors, gentle blending, velvety surface, big pastel strokes)\n[SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

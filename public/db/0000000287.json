@@ -1,6 +1,6 @@
 {
   "name": "Serenity",
-  "prompt": "(calm; balanced empty space; soft gradients; gentle luminosity; tranquil stillness)[SUBJECT]",
+  "prompt": { "ZIT": "(calm; balanced empty space; soft gradients; gentle luminosity; tranquil stillness)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Minimalist",
-  "prompt": "(reduced visual information; clean geometry; narrow palette)[SUBJECT]",
+  "prompt": { "ZIT": "(reduced visual information; clean geometry; narrow palette)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

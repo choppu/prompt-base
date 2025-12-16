@@ -1,6 +1,6 @@
 {
   "name": "Gold-Shaped Subject",
-  "prompt": "Gold shaped like a [SUBJECT], Glowing 3D realistic, Polished, Lustrous, Shiny, Precious, Reflective, Warm, Ornate, Radiant. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Gold shaped like a [SUBJECT], Glowing 3D realistic, Polished, Lustrous, Shiny, Precious, Reflective, Warm, Ornate, Radiant. [ENVIRONMENT]" },
   "tags": [
     "Materials:Precious"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Denim-Shaped Subject",
-  "prompt": "Denim shaped like a [SUBJECT], Blue jean texture, Woven cotton, White stitching, Frayed edges, Heavy fabric, Indigo. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Denim shaped like a [SUBJECT], Blue jean texture, Woven cotton, White stitching, Frayed edges, Heavy fabric, Indigo. [ENVIRONMENT]" },
   "tags": [
     "Materials:Fabric / Textile"
   ],

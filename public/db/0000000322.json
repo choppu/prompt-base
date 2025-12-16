@@ -1,6 +1,6 @@
 {
   "name": "High Angle",
-  "prompt": "[SUBJECT](High-angle shot: camera positioned above eye level, looking down at the subject. Creates vulnerability, smallness, or overview perspective. Subject appears diminished or subordinate in the frame.)",
+  "prompt": { "ZIT": "[SUBJECT](High-angle shot: camera positioned above eye level, looking down at the subject. Creates vulnerability, smallness, or overview perspective. Subject appears diminished or subordinate in the frame.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

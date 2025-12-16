@@ -1,6 +1,6 @@
 {
   "name": "Fairy Tale Fable",
-  "prompt": "(enchanted worlds; whimsical forests; magical ; pastel-jewel tones; surreal warmth , realistic)[SUBJECT]",
+  "prompt": { "ZIT": "(enchanted worlds; whimsical forests; magical ; pastel-jewel tones; surreal warmth , realistic)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

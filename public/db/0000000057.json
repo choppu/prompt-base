@@ -1,6 +1,6 @@
 {
   "name": "Saberration",
-  "prompt": "(Zoomed-OUT background warping SHRINKING \n around subject, intense lens distortion with spherical aberration, pronounced RGB fringing on edges, subtle color bleeding, chromatic separation, warped perspective, soft optical blur, dreamy cinematic lens effect, slight background swirl, distorted light refraction, artistic optical imperfection , MAGNIFIED AND WARPED SUBJECT)\n\n[SUBJECT]",
+  "prompt": { "ZIT": "(Zoomed-OUT background warping SHRINKING \n around subject, intense lens distortion with spherical aberration, pronounced RGB fringing on edges, subtle color bleeding, chromatic separation, warped perspective, soft optical blur, dreamy cinematic lens effect, slight background swirl, distorted light refraction, artistic optical imperfection , MAGNIFIED AND WARPED SUBJECT)\n\n[SUBJECT]" },
   "tags": [
     "Lights:Lens & Optical Artifacts"
   ],

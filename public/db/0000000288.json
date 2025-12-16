@@ -1,6 +1,6 @@
 {
   "name": "Euphoria",
-  "prompt": "(intense uplift; radiant glow; vibrant saturation; ecstatic motion; transcendent joy)[SUBJECT]",
+  "prompt": { "ZIT": "(intense uplift; radiant glow; vibrant saturation; ecstatic motion; transcendent joy)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

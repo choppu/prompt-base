@@ -1,6 +1,6 @@
 {
   "name": "Ruby-Shaped Subject",
-  "prompt": "Ruby shaped like a [SUBJECT] 3D realistic, Red faceted , Clear, Highly reflective, Prismatic. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Ruby shaped like a [SUBJECT] 3D realistic, Red faceted , Clear, Highly reflective, Prismatic. [ENVIRONMENT]" },
   "tags": [
     "Materials:Precious"
   ],

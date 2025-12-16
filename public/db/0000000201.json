@@ -1,6 +1,6 @@
 {
   "name": "Amethyst-Shaped Subject",
-  "prompt": "Amethyst shaped like a [SUBJECT], Purple crystalline clusters, Sparkling, Raw mineral formation, Semi-transparent. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Amethyst shaped like a [SUBJECT], Purple crystalline clusters, Sparkling, Raw mineral formation, Semi-transparent. [ENVIRONMENT]" },
   "tags": [
     "Materials:Precious"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Vaporwave",
-  "prompt": "(digital nostalgia; pastel neon palette; 3D CGI surrealism; Greek-Roman busts; checkerboard floors; mall aesthetics; dreamy retro environment)[SUBJECT]",
+  "prompt": { "ZIT": "(digital nostalgia; pastel neon palette; 3D CGI surrealism; Greek-Roman busts; checkerboard floors; mall aesthetics; dreamy retro environment)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

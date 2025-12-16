@@ -1,6 +1,6 @@
 {
   "name": "Post Magic Ruined Civilization",
-  "prompt": "(collapsed magic; overgrown ruins; crumbled temples; scattered relics; fog and mist)[SUBJECT]",
+  "prompt": { "ZIT": "(collapsed magic; overgrown ruins; crumbled temples; scattered relics; fog and mist)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

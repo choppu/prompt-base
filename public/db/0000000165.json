@@ -1,6 +1,6 @@
 {
   "name": "Framebeadworkpattern",
-  "prompt": "(intricate beaded design, segmented texture, reflective glass beads, shaped beadwork)\n[SUBJECT]",
+  "prompt": { "ZIT": "(intricate beaded design, segmented texture, reflective glass beads, shaped beadwork)\n[SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

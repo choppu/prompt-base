@@ -1,6 +1,6 @@
 {
   "name": "Biopunk",
-  "prompt": "(genetic modification dystopia; organic wet-tech; petri dishes; bioengineered organisms; fleshy textures; medical-lab aesthetic; body-horror undertones)[SUBJECT]",
+  "prompt": { "ZIT": "(genetic modification dystopia; organic wet-tech; petri dishes; bioengineered organisms; fleshy textures; medical-lab aesthetic; body-horror undertones)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

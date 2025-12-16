@@ -1,6 +1,6 @@
 {
   "name": "Surveillance",
-  "prompt": "[SUBJECT](Surveillance camera angle: high-corner mounted perspective with wide-angle distortion, timestamp overlay aesthetic. Creates voyeuristic, security monitoring viewpoint.)",
+  "prompt": { "ZIT": "[SUBJECT](Surveillance camera angle: high-corner mounted perspective with wide-angle distortion, timestamp overlay aesthetic. Creates voyeuristic, security monitoring viewpoint.)" },
   "tags": [
     "Camera:Point Of View"
   ],

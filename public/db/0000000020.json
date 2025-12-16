@@ -1,6 +1,6 @@
 {
   "name": "Cross-Processing (X-Pro)",
-  "prompt": "(unnatural color casts; extreme contrast; green/cyan shadows; yellow/red highlights; surreal tonal shifts)\n[SUBJECT]",
+  "prompt": { "ZIT": "(unnatural color casts; extreme contrast; green/cyan shadows; yellow/red highlights; surreal tonal shifts)\n[SUBJECT]" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

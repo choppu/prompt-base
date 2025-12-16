@@ -1,6 +1,6 @@
 {
   "name": "Wasteland",
-  "prompt": "(barren devastation; sand-blasted terrain; skeletal remains; cracked earth; minimal vegetation; wind erosion; extreme isolation)[SUBJECT]",
+  "prompt": { "ZIT": "(barren devastation; sand-blasted terrain; skeletal remains; cracked earth; minimal vegetation; wind erosion; extreme isolation)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

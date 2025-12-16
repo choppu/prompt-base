@@ -1,6 +1,6 @@
 {
   "name": "Vector Art",
-  "prompt": "(Sharp mathematically perfect edges, scalable flat shapes, smooth gradients or solids, digital precision) [SUBJECT]",
+  "prompt": { "ZIT": "(Sharp mathematically perfect edges, scalable flat shapes, smooth gradients or solids, digital precision) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

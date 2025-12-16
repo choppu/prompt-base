@@ -1,6 +1,6 @@
 {
   "name": "Scientific Illustration",
-  "prompt": "(Precise technical details, cross-sections, labeled structures, accurate rendering for study) [SUBJECT]",
+  "prompt": { "ZIT": "(Precise technical details, cross-sections, labeled structures, accurate rendering for study) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

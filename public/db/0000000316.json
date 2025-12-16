@@ -1,6 +1,6 @@
 {
   "name": "Afrofuturism",
-  "prompt": "(futurism fused with African culture; geometric patterns; cosmic motifs; radiant textiles; ancestral mythology; empowered aesthetic; advanced tech)[SUBJECT]",
+  "prompt": { "ZIT": "(futurism fused with African culture; geometric patterns; cosmic motifs; radiant textiles; ancestral mythology; empowered aesthetic; advanced tech)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

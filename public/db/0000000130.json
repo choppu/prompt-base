@@ -1,6 +1,6 @@
 {
   "name": "Studio Ghibli",
-  "prompt": "(Lush painterly backgrounds, soft color harmony, expressive rounded character design, magical warmth) [SUBJECT]",
+  "prompt": { "ZIT": "(Lush painterly backgrounds, soft color harmony, expressive rounded character design, magical warmth) [SUBJECT]" },
   "tags": [
     "Styles:Animation & Comics"
   ],

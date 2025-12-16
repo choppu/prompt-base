@@ -1,6 +1,6 @@
 {
   "name": "Object POV Shot",
-  "prompt": "[SUBJECT](Object POV shot: camera positioned at perspective of inanimate object, showing scene from object's \"viewpoint.\" Creates unusual, creative perspective.)",
+  "prompt": { "ZIT": "[SUBJECT](Object POV shot: camera positioned at perspective of inanimate object, showing scene from object's \"viewpoint.\" Creates unusual, creative perspective.)" },
   "tags": [
     "Camera:Point Of View"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Alpenglow",
-  "prompt": "(pink/red glow ; indirect horizon light; soft pastel radiance; rosy illumination, magenta skyline hue, ethereal glow, reflective high-altitude light)\n[SUBJECT]",
+  "prompt": { "ZIT": "(pink/red glow ; indirect horizon light; soft pastel radiance; rosy illumination, magenta skyline hue, ethereal glow, reflective high-altitude light)\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

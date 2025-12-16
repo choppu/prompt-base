@@ -1,6 +1,6 @@
 {
   "name": "Dashcam Angle",
-  "prompt": "[SUBJECT](Dashcam perspective: forward-facing view from vehicle dashboard, showing road ahead. Creates point-of-view from driver's position with characteristic wide angle.)",
+  "prompt": { "ZIT": "[SUBJECT](Dashcam perspective: forward-facing view from vehicle dashboard, showing road ahead. Creates point-of-view from driver's position with characteristic wide angle.)" },
   "tags": [
     "Camera:Point Of View"
   ],

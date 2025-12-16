@@ -1,6 +1,6 @@
 {
   "name": "Royalcore",
-  "prompt": "(regal opulence; velvet and gold; ceremonial decor; grand halls; dynastic prestige; aristocratic poise)[SUBJECT]",
+  "prompt": { "ZIT": "(regal opulence; velvet and gold; ceremonial decor; grand halls; dynastic prestige; aristocratic poise)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

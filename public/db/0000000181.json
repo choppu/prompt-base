@@ -1,6 +1,6 @@
 {
   "name": "Lava-Shaped Subject",
-  "prompt": "Lava shaped like a [SUBJECT], Molten 3D realistic, Glowing, Flowing, Fiery, Viscous, Radiant, Smoky. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Lava shaped like a [SUBJECT], Molten 3D realistic, Glowing, Flowing, Fiery, Viscous, Radiant, Smoky. [ENVIRONMENT]" },
   "tags": [
     "Materials:Elemental"
   ],

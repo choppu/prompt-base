@@ -1,6 +1,6 @@
 {
   "name": "Atompunk",
-  "prompt": "(1950s space-age optimism; ray-gun futurism; chrome diners; pastel nuclear colors; retro rockets; atomic diagrams; mid-century modern futurism)[SUBJECT]",
+  "prompt": { "ZIT": "(1950s space-age optimism; ray-gun futurism; chrome diners; pastel nuclear colors; retro rockets; atomic diagrams; mid-century modern futurism)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

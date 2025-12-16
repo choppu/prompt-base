@@ -1,6 +1,6 @@
 {
   "name": "Telescope",
-  "prompt": "[SUBJECT](Telescope viewpoint: distant view through circular vignette, showing magnified far-away subjects. Creates astronomical, surveillance, or distant observation perspective.)",
+  "prompt": { "ZIT": "[SUBJECT](Telescope viewpoint: distant view through circular vignette, showing magnified far-away subjects. Creates astronomical, surveillance, or distant observation perspective.)" },
   "tags": [
     "Camera:Point Of View"
   ],

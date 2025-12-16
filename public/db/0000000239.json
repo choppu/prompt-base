@@ -1,6 +1,6 @@
 {
   "name": "Sand-Shaped Subject",
-  "prompt": "3D Sand shaped like a [SUBJECT], realistic, Textured, Loose, Dry, Natural, Layered. [ENVIRONMENT]",
+  "prompt": { "ZIT": "3D Sand shaped like a [SUBJECT], realistic, Textured, Loose, Dry, Natural, Layered. [ENVIRONMENT]" },
   "tags": [
     "Materials:Powder / Dust / Grain"
   ],

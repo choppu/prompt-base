@@ -1,6 +1,6 @@
 {
   "name": "Stylized 3D (Blizzard-Like)",
-  "prompt": "(Exaggerated forms, hand-painted textures, high contrast)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Exaggerated forms, hand-painted textures, high contrast)\n[SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

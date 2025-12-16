@@ -1,6 +1,6 @@
 {
   "name": "Chinoiserie",
-  "prompt": "(European interpretation of Chinese artistic traditions, ornate detailed landscapes, delicate figures, pagodas, porcelain blue and white color scheme, gold accents, highly decorative elegance)\n[SUBJECT]",
+  "prompt": { "ZIT": "(European interpretation of Chinese artistic traditions, ornate detailed landscapes, delicate figures, pagodas, porcelain blue and white color scheme, gold accents, highly decorative elegance)\n[SUBJECT]" },
   "tags": [
     "Styles:Extra Styles"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Wire-Shaped Subject",
-  "prompt": "Wire shaped like a [SUBJECT], Tangled cables, Copper or steel strands, Industrial weave, Complex mesh, Tech-waste aesthetic. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Wire shaped like a [SUBJECT], Tangled cables, Copper or steel strands, Industrial weave, Complex mesh, Tech-waste aesthetic. [ENVIRONMENT]" },
   "tags": [
     "Materials:Synthetic & Industrial"
   ],

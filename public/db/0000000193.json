@@ -1,6 +1,6 @@
 {
   "name": "Granite-Shaped Subject",
-  "prompt": "Granite shaped like a [SUBJECT], Speckled stone texture, Polished or rough, Dense, Mineral flecks, Heavy. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Granite shaped like a [SUBJECT], Speckled stone texture, Polished or rough, Dense, Mineral flecks, Heavy. [ENVIRONMENT]" },
   "tags": [
     "Materials:Stone / Mineral"
   ],

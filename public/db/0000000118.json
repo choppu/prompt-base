@@ -1,6 +1,6 @@
 {
   "name": "Flat Design",
-  "prompt": "(Minimalist shapes, no gradients, corporate visual language, clean geometry, simple color schemes) [SUBJECT]",
+  "prompt": { "ZIT": "(Minimalist shapes, no gradients, corporate visual language, clean geometry, simple color schemes) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

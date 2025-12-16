@@ -1,6 +1,6 @@
 {
   "name": "Cool Cinematic Filter",
-  "prompt": "[SUBJECT](clean teal-and-neutral tones, smooth contrast, soft shadows, modern cinematic color grading, no added objects)\n",
+  "prompt": { "ZIT": "[SUBJECT](clean teal-and-neutral tones, smooth contrast, soft shadows, modern cinematic color grading, no added objects)"},
   "tags": [
     "Camera:Point Of View"
   ],

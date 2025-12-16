@@ -1,6 +1,6 @@
 {
   "name": "Nostalgia",
-  "prompt": "(memory-tinged warmth; faded textures; retro elements; sentimental artifacts; comforting imperfection)[SUBJECT]",
+  "prompt": { "ZIT": "(memory-tinged warmth; faded textures; retro elements; sentimental artifacts; comforting imperfection)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

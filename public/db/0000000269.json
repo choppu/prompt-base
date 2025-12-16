@@ -1,6 +1,6 @@
 {
   "name": "Devilcore",
-  "prompt": "(infernal intensity; red-black palette; horns; fire; shadow-heavy scenes; demonic motifs; primal menace)[SUBJECT]",
+  "prompt": { "ZIT": "(infernal intensity; red-black palette; horns; fire; shadow-heavy scenes; demonic motifs; primal menace)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

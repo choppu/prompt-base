@@ -1,6 +1,6 @@
 {
   "name": "Two Shot",
-  "prompt": "[SUBJECT](Two-shot: camera frames two subjects within same composition. Establishes relationship, interaction, or comparison between characters.)",
+  "prompt": { "ZIT": "[SUBJECT](Two-shot: camera frames two subjects within same composition. Establishes relationship, interaction, or comparison between characters.)" },
   "tags": [
     "Camera:Composition"
   ],

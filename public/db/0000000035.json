@@ -1,6 +1,6 @@
 {
   "name": "Moir\u00e9 Pattern Effect",
-  "prompt": "(wavy rainbow interference on the image light; fine-grid distortion; spectral patterning; overlapping the image fractal ripples, iridescent mesh distortion frame, micro-pattern color waves)\n[SUBJECT]",
+  "prompt": { "ZIT": "(wavy rainbow interference on the image light; fine-grid distortion; spectral patterning; overlapping the image fractal ripples, iridescent mesh distortion frame, micro-pattern color waves)\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Sensor & Glitch Artifacts"
   ],

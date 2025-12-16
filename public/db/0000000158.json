@@ -1,6 +1,6 @@
 {
   "name": "Isometric",
-  "prompt": "(Three-quarter perspective from a corner view, equal axes, illustration) [SUBJECT]",
+  "prompt": { "ZIT": "(Three-quarter perspective from a corner view, equal axes, illustration) [SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

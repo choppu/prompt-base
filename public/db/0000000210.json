@@ -1,6 +1,6 @@
 {
   "name": "Tire Rubber-Shaped Subject",
-  "prompt": "Tire rubber shaped like a [SUBJECT], Deep tread grooves, Black textured rubber, Heavy-duty, Industrial. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Tire rubber shaped like a [SUBJECT], Deep tread grooves, Black textured rubber, Heavy-duty, Industrial. [ENVIRONMENT]" },
   "tags": [
     "Materials:Synthetic & Industrial"
   ],

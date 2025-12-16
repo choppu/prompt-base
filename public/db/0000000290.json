@@ -1,6 +1,6 @@
 {
   "name": "Isolation",
-  "prompt": "(lone subjects; expansive emptiness; cold tones; existential detachment)[SUBJECT]",
+  "prompt": { "ZIT": "(lone subjects; expansive emptiness; cold tones; existential detachment)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

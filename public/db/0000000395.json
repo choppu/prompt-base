@@ -1,6 +1,6 @@
 {
   "name": "First Person Shot",
-  "prompt": "[SUBJECT](First-person perspective: camera represents character's own eyes, showing what they see. Creates immersive, subjective experience of being the character.)",
+  "prompt": { "ZIT": "[SUBJECT](First-person perspective: camera represents character's own eyes, showing what they see. Creates immersive, subjective experience of being the character.)" },
   "tags": [
     "Camera:Point Of View"
   ],

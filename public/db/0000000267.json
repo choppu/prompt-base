@@ -1,6 +1,6 @@
 {
   "name": "Witchcore",
-  "prompt": "(occult mysticism; runes; herbal bundles; arcane tools; candlelight; deep violets and blacks; ritualistic atmosphere)[SUBJECT]",
+  "prompt": { "ZIT": "(occult mysticism; runes; herbal bundles; arcane tools; candlelight; deep violets and blacks; ritualistic atmosphere)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Rotoscoping",
-  "prompt": "(Fluid lifelike movement recreated through traced live-action, smooth outlines, cartoon realistic motion) [SUBJECT]",
+  "prompt": { "ZIT": "(Fluid lifelike movement recreated through traced live-action, smooth outlines, cartoon realistic motion) [SUBJECT]" },
   "tags": [
     "Styles:Animation & Comics"
   ],

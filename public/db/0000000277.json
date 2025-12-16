@@ -1,6 +1,6 @@
 {
   "name": "Y2K",
-  "prompt": "(early digital futurism; chrome sheen; translucent plastics; cyber-glam fashion)[SUBJECT]",
+  "prompt": { "ZIT": "(early digital futurism; chrome sheen; translucent plastics; cyber-glam fashion)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

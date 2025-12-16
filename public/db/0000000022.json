@@ -1,6 +1,6 @@
 {
   "name": "Day For Night",
-  "prompt": "(day scenes graded to blue; crushed highlights; underexposed tones; simulation,blue tint, crushed sky, nighttime emulation, underexposed daylight, cinematic look)\n[SUBJECT]",
+  "prompt": { "ZIT": "(day scenes graded to blue; crushed highlights; underexposed tones; simulation,blue tint, crushed sky, nighttime emulation, underexposed daylight, cinematic look)\n[SUBJECT]" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

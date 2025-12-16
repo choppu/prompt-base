@@ -1,6 +1,6 @@
 {
   "name": "HDR Tone Mapping",
-  "prompt": "(high dynamic range; enhanced contrast and detail in highlights and shadows; vibrant yet balanced colors; subject rendered with enhanced depth and clarity)\n[SUBJECT]",
+  "prompt": { "ZIT": "(high dynamic range; enhanced contrast and detail in highlights and shadows; vibrant yet balanced colors; subject rendered with enhanced depth and clarity)\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Sensor & Glitch Artifacts"
   ],

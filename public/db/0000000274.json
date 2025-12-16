@@ -1,6 +1,6 @@
 {
   "name": "Dreamcore",
-  "prompt": "(soft surrealism enviroments; floating objects; pastel haze; subconscious warped landscapes; drifting field of view on the background) [SUBJECT]",
+  "prompt": { "ZIT": "(soft surrealism enviroments; floating objects; pastel haze; subconscious warped landscapes; drifting field of view on the background) [SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

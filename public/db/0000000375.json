@@ -1,6 +1,6 @@
 {
   "name": "Tracking Shot",
-  "prompt": "[SUBJECT](Tracking shot aesthetic: composition suggesting camera movement following subject laterally. Creates dynamic sense of motion, pursuit, or accompaniment.)",
+  "prompt": { "ZIT": "[SUBJECT](Tracking shot aesthetic: composition suggesting camera movement following subject laterally. Creates dynamic sense of motion, pursuit, or accompaniment.)" },
   "tags": [
     "Camera:Movement"
   ],

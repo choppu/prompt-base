@@ -1,6 +1,6 @@
 {
   "name": "Telephoto Shot",
-  "prompt": "[SUBJECT](Telephoto lens shot: composition with compressed perspective, flattened depth, and narrow field of view. Creates isolated subject with beautifully blurred background.)",
+  "prompt": { "ZIT": "[SUBJECT](Telephoto lens shot: composition with compressed perspective, flattened depth, and narrow field of view. Creates isolated subject with beautifully blurred background.)" },
   "tags": [
     "Camera:Lens / Perspective"
   ],

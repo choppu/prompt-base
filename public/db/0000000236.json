@@ -1,6 +1,6 @@
 {
   "name": "Foam-Shaped Subject",
-  "prompt": "Bubble Foam shaped like a [SUBJECT], Soft porous texture, Lightweight, Air-bubble structure, Spongy, Matte. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Bubble Foam shaped like a [SUBJECT], Soft porous texture, Lightweight, Air-bubble structure, Spongy, Matte. [ENVIRONMENT]" },
   "tags": [
     "Materials:Soft / Porous"
   ],

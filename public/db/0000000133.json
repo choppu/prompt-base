@@ -1,6 +1,6 @@
 {
   "name": "Noir Graphic Novel",
-  "prompt": "(Extreme black-and-white contrast, harsh shadows, gritty atmosphere, Frank Miller storytelling tone) [SUBJECT]",
+  "prompt": { "ZIT": "(Extreme black-and-white contrast, harsh shadows, gritty atmosphere, Frank Miller storytelling tone) [SUBJECT]" },
   "tags": [
     "Styles:Animation & Comics"
   ],

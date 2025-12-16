@@ -1,6 +1,6 @@
 {
   "name": "Leading Lines Shot",
-  "prompt": "[SUBJECT](Leading lines composition: visual lines within frame guide viewer's eye toward subject. Creates depth, direction, and purposeful visual flow.)",
+  "prompt": { "ZIT": "[SUBJECT](Leading lines composition: visual lines within frame guide viewer's eye toward subject. Creates depth, direction, and purposeful visual flow.)" },
   "tags": [
     "Camera:Composition"
   ],

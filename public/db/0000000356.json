@@ -1,6 +1,6 @@
 {
   "name": "Knee Shot",
-  "prompt": "[SUBJECT](Knee shot: camera frames subject from knees upward, showing most of body while maintaining facial detail. Provides strong sense of physical presence.)",
+  "prompt": { "ZIT": "[SUBJECT](Knee shot: camera frames subject from knees upward, showing most of body while maintaining facial detail. Provides strong sense of physical presence.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

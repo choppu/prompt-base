@@ -1,6 +1,6 @@
 {
   "name": "Feather-Shaped Subject",
-  "prompt": "Many feathers shaped like a [SUBJECT] stylized stristic plumage-like , abstract , 3D realistic full with feathers , Detailed , Flowing. . [ENVIRONMENT]",
+  "prompt": { "ZIT": "Many feathers shaped like a [SUBJECT] stylized stristic plumage-like , abstract , 3D realistic full with feathers , Detailed , Flowing. . [ENVIRONMENT]" },
   "tags": [
     "Materials:Natural Organic"
   ],

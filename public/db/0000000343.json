@@ -1,6 +1,6 @@
 {
   "name": "Reverse POV Angle",
-  "prompt": "[SUBJECT](Reverse POV shot: camera showing what is looking at the POV character. Reveals the subject of character's gaze, completing visual conversation between perspectives.)",
+  "prompt": { "ZIT": "[SUBJECT](Reverse POV shot: camera showing what is looking at the POV character. Reveals the subject of character's gaze, completing visual conversation between perspectives.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

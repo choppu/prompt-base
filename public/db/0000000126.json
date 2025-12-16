@@ -1,6 +1,6 @@
 {
   "name": "Tattoo Flash",
-  "prompt": "(Bold black outlines, classic shading, isolated motif, traditional tattoo palette and form) [SUBJECT]",
+  "prompt": { "ZIT": "(Bold black outlines, classic shading, isolated motif, traditional tattoo palette and form) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

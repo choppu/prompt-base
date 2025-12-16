@@ -1,6 +1,6 @@
 {
   "name": "Wide Angle Shot",
-  "prompt": "[SUBJECT](Wide-angle lens shot: composition showing expanded field of view with slight barrel distortion. Exaggerates space, depth, and environmental scope.)",
+  "prompt": { "ZIT": "[SUBJECT](Wide-angle lens shot: composition showing expanded field of view with slight barrel distortion. Exaggerates space, depth, and environmental scope.)" },
   "tags": [
     "Camera:Lens / Perspective"
   ],

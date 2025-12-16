@@ -1,6 +1,6 @@
 {
   "name": "Sponge Material",
-  "prompt": "Sponge-material shaped like a [SUBJECT], porous texture, Air holes, Soft, Absorbent, Matte, Squeezable. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Sponge-material shaped like a [SUBJECT], porous texture, Air holes, Soft, Absorbent, Matte, Squeezable. [ENVIRONMENT]" },
   "tags": [
     "Materials:Soft / Porous"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Selective Color",
-  "prompt": "(one color preserved saturated ; strong visual isolation of the color, isolated hue, high contrast focal color )\n[COLOR+OBJECT]\n[SUBJECT]",
+  "prompt": { "ZIT": "(one color preserved saturated ; strong visual isolation of the color, isolated hue, high contrast focal color )\n[COLOR+OBJECT]\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Grading & Post-Processing"
   ],

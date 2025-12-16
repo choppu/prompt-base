@@ -1,6 +1,6 @@
 {
   "name": "Cinematic Moody",
-  "prompt": "(low-key richness; controlled darkness; selective highlights; emotionally saturated environments)[SUBJECT]",
+  "prompt": { "ZIT": "(low-key richness; controlled darkness; selective highlights; emotionally saturated environments)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

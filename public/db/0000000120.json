@@ -1,6 +1,6 @@
 {
   "name": "Halftone",
-  "prompt": "(Dot-pattern shading, vintage comic newspaper texture, variable dot density forming tones) [SUBJECT]",
+  "prompt": { "ZIT": "(Dot-pattern shading, vintage comic newspaper texture, variable dot density forming tones) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

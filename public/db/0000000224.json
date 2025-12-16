@@ -1,6 +1,6 @@
 {
   "name": "Bamboo-Shaped Subject",
-  "prompt": "Bamboo shaped like a [SUBJECT], Hollow segments, Natural green or dried tan, Linear texture, Organic, Fibrous. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Bamboo shaped like a [SUBJECT], Hollow segments, Natural green or dried tan, Linear texture, Organic, Fibrous. [ENVIRONMENT]" },
   "tags": [
     "Materials:Natural Organic"
   ],

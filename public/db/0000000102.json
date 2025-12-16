@@ -1,6 +1,6 @@
 {
   "name": "Oil Painting",
-  "prompt": "(Thick textured brushstrokes, impasto depth, smooth color blending, glossy surface, classical painted look) [SUBJECT]",
+  "prompt": { "ZIT": "(Thick textured brushstrokes, impasto depth, smooth color blending, glossy surface, classical painted look) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

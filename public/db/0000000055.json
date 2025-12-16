@@ -1,6 +1,6 @@
 {
   "name": "Sunstar Starburst",
-  "prompt": "(sharp radiating spikes; aperture-blade diffraction; bright point splitting into rays; multi-point star flare, crisp light spikes, radiating sun-lines, high-contrast starburst geometry)\n[SUBJECT]",
+  "prompt": { "ZIT": "(sharp radiating spikes; aperture-blade diffraction; bright point splitting into rays; multi-point star flare, crisp light spikes, radiating sun-lines, high-contrast starburst geometry)\n[SUBJECT]" },
   "tags": [
     "Lights:Lens & Optical Artifacts"
   ],

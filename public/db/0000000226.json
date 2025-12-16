@@ -1,6 +1,6 @@
 {
   "name": "Fur-Shaped Subject",
-  "prompt": "Fur shaped like a [SUBJECT], Soft dense fibers, Realistic strands, Fluffy, Textured, Warm tactile look. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Fur shaped like a [SUBJECT], Soft dense fibers, Realistic strands, Fluffy, Textured, Warm tactile look. [ENVIRONMENT]" },
   "tags": [
     "Materials:Natural Organic"
   ],

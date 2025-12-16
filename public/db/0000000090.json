@@ -1,6 +1,6 @@
 {
   "name": "Expressionism Art",
-  "prompt": "(Distorted forms, exaggerated colors, emotional intensity, energetic strokes, subjective and psychological atmosphere) [SUBJECT]",
+  "prompt": { "ZIT": "(Distorted forms, exaggerated colors, emotional intensity, energetic strokes, subjective and psychological atmosphere) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

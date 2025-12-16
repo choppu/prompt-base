@@ -1,6 +1,6 @@
 {
   "name": "Polymer Clay Model",
-  "prompt": "(sculpey figure, smooth matte texture, hand-sculpted miniature) [SUBJECT]",
+  "prompt": { "ZIT": "(sculpey figure, smooth matte texture, hand-sculpted miniature) [SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

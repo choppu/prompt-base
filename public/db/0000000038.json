@@ -1,6 +1,6 @@
 {
   "name": "Film Grain",
-  "prompt": "(subtle or heavy analog noise; textured image surface; retro photographic feel; visual imperfections resembling classic film stock; soft tonal variation across subject)\n[SUBJECT]",
+  "prompt": { "ZIT": "(subtle or heavy analog noise; textured image surface; retro photographic feel; visual imperfections resembling classic film stock; soft tonal variation across subject)\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Sensor & Glitch Artifacts"
   ],

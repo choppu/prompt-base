@@ -1,6 +1,6 @@
 {
   "name": "Streetwear",
-  "prompt": "(oversized silhouettes; layered textiles; logo-driven; contemporary urban sophistication)[SUBJECT]",
+  "prompt": { "ZIT": "(oversized silhouettes; layered textiles; logo-driven; contemporary urban sophistication)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

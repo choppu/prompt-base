@@ -1,6 +1,6 @@
 {
   "name": "SPB Bokeh",
-  "prompt": "(medium transparent inner bokeh-discs circular shaped bokehs, soft translucent inside centers, bokeh hard edges effects,optical bokeh ring artifacts , bubbl-bokeh )\n[SUBJECT]",
+  "prompt": { "ZIT": "(medium transparent inner bokeh-discs circular shaped bokehs, soft translucent inside centers, bokeh hard edges effects,optical bokeh ring artifacts , bubbl-bokeh )\n[SUBJECT]" },
   "tags": [
     "Lights:Lens & Optical Artifacts"
   ],

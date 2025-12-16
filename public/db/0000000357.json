@@ -1,6 +1,6 @@
 {
   "name": "Shoulder Shot",
-  "prompt": "[SUBJECT](Shoulder shot: camera frames subject from shoulders up, focusing on face and upper torso. Creates intimacy while maintaining personal space boundary.)",
+  "prompt": { "ZIT": "[SUBJECT](Shoulder shot: camera frames subject from shoulders up, focusing on face and upper torso. Creates intimacy while maintaining personal space boundary.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

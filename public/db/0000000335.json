@@ -1,6 +1,6 @@
 {
   "name": "Front Angle",
-  "prompt": "[SUBJECT](Front-facing angle: camera positioned directly in front of subject, creating symmetrical frontal view. Establishes direct confrontation, intimacy, or formal presentation.)",
+  "prompt": { "ZIT": "[SUBJECT](Front-facing angle: camera positioned directly in front of subject, creating symmetrical frontal view. Establishes direct confrontation, intimacy, or formal presentation.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

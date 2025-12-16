@@ -1,6 +1,6 @@
 {
   "name": "Fire-Shaped Subject",
-  "prompt": "Fire shaped like a [SUBJECT], Glowing 3D realistic, Flickering, Lively, Intense, Warm, Dynamic, Blazing, Radiant, Ember-like, Smoke Rising, Heat Waves. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Fire shaped like a [SUBJECT], Glowing 3D realistic, Flickering, Lively, Intense, Warm, Dynamic, Blazing, Radiant, Ember-like, Smoke Rising, Heat Waves. [ENVIRONMENT]" },
   "tags": [
     "Materials:Elemental"
   ],

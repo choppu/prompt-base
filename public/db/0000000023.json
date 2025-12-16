@@ -1,6 +1,6 @@
 {
   "name": "Kodachrome Look",
-  "prompt": "(punchy contrast; vibrant reds/yellows; slightly cool shadows; fine grain; classic analog color, vintage Kodak, rich reds, punchy contrast, cool shadows, film grain)\n[SUBJECT]",
+  "prompt": { "ZIT": "(punchy contrast; vibrant reds/yellows; slightly cool shadows; fine grain; classic analog color, vintage Kodak, rich reds, punchy contrast, cool shadows, film grain)\n[SUBJECT]" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

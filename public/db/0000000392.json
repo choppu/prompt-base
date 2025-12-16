@@ -1,6 +1,6 @@
 {
   "name": "Macro Lens Shot",
-  "prompt": "[SUBJECT](Macro-lens shot: composition capturing extreme detail of small subject at very close range. Reveals microscopic textures and details with minimal depth of field.)",
+  "prompt": { "ZIT": "[SUBJECT](Macro-lens shot: composition capturing extreme detail of small subject at very close range. Reveals microscopic textures and details with minimal depth of field.)" },
   "tags": [
     "Camera:Lens / Perspective"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Chiaroscuro",
-  "prompt": "(strong interplay of light and shadow; painterly contrast; highlights sharply define form; dramatic and artistic lighting; subject illuminated in cinematic shadow patterns) \n[SUBJECT]",
+  "prompt": { "ZIT": "(strong interplay of light and shadow; painterly contrast; highlights sharply define form; dramatic and artistic lighting; subject illuminated in cinematic shadow patterns) \n[SUBJECT]" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "De Stijl",
-  "prompt": "(Strict grids, black outlines, primary color rectangles, strong alignment, Mondrian-like abstraction) [SUBJECT]",
+  "prompt": { "ZIT": "(Strict grids, black outlines, primary color rectangles, strong alignment, Mondrian-like abstraction) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

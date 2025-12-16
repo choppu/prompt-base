@@ -1,6 +1,6 @@
 {
   "name": "Anime",
-  "prompt": "(Stylized Japanese animation look, clean lines, expressive eyes, flat shading, bright colors) [SUBJECT]",
+  "prompt": { "ZIT": "(Stylized Japanese animation look, clean lines, expressive eyes, flat shading, bright colors) [SUBJECT]" },
   "tags": [
     "Styles:Animation & Comics"
   ],

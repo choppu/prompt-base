@@ -1,6 +1,6 @@
 {
   "name": "Blue Hour",
-  "prompt": "(deep cool blue ambience; shadowless soft light; civil-twilight glow; cobalt gradients, diffuse even illumination, serene low-contrast lighting, dusk-toned palette)\n[SUBJECT]",
+  "prompt": { "ZIT": "(deep cool blue ambience; shadowless soft light; civil-twilight glow; cobalt gradients, diffuse even illumination, serene low-contrast lighting, dusk-toned palette)\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

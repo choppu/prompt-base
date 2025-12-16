@@ -1,6 +1,6 @@
 {
   "name": "Centered Composition",
-  "prompt": "[SUBJECT](Centered composition: subject positioned in exact center of frame, creating symmetrical, balanced, formal arrangement. Emphasizes subject importance and stability.)",
+  "prompt": { "ZIT": "[SUBJECT](Centered composition: subject positioned in exact center of frame, creating symmetrical, balanced, formal arrangement. Emphasizes subject importance and stability.)" },
   "tags": [
     "Camera:Composition"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Steampunk Fantasy",
-  "prompt": "(magic-meets-steam tech; brass machinery; cogwork automatons; airships; Victorian clothing)[SUBJECT]",
+  "prompt": { "ZIT": "(magic-meets-steam tech; brass machinery; cogwork automatons; airships; Victorian clothing)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Knightcore",
-  "prompt": "(chivalric symbols; steel armor; heraldic banners; medieval grandeur; fortified castles; battlefield honor)[SUBJECT]",
+  "prompt": { "ZIT": "(chivalric symbols; steel armor; heraldic banners; medieval grandeur; fortified castles; battlefield honor)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

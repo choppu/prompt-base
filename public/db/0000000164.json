@@ -1,6 +1,6 @@
 {
   "name": "Pyrography Art",
-  "prompt": "(wood burning detail, etched wood surface, rustic carving)\n[SUBJECT]",
+  "prompt": { "ZIT": "(wood burning detail, etched wood surface, rustic carving)\n[SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

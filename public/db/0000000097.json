@@ -1,6 +1,6 @@
 {
   "name": "Pop Art",
-  "prompt": "(Bold comic-like colors, commercial imagery, flat tones, repetition, Warhol/Lichtenstein graphic aesthetic)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Bold comic-like colors, commercial imagery, flat tones, repetition, Warhol/Lichtenstein graphic aesthetic)\n[SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

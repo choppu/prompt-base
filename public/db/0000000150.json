@@ -1,6 +1,6 @@
 {
   "name": "Hand Painted Texture",
-  "prompt": "(Visible brushstrokes on 3D surfaces, stylized game look, color-blocked shading, crafted feel) [SUBJECT]",
+  "prompt": { "ZIT": "(Visible brushstrokes on 3D surfaces, stylized game look, color-blocked shading, crafted feel) [SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

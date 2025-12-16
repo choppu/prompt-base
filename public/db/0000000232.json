@@ -1,6 +1,6 @@
 {
   "name": "Silk-Shaped Subject",
-  "prompt": "Silk shaped like a [SUBJECT], Smooth flowing fabric, High-gloss sheen, Delicate drape, Ultra-fine fibers, Elegant shimmer, Luxurious texture. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Silk shaped like a [SUBJECT], Smooth flowing fabric, High-gloss sheen, Delicate drape, Ultra-fine fibers, Elegant shimmer, Luxurious texture. [ENVIRONMENT]" },
   "tags": [
     "Materials:Fabric / Textile"
   ],

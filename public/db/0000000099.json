@@ -1,6 +1,6 @@
 {
   "name": "Bauhaus Art",
-  "prompt": "(Functional geometry, clean industrial design, primary colors, minimalist structure , flat illustration, utilitarian visual language)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Functional geometry, clean industrial design, primary colors, minimalist structure , flat illustration, utilitarian visual language)\n[SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

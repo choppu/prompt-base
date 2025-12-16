@@ -1,6 +1,6 @@
 {
   "name": "Sapphire-Shaped Subject",
-  "prompt": "Sapphire material shaped like a [SUBJECT], Deep blue faceted , Transparent, Highly refractive, Polished, Luminous. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Sapphire material shaped like a [SUBJECT], Deep blue faceted , Transparent, Highly refractive, Polished, Luminous. [ENVIRONMENT]" },
   "tags": [
     "Materials:Precious"
   ],

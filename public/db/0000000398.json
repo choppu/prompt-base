@@ -1,6 +1,6 @@
 {
   "name": "Drone Shot",
-  "prompt": "[SUBJECT](Drone shot perspective: elevated aerial view with smooth, floating quality. Creates sweeping, bird's-eye perspective with contemporary aesthetic.)",
+  "prompt": { "ZIT": "[SUBJECT](Drone shot perspective: elevated aerial view with smooth, floating quality. Creates sweeping, bird's-eye perspective with contemporary aesthetic.)" },
   "tags": [
     "Camera:Point Of View"
   ],

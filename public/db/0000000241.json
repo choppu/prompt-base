@@ -1,6 +1,6 @@
 {
   "name": "Honey-Shaped Subject",
-  "prompt": "Honey shaped like a [SUBJECT], Golden amber liquid, Viscous, Translucent, Sticky, Slow-dripping, Sweet gloss, Bubble inclusions. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Honey shaped like a [SUBJECT], Golden amber liquid, Viscous, Translucent, Sticky, Slow-dripping, Sweet gloss, Bubble inclusions. [ENVIRONMENT]" },
   "tags": [
     "Materials:Liquid / Viscous"
   ],

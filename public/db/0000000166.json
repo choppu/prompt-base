@@ -1,6 +1,6 @@
 {
   "name": "Stained Glass",
-  "prompt": "(Bold black lines forming the contours, translucent, jeweled colors, light streaming through the colored panes, segmented composition, religious or gothic subject matter, lead-came framing, luminous radiance)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Bold black lines forming the contours, translucent, jeweled colors, light streaming through the colored panes, segmented composition, religious or gothic subject matter, lead-came framing, luminous radiance)\n[SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

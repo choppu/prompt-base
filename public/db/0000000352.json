@@ -1,6 +1,6 @@
 {
   "name": "Close Up",
-  "prompt": "[SUBJECT](Close-up: the camera is positioned very near the subject, capturing all subject in the frame.)",
+  "prompt": { "ZIT": "[SUBJECT](Close-up: the camera is positioned very near the subject, capturing all subject in the frame.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

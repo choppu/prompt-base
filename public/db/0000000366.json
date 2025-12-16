@@ -1,6 +1,6 @@
 {
   "name": "Busy Composition",
-  "prompt": "[SUBJECT](Busy composition: frame filled with multiple elements, details, and visual information. Creates complexity, energy, or overwhelming sensory experience.)",
+  "prompt": { "ZIT": "[SUBJECT](Busy composition: frame filled with multiple elements, details, and visual information. Creates complexity, energy, or overwhelming sensory experience.)" },
   "tags": [
     "Camera:Composition"
   ],

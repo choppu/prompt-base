@@ -1,6 +1,6 @@
 {
   "name": "Side Angle",
-  "prompt": "[SUBJECT](Side-angle shot: camera positioned perpendicular to subject, capturing pure profile view. Emphasizes silhouette, outline, and lateral dimension of subject.)",
+  "prompt": { "ZIT": "[SUBJECT](Side-angle shot: camera positioned perpendicular to subject, capturing pure profile view. Emphasizes silhouette, outline, and lateral dimension of subject.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

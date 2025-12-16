@@ -1,6 +1,6 @@
 {
   "name": "Mineral-Shaped Subject",
-  "prompt": "Mineral shaped like a [SUBJECT], Crystalline clusters, Raw stone texture, Metallic flecks, Natural formation. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Mineral shaped like a [SUBJECT], Crystalline clusters, Raw stone texture, Metallic flecks, Natural formation. [ENVIRONMENT]" },
   "tags": [
     "Materials:Stone / Mineral"
   ],

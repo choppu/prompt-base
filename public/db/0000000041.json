@@ -1,6 +1,6 @@
 {
   "name": "Strobe Flash Effect",
-  "prompt": "(momentary intense light; dramatic frozen motion; high-contrast highlights and shadows; simulated flash photography; dynamic subject illumination with sharp light bursts)\n[SUBJECT]",
+  "prompt": { "ZIT": "(momentary intense light; dramatic frozen motion; high-contrast highlights and shadows; simulated flash photography; dynamic subject illumination with sharp light bursts)\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Sensor & Glitch Artifacts"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Vibrance Boost",
-  "prompt": "(Vivid colors, enhanced saturation, radiant tones, intense and vibrant hues, eye-catching color pop, rich and luminous colors )\n[SUBJECT]",
+  "prompt": { "ZIT": "(Vivid colors, enhanced saturation, radiant tones, intense and vibrant hues, eye-catching color pop, rich and luminous colors )\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Grading & Post-Processing"
   ],

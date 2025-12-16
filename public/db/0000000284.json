@@ -1,6 +1,6 @@
 {
   "name": "Skatecore",
-  "prompt": "(street athleticism; graffiti influence; loose silhouettes; scuffed textures; kinetic energy)[SUBJECT]",
+  "prompt": { "ZIT": "(street athleticism; graffiti influence; loose silhouettes; scuffed textures; kinetic energy)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

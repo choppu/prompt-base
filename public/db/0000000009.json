@@ -1,6 +1,6 @@
 {
   "name": "Golden Hour",
-  "prompt": "\n(warm soft orange light; long shadows; glowing skin tones; rich amber lighting, directional low sun, warm atmosphere haze, cinematic sunset illumination)\n[SUBJECT]",
+  "prompt": { "ZIT": "(warm soft orange light; long shadows; glowing skin tones; rich amber lighting, directional low sun, warm atmosphere haze, cinematic sunset illumination)\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

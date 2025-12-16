@@ -1,6 +1,6 @@
 {
   "name": "Velvet-Shaped Subject",
-  "prompt": "Velvet shaped like a [SUBJECT], Soft crushed fabric, Sheen, Deep shadows, Smooth, Luxurious, Tactile fuzz. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Velvet shaped like a [SUBJECT], Soft crushed fabric, Sheen, Deep shadows, Smooth, Luxurious, Tactile fuzz. [ENVIRONMENT]" },
   "tags": [
     "Materials:Fabric / Textile"
   ],

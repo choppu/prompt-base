@@ -1,6 +1,6 @@
 {
   "name": "Seinen Anime",
-  "prompt": "(Mature themes, more realistic proportions and detailed anatomy, muted or darker color palette, heavier use of shadows and atmospheric lighting, complex, gritty linework, Ghost in the Shell or Berserk influence)[SUBJECT]\n",
+  "prompt": { "ZIT": "(Mature themes, more realistic proportions and detailed anatomy, muted or darker color palette, heavier use of shadows and atmospheric lighting, complex, gritty linework, Ghost in the Shell or Berserk influence)[SUBJECT]"},
   "tags": [
     "Styles:Animation & Comics"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Apocalyptic",
-  "prompt": "(collapse-driven desolation; scorched fragments; dust-laden air; survival motifs)[SUBJECT]",
+  "prompt": { "ZIT": "(collapse-driven desolation; scorched fragments; dust-laden air; survival motifs)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

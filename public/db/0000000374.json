@@ -1,6 +1,6 @@
 {
   "name": "Group Shot",
-  "prompt": "[SUBJECT](Group shot: camera captures multiple subjects arranged together in frame. Emphasizes collective presence, community, or ensemble dynamic.)",
+  "prompt": { "ZIT": "[SUBJECT](Group shot: camera captures multiple subjects arranged together in frame. Emphasizes collective presence, community, or ensemble dynamic.)" },
   "tags": [
     "Camera:Composition"
   ],

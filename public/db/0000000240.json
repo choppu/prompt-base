@@ -1,6 +1,6 @@
 {
   "name": "Charcoal-Shaped Subject",
-  "prompt": "Charcoal shaped like a [SUBJECT], Burnt 3D realistic, Matte dark texture, Cracked, Dry, Chalky edges. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Charcoal shaped like a [SUBJECT], Burnt 3D realistic, Matte dark texture, Cracked, Dry, Chalky edges. [ENVIRONMENT]" },
   "tags": [
     "Materials:Powder / Dust / Grain"
   ],

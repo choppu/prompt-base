@@ -1,6 +1,6 @@
 {
   "name": "Long Shot",
-  "prompt": "[SUBJECT](Long shot: camera positioned at distance showing full subject from head to toe with surrounding space. Balances subject presence with environmental context.)",
+  "prompt": { "ZIT": "[SUBJECT](Long shot: camera positioned at distance showing full subject from head to toe with surrounding space. Balances subject presence with environmental context.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

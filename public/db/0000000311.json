@@ -1,6 +1,6 @@
 {
   "name": "Synthwave",
-  "prompt": "(80s sci-fi action aesthetic; neon pink/cyan grids; retro sun-set horizons; chrome ; cinematic silhouettes; nostalgic technology)[SUBJECT]",
+  "prompt": { "ZIT": "(80s sci-fi action aesthetic; neon pink/cyan grids; retro sun-set horizons; chrome ; cinematic silhouettes; nostalgic technology)[SUBJECT]" },
   "tags": [
     "Themes:Narrative Worlds & Speculative Fiction"
   ],

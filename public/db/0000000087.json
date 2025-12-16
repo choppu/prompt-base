@@ -1,6 +1,6 @@
 {
   "name": "Pointillism",
-  "prompt": "(Image constructed only from countless distinct colored dots, optical color blending, crisp contours made only with micro-points) [SUBJECT]",
+  "prompt": { "ZIT": "(Image constructed only from countless distinct colored dots, optical color blending, crisp contours made only with micro-points) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

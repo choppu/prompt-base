@@ -1,6 +1,6 @@
 {
   "name": "Ghosting",
-  "prompt": "(Layered ghosted subjects, fuzzy super overlapping shapes, motion blur on moving subject, prolonged exposure , semi-transparent stacked exposures, subtle lens aberrations and reflective artifacts, distorted focal length ,ethereal distortion, scattered highlights and subtle ghost flare, elongated motion trails spectral glow, overlapping movement between consecutive frames , intensive hard exaggerated overlapping transparent effect, intense optical aberration ,warped perspective layering)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Layered ghosted subjects, fuzzy super overlapping shapes, motion blur on moving subject, prolonged exposure , semi-transparent stacked exposures, subtle lens aberrations and reflective artifacts, distorted focal length ,ethereal distortion, scattered highlights and subtle ghost flare, elongated motion trails spectral glow, overlapping movement between consecutive frames , intensive hard exaggerated overlapping transparent effect, intense optical aberration ,warped perspective layering)\n[SUBJECT]" },
   "tags": [
     "Lights:Lens & Optical Artifacts"
   ],

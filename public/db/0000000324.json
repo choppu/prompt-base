@@ -1,6 +1,6 @@
 {
   "name": "Extreme Low Angle",
-  "prompt": "[SUBJECT](Extreme low-angle shot: camera positioned very close to ground level, looking sharply upward. Creates dramatic scale distortion, towering effect, and powerful sense of dominance or intimidation.)",
+  "prompt": { "ZIT": "[SUBJECT](Extreme low-angle shot: camera positioned very close to ground level, looking sharply upward. Creates dramatic scale distortion, towering effect, and powerful sense of dominance or intimidation.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

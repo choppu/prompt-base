@@ -1,6 +1,6 @@
 {
   "name": "Impressionism",
-  "prompt": "(Visible short brushstrokes, emphasis on light changes, soft edges, plein-air feeling, broken color, Monet-like luminosity) [SUBJECT]",
+  "prompt": { "ZIT": "(Visible short brushstrokes, emphasis on light changes, soft edges, plein-air feeling, broken color, Monet-like luminosity) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

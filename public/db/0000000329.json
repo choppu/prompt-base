@@ -1,6 +1,6 @@
 {
   "name": "Dutch Tilt",
-  "prompt": "[SUBJECT](Dutch tilt composition: camera rolled on its axis, creating slanted horizon line and diagonal perspective. Generates tension, disorientation, or psychological unease in the frame.)",
+  "prompt": { "ZIT": "[SUBJECT](Dutch tilt composition: camera rolled on its axis, creating slanted horizon line and diagonal perspective. Generates tension, disorientation, or psychological unease in the frame.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

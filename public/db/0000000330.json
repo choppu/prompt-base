@@ -1,6 +1,6 @@
 {
   "name": "Canted Angle",
-  "prompt": "(Canted angle shot: camera tilted sideways off horizontal axis, creating oblique composition. Conveys instability, tension, or dynamic energy through off-kilter framing.)",
+  "prompt": { "ZIT": "(Canted angle shot: camera tilted sideways off horizontal axis, creating oblique composition. Conveys instability, tension, or dynamic energy through off-kilter framing.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

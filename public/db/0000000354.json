@@ -1,6 +1,6 @@
 {
   "name": "Macro Shot",
-  "prompt": "[SUBJECT](Macro shot: camera with macro lens positioned extremely close to small subject, revealing minute details invisible to naked eye. Creates abstract, detailed, magnified perspective.)",
+  "prompt": { "ZIT": "[SUBJECT](Macro shot: camera with macro lens positioned extremely close to small subject, revealing minute details invisible to naked eye. Creates abstract, detailed, magnified perspective.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

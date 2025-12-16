@@ -1,6 +1,6 @@
 {
   "name": "Rim Light",
-  "prompt": "\n(thin bright outline from behind; silhouette separator; glowing edge halo; crisp edge-light band, background separation flare, luminous outline shaping)\n[SUBJECT]",
+  "prompt": { "ZIT": "(thin bright outline from behind; silhouette separator; glowing edge halo; crisp edge-light band, background separation flare, luminous outline shaping)\n[SUBJECT]" },
   "tags": [
     "Lights:Portrait & Studio Patterns"
   ],

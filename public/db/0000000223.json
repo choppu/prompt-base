@@ -1,6 +1,6 @@
 {
   "name": "Plant-Shaped Subject",
-  "prompt": "Plant shaped like a [SUBJECT], Lush 3D realistic, Green, Leafy, Textured, Organic, Blooming, Natural, Vine-like, Rooted. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Plant shaped like a [SUBJECT], Lush 3D realistic, Green, Leafy, Textured, Organic, Blooming, Natural, Vine-like, Rooted. [ENVIRONMENT]" },
   "tags": [
     "Materials:Natural Organic"
   ],

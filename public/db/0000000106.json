@@ -1,6 +1,6 @@
 {
   "name": "Pencil Sketch",
-  "prompt": "(Graphite texture, cross-hatching, loose outlines, soft shading, hand-drawn realism or rough study feel) [SUBJECT]",
+  "prompt": { "ZIT": "(Graphite texture, cross-hatching, loose outlines, soft shading, hand-drawn realism or rough study feel) [SUBJECT]" },
   "tags": [
     "Styles:Traditional Media"
   ],

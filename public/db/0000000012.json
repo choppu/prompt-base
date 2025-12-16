@@ -1,6 +1,6 @@
 {
   "name": "Brocken Spectre",
-  "prompt": "\n(enlarged projected shadow; rainbow halo ring; fog-projection glow; ghostlike figure projection, circular glory halo, atmospheric scattering ring, mountain mist halo)\n[SUBJECT]",
+  "prompt": { "ZIT": "(enlarged projected shadow; rainbow halo ring; fog-projection glow; ghostlike figure projection, circular glory halo, atmospheric scattering ring, mountain mist halo)\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

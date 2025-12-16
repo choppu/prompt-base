@@ -1,6 +1,6 @@
 {
   "name": "Bokeh (Compressed Edge)",
-  "prompt": "(edge-compressed bokeh; oval-rugby-ball highlights; vignetting-induced background distortion; background directional oval  blur , tapered highlight shapes, peripheral compression, asymmetrical spread bokeh geometry , cinematic focused subject)\n[SUBJECT]",
+  "prompt": { "ZIT": "(edge-compressed bokeh; oval-rugby-ball highlights; vignetting-induced background distortion; background directional oval  blur , tapered highlight shapes, peripheral compression, asymmetrical spread bokeh geometry , cinematic focused subject)\n[SUBJECT]" },
   "tags": [
     "Lights:Lens & Optical Artifacts"
   ],

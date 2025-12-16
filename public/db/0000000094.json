@@ -1,6 +1,6 @@
 {
   "name": "Fresco Painting",
-  "prompt": "(Ancient wall painting on wet plaster, matte earthy pigments, slightly desaturated, texture of aging wall, cracking plaster, renaissance feel) [SUBJECT]",
+  "prompt": { "ZIT": "(Ancient wall painting on wet plaster, matte earthy pigments, slightly desaturated, texture of aging wall, cracking plaster, renaissance feel) [SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

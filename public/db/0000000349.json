@@ -1,6 +1,6 @@
 {
   "name": "Medium Long Shot",
-  "prompt": "[SUBJECT](Medium long shot: camera frames subject from approximately knees upward. Often called \"cowboy shot,\" balancing body language visibility with facial detail.)",
+  "prompt": { "ZIT": "[SUBJECT](Medium long shot: camera frames subject from approximately knees upward. Often called \"cowboy shot,\" balancing body language visibility with facial detail.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

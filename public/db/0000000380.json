@@ -1,6 +1,6 @@
 {
   "name": "Push In Shot",
-  "prompt": "[SUBJECT](Push-in composition: framing suggesting camera moving steadily closer to subject. Creates building tension, intimacy, or focused attention.)",
+  "prompt": { "ZIT": "[SUBJECT](Push-in composition: framing suggesting camera moving steadily closer to subject. Creates building tension, intimacy, or focused attention.)" },
   "tags": [
     "Camera:Movement"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Hip Hop",
-  "prompt": "(street culture; bold ; urban fashion; expressive energy; gold accents)[SUBJECT]",
+  "prompt": { "ZIT": "(street culture; bold ; urban fashion; expressive energy; gold accents)[SUBJECT]" },
   "tags": [
     "Themes:Micro-Aesthetics & Cultural Themes"
   ],

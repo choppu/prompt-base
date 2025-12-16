@@ -1,6 +1,6 @@
 {
   "name": "Romantic",
-  "prompt": "(soft allure; intimate warmth; glowing highlights; affectionate tone)[SUBJECT]",
+  "prompt": { "ZIT": "(soft allure; intimate warmth; glowing highlights; affectionate tone)[SUBJECT]" },
   "tags": [
     "Themes:Moods & Conceptual States"
   ],

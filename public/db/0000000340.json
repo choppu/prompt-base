@@ -1,6 +1,6 @@
 {
   "name": "Tilt Up Angle",
-  "prompt": "[SUBJECT](Tilt-up composition: camera angled upward from lower position, gradually revealing subject from bottom to top. Creates anticipation, grandeur, or revealing movement.)",
+  "prompt": { "ZIT": "[SUBJECT](Tilt-up composition: camera angled upward from lower position, gradually revealing subject from bottom to top. Creates anticipation, grandeur, or revealing movement.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

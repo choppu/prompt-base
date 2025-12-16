@@ -1,6 +1,6 @@
 {
   "name": "God Rays",
-  "prompt": "\n(parallel sunbeams through clouds/trees; dust-lit shafts; dramatic volumetric rays; radiant crepuscular beams, directional sun shafts, atmospheric diffusion, glowing light columns)\n[SUBJECT]",
+  "prompt": { "ZIT": "(parallel sunbeams through clouds/trees; dust-lit shafts; dramatic volumetric rays; radiant crepuscular beams, directional sun shafts, atmospheric diffusion, glowing light columns)\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Complementary",
-  "prompt": "(opposite hues; high contrast; bold visual pop; strong , red\u2013green contrast, blue\u2013orange pop, opposite hues, dramatic color tension )\n[SUBJECT]",
+  "prompt": { "ZIT": "(opposite hues; high contrast; bold visual pop; strong , red\u2013green contrast, blue\u2013orange pop, opposite hues, dramatic color tension )\n[SUBJECT]" },
   "tags": [
     "Lights:Color Theory & Harmony Effects"
   ],

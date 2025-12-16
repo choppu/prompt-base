@@ -1,6 +1,6 @@
 {
   "name": "Slime-Shaped Subject",
-  "prompt": "Slime shaped like a [SUBJECT], Translucent, Gooey, Dripping, Wet, Gelatinous, Sticky, Glossy surface. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Slime shaped like a [SUBJECT], Translucent, Gooey, Dripping, Wet, Gelatinous, Sticky, Glossy surface. [ENVIRONMENT]" },
   "tags": [
     "Materials:Liquid / Viscous"
   ],

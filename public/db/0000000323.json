@@ -1,6 +1,6 @@
 {
   "name": "Eye Level",
-  "prompt": "[SUBJECT](Eye-level shot: camera positioned at the subject's eye height, creating neutral, natural perspective. Establishes equality and realism, neither empowering nor diminishing the subject.)",
+  "prompt": { "ZIT": "[SUBJECT](Eye-level shot: camera positioned at the subject's eye height, creating neutral, natural perspective. Establishes equality and realism, neither empowering nor diminishing the subject.)" },
   "tags": [
     "Camera:Angles & Orientations"
   ],

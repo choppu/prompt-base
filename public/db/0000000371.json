@@ -1,6 +1,6 @@
 {
   "name": "Reaction Shot",
-  "prompt": "[SUBJECT](Reaction shot: camera captures subject responding to off-screen action or dialogue. Emphasizes emotional response and character perspective.)",
+  "prompt": { "ZIT": "[SUBJECT](Reaction shot: camera captures subject responding to off-screen action or dialogue. Emphasizes emotional response and character perspective.)" },
   "tags": [
     "Camera:Composition"
   ],

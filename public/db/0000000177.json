@@ -1,6 +1,6 @@
 {
   "name": "Caricature Art Exaggerated",
-  "prompt": "(Focuses on highly stylized and humorous exaggeration of facial features and body proportions to emphasize personality traits, bold outlines and dynamic line work)\n[SUBJECT]\n",
+  "prompt": { "ZIT": "(Focuses on highly stylized and humorous exaggeration of facial features and body proportions to emphasize personality traits, bold outlines and dynamic line work)\n[SUBJECT]"},
   "tags": [
     "Styles:Extra Styles"
   ],

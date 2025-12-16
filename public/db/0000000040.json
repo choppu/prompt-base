@@ -1,6 +1,6 @@
 {
   "name": "Vignette",
-  "prompt": "(darkened or subtly shaded image corners; draws attention toward center; soft gradient around edges; classic cinematic or portrait emphasis; subject highlighted by surrounding shading)\n[SUBJECT]",
+  "prompt": { "ZIT": "(darkened or subtly shaded image corners; draws attention toward center; soft gradient around edges; classic cinematic or portrait emphasis; subject highlighted by surrounding shading)\n[SUBJECT]" },
   "tags": [
     "Lights:Digital Sensor & Glitch Artifacts"
   ],

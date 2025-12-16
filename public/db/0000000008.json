@@ -1,6 +1,6 @@
 {
   "name": "Sun Dogs",
-  "prompt": "(double halo bright spots; 22\u00b0 parhelia; glowing mock-suns; lateral bright orbs, icy atmospheric refraction, arc halo glow, dual side-sun reflections)\n[SUBJECT]",
+  "prompt": { "ZIT": "(double halo bright spots; 22\u00b0 parhelia; glowing mock-suns; lateral bright orbs, icy atmospheric refraction, arc halo glow, dual side-sun reflections)\n[SUBJECT]" },
   "tags": [
     "Lights:Atmospheric & Natural Phenomena"
   ],

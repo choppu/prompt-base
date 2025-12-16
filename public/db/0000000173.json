@@ -1,6 +1,6 @@
 {
   "name": "Technical Blueprint",
-  "prompt": "(White-line diagrams on blue boards, engineering precision)\n[SUBJECT]",
+  "prompt": { "ZIT": "(White-line diagrams on blue boards, engineering precision)\n[SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

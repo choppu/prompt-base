@@ -1,6 +1,6 @@
 {
   "name": "Extreme Close-Up",
-  "prompt": "[SUBJECT](Extreme close-up shot: camera frames very tight on specific detail\u2014eyes, mouth, hands, or object. Creates intense intimacy, emphasis, or dramatic focus.)",
+  "prompt": { "ZIT": "[SUBJECT](Extreme close-up shot: camera frames very tight on specific detail\u2014eyes, mouth, hands, or object. Creates intense intimacy, emphasis, or dramatic focus.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Cel-Shaded",
-  "prompt": "(Flat color regions with hard-edged shadows, toon-outlined look, simplified lighting) [SUBJECT]",
+  "prompt": { "ZIT": "(Flat color regions with hard-edged shadows, toon-outlined look, simplified lighting) [SUBJECT]" },
   "tags": [
     "Styles:Animation & Comics"
   ],

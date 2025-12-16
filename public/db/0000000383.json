@@ -1,6 +1,6 @@
 {
   "name": "Tilt Shot",
-  "prompt": "[SUBJECT](Tilt shot aesthetic: composition suggesting vertical camera rotation, scanning up or down. Creates height revelation or vertical space exploration.)",
+  "prompt": { "ZIT": "[SUBJECT](Tilt shot aesthetic: composition suggesting vertical camera rotation, scanning up or down. Creates height revelation or vertical space exploration.)" },
   "tags": [
     "Camera:Movement"
   ],

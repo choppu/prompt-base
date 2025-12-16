@@ -1,6 +1,6 @@
 {
   "name": "Plastic Bottle-Shaped Subject",
-  "prompt": "Many Plastic bottles shaped like a [SUBJECT], Transparent , Molded ridges, distortion, Glossy, Recycled. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Many Plastic bottles shaped like a [SUBJECT], Transparent , Molded ridges, distortion, Glossy, Recycled. [ENVIRONMENT]" },
   "tags": [
     "Materials:Synthetic & Industrial"
   ],

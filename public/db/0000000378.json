@@ -1,6 +1,6 @@
 {
   "name": "Boom Shot",
-  "prompt": "[SUBJECT](Boom shot style: composition implying camera on boom arm, moving vertically. Creates rising or lowering perspective with dramatic reveal.)",
+  "prompt": { "ZIT": "[SUBJECT](Boom shot style: composition implying camera on boom arm, moving vertically. Creates rising or lowering perspective with dramatic reveal.)" },
   "tags": [
     "Camera:Movement"
   ],

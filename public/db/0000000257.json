@@ -1,6 +1,6 @@
 {
   "name": "Elemental Magic Worlds",
-  "prompt": "(planes dominated by fire, water, earth, air; dynamic lighting; elemental colors; floating landmasses)[SUBJECT]",
+  "prompt": { "ZIT": "(planes dominated by fire, water, earth, air; dynamic lighting; elemental colors; floating landmasses)[SUBJECT]" },
   "tags": [
     "Themes:Fantasy, Mythology & Speculative Worldbuilding"
   ],

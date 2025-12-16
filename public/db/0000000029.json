@@ -1,6 +1,6 @@
 {
   "name": "Light Leak",
-  "prompt": "(analog film effect; accidental streaks of colored light; hazy glows; soft gradients of warm or magenta tones; nostalgic or dreamy imperfections; light bleeding across the frame)\n[SUBJECT]",
+  "prompt": { "ZIT": "(analog film effect; accidental streaks of colored light; hazy glows; soft gradients of warm or magenta tones; nostalgic or dreamy imperfections; light bleeding across the frame)\n[SUBJECT]" },
   "tags": [
     "Lights:Cinematic & Film Emulations"
   ],

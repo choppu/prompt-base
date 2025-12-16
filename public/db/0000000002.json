@@ -1,6 +1,6 @@
 {
   "name": "Ambient Occlusion",
-  "prompt": "\n(soft corner shadows; contact darkness; grounded realism; subtle crevice shading, depth-weight enhancement, photorealistic surface grounding)\n[SUBJECT]",
+  "prompt": { "ZIT": "(soft corner shadows; contact darkness; grounded realism; subtle crevice shading, depth-weight enhancement, photorealistic surface grounding)\n[SUBJECT]" },
   "tags": [
     "Lights:3D Rendering & CGI Specific"
   ],

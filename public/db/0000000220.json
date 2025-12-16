@@ -1,6 +1,6 @@
 {
   "name": "Hologram-Shaped Subject",
-  "prompt": "Hologram shaped like a [SUBJECT], Translucent 3D projection, Glitching, Luminous, Pixel-lit edges, Futuristic, Floating light grid, Volumetric glow. [ENVIRONMENT]",
+  "prompt": { "ZIT": "Hologram shaped like a [SUBJECT], Translucent 3D projection, Glitching, Luminous, Pixel-lit edges, Futuristic, Floating light grid, Volumetric glow. [ENVIRONMENT]" },
   "tags": [
     "Materials:Light-Based / Energy"
   ],

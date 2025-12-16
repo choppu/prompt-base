@@ -1,6 +1,6 @@
 {
   "name": "Quilling Art",
-  "prompt": "(rolled paper sculpture, delicate paper strips, intricate filigree paper) [SUBJECT]",
+  "prompt": { "ZIT": "(rolled paper sculpture, delicate paper strips, intricate filigree paper) [SUBJECT]" },
   "tags": [
     "Styles:Aesthetic Genres"
   ],

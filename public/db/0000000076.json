@@ -1,6 +1,6 @@
 {
   "name": "Color Clipping (Burnout)",
-  "prompt": "(Clipped-color style; overexposed color channels; blown-out red, green, or blue areas; flat highlights lacking detail; channel burnout; detail loss in bright areas; strong color clipping; intentional overexposure; subject affected by clipped colors; minimal texture in highlighted regions)\n[SUBJECT]",
+  "prompt": { "ZIT": "(Clipped-color style; overexposed color channels; blown-out red, green, or blue areas; flat highlights lacking detail; channel burnout; detail loss in bright areas; strong color clipping; intentional overexposure; subject affected by clipped colors; minimal texture in highlighted regions)\n[SUBJECT]" },
   "tags": [
     "Lights:Technical & Glitch Artifacts"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "Abstract Expressionism",
-  "prompt": "(Spontaneous gestures, dynamic splashes, textured paint, emotional abstraction, Pollock-inspired energy) \n[SUBJECT]",
+  "prompt": { "ZIT": "(Spontaneous gestures, dynamic splashes, textured paint, emotional abstraction, Pollock-inspired energy) \n[SUBJECT]" },
   "tags": [
     "Styles:Historical Art Movements"
   ],

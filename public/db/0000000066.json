@@ -1,6 +1,6 @@
 {
   "name": "Short Lighting",
-  "prompt": "\n(distant face side lit; slimming effect; deep sculpted contours; shadow-rich shaping, contrasty face definition, refined portrait structure)\n[SUBJECT]",
+  "prompt": { "ZIT": "(distant face side lit; slimming effect; deep sculpted contours; shadow-rich shaping, contrasty face definition, refined portrait structure)\n[SUBJECT]" },
   "tags": [
     "Lights:Portrait & Studio Patterns"
   ],

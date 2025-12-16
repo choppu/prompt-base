@@ -1,6 +1,6 @@
 {
   "name": "Veiling Glare",
-  "prompt": "(soft  giant light glare hard edges ; wshed glowing scatter, bright atmospheric light flare covers , giant radius lense glare ,  soft obstructing subject giant glare )\n[SUBJECT]",
+  "prompt": { "ZIT": "(soft  giant light glare hard edges ; wshed glowing scatter, bright atmospheric light flare covers , giant radius lense glare ,  soft obstructing subject giant glare )\n[SUBJECT]" },
   "tags": [
     "Lights:Lens & Optical Artifacts"
   ],

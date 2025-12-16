@@ -1,6 +1,6 @@
 {
   "name": "Low Poly",
-  "prompt": "(Geometric faceted mesh, sharp polygonal planes, minimal textures, simplified forms) [SUBJECT]",
+  "prompt": { "ZIT": "(Geometric faceted mesh, sharp polygonal planes, minimal textures, simplified forms) [SUBJECT]" },
   "tags": [
     "Styles:3D / Digital Rendering"
   ],

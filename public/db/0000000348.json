@@ -1,6 +1,6 @@
 {
   "name": "Full Body Shot",
-  "prompt": "[SUBJECT](Full body shot: camera framing captures subject's entire body from head to feet. Shows complete physical presence, posture, and body language within frame.)",
+  "prompt": { "ZIT": "[SUBJECT](Full body shot: camera framing captures subject's entire body from head to feet. Shows complete physical presence, posture, and body language within frame.)" },
   "tags": [
     "Camera:Framing / Distance"
   ],

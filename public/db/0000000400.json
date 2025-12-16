@@ -1,6 +1,6 @@
 {
   "name": "Security Cam Angle",
-  "prompt": "[SUBJECT](Security cam perspective: fixed high-angle viewpoint with grainy quality, suggesting CCTV footage. Creates documentary, monitoring, or found-footage aesthetic.)",
+  "prompt": { "ZIT": "[SUBJECT](Security cam perspective: fixed high-angle viewpoint with grainy quality, suggesting CCTV footage. Creates documentary, monitoring, or found-footage aesthetic.)" },
   "tags": [
     "Camera:Point Of View"
   ],
