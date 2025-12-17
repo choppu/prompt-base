@@ -5,7 +5,7 @@
     <div>
       <div class="pbase__prompts-container">
         <PromptComponent
-          v-model="activePrompt"
+          @prompt-selected="(val) => activePrompt = val"
           v-for="(prompt, id) in promptGroup"
           :key="id"
           :prompt="prompt"
@@ -13,7 +13,7 @@
       </div>
     </div>
   </div>
-  <ActivePrompt :active-prompt="activePrompt" @activeStateChange="activePrompt.state = false" />
+  <ActivePrompt v-if="activePrompt" :active-prompt="activePrompt" @close="activePrompt = null" />
 </template>
 
 <script setup lang="ts">
@@ -38,7 +38,7 @@ const prompts = useDexieLiveQueryWithDeps(
     DB.getPrompts(searchTerm.searchString, toRaw(searchTerm.filterTags)),
   { initialValue: [] },
 )
-const activePrompt = ref({ state: false, defaultPromptType: 'ZIT', prompt: {} as Prompt })
+const activePrompt = ref<Prompt | null>(null)
 </script>
 <style scoped>
 @import '../assets/css/base.css';

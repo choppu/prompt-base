@@ -1,21 +1,21 @@
 <template>
-  <div :class="activePromptContainerClass(props.activePrompt.state)">
+  <div class="pbase__active-prompt-container">
     <div class="pbase__prompt-container">
-      <img :src="imageDataToURL(props.activePrompt.prompt.image)" class="pbase__prompt-image" />
+      <img :src="imageDataToURL(props.activePrompt.image)" class="pbase__prompt-image" />
       <div class="pbase__active-prompt-context-container">
-        <h3 class="pbase__active-prompt-heading">{{ props.activePrompt.prompt.name }}</h3>
+        <h3 class="pbase__active-prompt-heading">{{ props.activePrompt.name }}</h3>
         <div class="pbase__prompt-context-container">
           <div class="pbase__prompt-field-container">
             <p
-              v-if="props.activePrompt.prompt.prompts"
+              v-if="props.activePrompt.prompts"
               class="pbase__prompt-field"
               ref="selected-prompt"
               contentEditable="false"
               @click="makeEditable"
             >
               {{
-                props.activePrompt.prompt.prompts[selectedPromptType]
-                  ? props.activePrompt.prompt.prompts[selectedPromptType]
+                props.activePrompt.prompts[selectedPromptType]
+                  ? props.activePrompt.prompts[selectedPromptType]
                   : 'Change me...'
               }}
             </p>
@@ -32,9 +32,9 @@
           </div>
         </div>
         <div class="pbase__prompt-variants-container">
-          <div v-if="props.activePrompt.prompt.prompts" class="pbase__prompt-variant-container">
+          <div v-if="props.activePrompt.prompts" class="pbase__prompt-variant-container">
             <div
-              v-for="promptType in Object.keys(props.activePrompt.prompt.prompts)"
+              v-for="promptType in Object.keys(props.activePrompt.prompts)"
               :key="promptType"
               @click="updateSelectedPromptType(promptType)"
               class="pbase__prompt-variant"
@@ -54,7 +54,7 @@
           </span>
         </div>
         <div class="pbase__tags-list">
-          <TagList :tags="props.activePrompt.prompt.tags" />
+          <TagList :tags="props.activePrompt.tags" />
         </div>
       </div>
     </div>
@@ -71,18 +71,14 @@ import TagList from './TagComponent.vue'
 import * as DB from '@/data/db'
 
 const props = defineProps(['activePrompt'])
-const emit = defineEmits(['activeStateChange'])
+const emit = defineEmits(['close'])
 const selectedPromptText = useTemplateRef('selected-prompt')
-const selectedPromptType = ref(props.activePrompt.defaultPromptType)
+const selectedPromptType = ref("ZIT")
 const newVariantName = useTemplateRef('new-variant-name')
-
-const activePromptContainerClass = (state: boolean): string => {
-  return state ? 'pbase__active-prompt-container' : 'pbase__active-prompt-container-close'
-}
 
 function addNewPromptVariant(): void {
   newVariantName.value!.innerHTML = 'Prompt Variant 1'
-  selectedPromptType.value = newVariantName.value?.innerText
+  selectedPromptType.value = newVariantName.value!.innerText
 }
 
 function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
@@ -90,7 +86,7 @@ function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
 }
 
 function closeActivePrompt(): void {
-  emit('activeStateChange')
+  emit('close')
 }
 
 function updateSelectedPromptType(t: string): void {
@@ -103,10 +99,10 @@ function makeEditable(): void {
 
 async function updatePrompt(): Promise<void> {
   const updatedPrompts = {
-    ...props.activePrompt.prompt.prompts,
+    ...props.activePrompt.prompts,
     [selectedPromptType.value as string]: selectedPromptText.value?.innerHTML,
   }
-  const updatedPrompt = { ...props.activePrompt.prompt, prompts: updatedPrompts }
+  const updatedPrompt = { ...props.activePrompt, prompts: updatedPrompts }
   updatedPrompt.tags = toRaw(updatedPrompt.tags)
   await DB.putPrompt(updatedPrompt)
   ;(selectedPromptText.value as HTMLParagraphElement).contentEditable = 'false'
@@ -133,10 +129,6 @@ async function copyToClipboard(): Promise<void> {
   margin-top: 100px;
   background-color: var(--background-color-semitransparent);
   backdrop-filter: var(--blur-effect);
-}
-
-.pbase__active-prompt-container-close {
-  display: none;
 }
 
 .pbase__prompt-container {

@@ -1,5 +1,5 @@
 <template>
-  <div class="pbase__prompt-container" @click="handleActivePrompt(props.prompt)">
+  <div class="pbase__prompt-container" @click="emit('prompt-selected', props.prompt)">
     <div class="pbase__relative-container">
       <img :src="imageDataToURL(props.prompt.image)" class="pbase__prompt-image" />
     </div>
@@ -9,14 +9,9 @@
   </div>
 </template>
 <script setup lang="ts">
-import type { Prompt } from '@/types/Prompt'
 
-const props = defineProps(['modelValue', 'prompt'])
-const emit = defineEmits(['update:modelValue'])
-
-const handleActivePrompt = (prompt: Prompt): void => {
-  emit('update:modelValue', { ...props.modelValue, state: true, prompt: prompt })
-}
+const props = defineProps(['prompt'])
+const emit = defineEmits(['prompt-selected'])
 
 function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
   return URL.createObjectURL(new Blob([img], { type: 'image/png' }))
