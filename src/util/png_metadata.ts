@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 const PNG_HEADER = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0xa, 0x1a, 0x0a]
 
 type GenerationParams = {
@@ -121,7 +122,7 @@ export default class PNGMetadata {
   }
 
   public getGenerationParams = (): GenerationParams[] => {
-    let res: GenerationParams[] = [];
+    const res: GenerationParams[] = [];
 
     if (this.text.prompt === undefined) {
       return res;
@@ -131,7 +132,7 @@ export default class PNGMetadata {
 
     for (const key of Object.keys(prompt)) {
       if (this.isKSampler(prompt[key])) {
-        let params: GenerationParams = {seed: 0, sampler: "", scheduler: "", steps: 0, cfg: 0, positive_prompt: "", negative_prompt: ""};
+        const params: GenerationParams = {seed: 0, sampler: "", scheduler: "", steps: 0, cfg: 0, positive_prompt: "", negative_prompt: ""};
 
         params.seed = this.readPromptInput(prompt, key, "seed", ["seed", "value"], 0);
         params.scheduler = this.readPromptInput(prompt, key, "scheduler", ["scheduler", "text", "value"], "");
