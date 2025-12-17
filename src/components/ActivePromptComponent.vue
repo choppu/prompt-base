@@ -5,29 +5,53 @@
       <div class="pbase__active-prompt-context-container">
         <h3 class="pbase__active-prompt-heading">{{ props.activePrompt.prompt.name }}</h3>
         <div class="pbase__prompt-context-container">
-          <p class="pbase__prompt-field" ref="selected-prompt" contentEditable="false">
-            {{
-              props.activePrompt.prompt.prompts
-                ? props.activePrompt.prompt.prompts[selectedPromptType]
-                : ''
-            }}
-          </p>
-          <span class="material-symbols-outlined pbase__icon" @click="copyToClipboard()"
-            >content_copy</span
-          >
-          <span class="material-symbols-outlined pbase__icon" @click="makeEditable"
-            >edit_square</span
-          >
-          <span class="material-symbols-outlined pbase__icon" @click="updatePrompt">check</span>
-        </div>
-        <div v-if="props.activePrompt.prompt.prompts">
-          <div
-            v-for="promptType in Object.keys(props.activePrompt.prompt.prompts)"
-            :key="promptType"
-            @click="updateSelectedPromptType(promptType)"
-          >
-            {{ promptType }}
+          <div class="pbase__prompt-field-container">
+            <p
+              v-if="props.activePrompt.prompt.prompts"
+              class="pbase__prompt-field"
+              ref="selected-prompt"
+              contentEditable="false"
+              @click="makeEditable"
+            >
+              {{
+                props.activePrompt.prompt.prompts[selectedPromptType]
+                  ? props.activePrompt.prompt.prompts[selectedPromptType]
+                  : 'Change me...'
+              }}
+            </p>
           </div>
+          <div class="pbase__action-btns-container">
+            <button class="pbase__action-btn" @click="copyToClipboard()">
+              <span class="material-symbols-outlined pbase__icon">content_copy</span>
+              <span>Copy</span>
+            </button>
+            <button class="pbase__action-btn" @click="updatePrompt">
+              <span class="material-symbols-outlined pbase__icon">check</span>
+              <span>Save</span>
+            </button>
+          </div>
+        </div>
+        <div class="pbase__prompt-variants-container">
+          <div v-if="props.activePrompt.prompt.prompts" class="pbase__prompt-variant-container">
+            <div
+              v-for="promptType in Object.keys(props.activePrompt.prompt.prompts)"
+              :key="promptType"
+              @click="updateSelectedPromptType(promptType)"
+              class="pbase__prompt-variant"
+            >
+              {{ promptType }}
+              <span class="material-symbols-outlined pbase__prompt-variant-separator">
+                horizontal_rule</span
+              >
+            </div>
+          </div>
+          <div class="pbase__new-prompt-variant-name-container">
+            <span class="pbase__new-prompt-variant-name" ref="new-variant-name"></span>
+          </div>
+          <span class="pbase__add-btn-container" @click="addNewPromptVariant">
+            <span class="material-symbols-outlined pbase__icon">library_add</span>
+            <span>Add new prompt variant</span>
+          </span>
         </div>
         <div class="pbase__tags-list">
           <TagList :tags="props.activePrompt.prompt.tags" />
@@ -50,9 +74,15 @@ const props = defineProps(['activePrompt'])
 const emit = defineEmits(['activeStateChange'])
 const selectedPromptText = useTemplateRef('selected-prompt')
 const selectedPromptType = ref(props.activePrompt.defaultPromptType)
+const newVariantName = useTemplateRef('new-variant-name')
 
 const activePromptContainerClass = (state: boolean): string => {
   return state ? 'pbase__active-prompt-container' : 'pbase__active-prompt-container-close'
+}
+
+function addNewPromptVariant(): void {
+  newVariantName.value!.innerHTML = 'Prompt Variant 1'
+  selectedPromptType.value = newVariantName.value?.innerText
 }
 
 function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
@@ -79,6 +109,7 @@ async function updatePrompt(): Promise<void> {
   const updatedPrompt = { ...props.activePrompt.prompt, prompts: updatedPrompts }
   updatedPrompt.tags = toRaw(updatedPrompt.tags)
   await DB.putPrompt(updatedPrompt)
+  ;(selectedPromptText.value as HTMLParagraphElement).contentEditable = 'false'
 }
 
 async function copyToClipboard(): Promise<void> {
@@ -134,6 +165,10 @@ async function copyToClipboard(): Promise<void> {
 .pbase__active-prompt-context-container {
   color: var(--background-color);
   width: calc(100% - 350px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .pbase__icon-close-container {
@@ -152,9 +187,53 @@ async function copyToClipboard(): Promise<void> {
   cursor: pointer;
 }
 
+.pbase__action-btns-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.pbase__action-btn {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  padding: 5px 8px;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-size: var(--text-small);
+  font-weight: var(--text-weight-200);
+  border-radius: 6px;
+  border: none;
+}
+
+.pbase__action-btn:disabled {
+  background-color: var(--secondary-color-brighter);
+}
+
+.pbase__icon {
+  font-size: var(--h2-size);
+}
+
 .pbase__icon-close {
   margin-top: 10px;
   rotate: 52deg;
+}
+
+.pbase__prompt-field-container {
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 0 0 10px 0;
+  cursor: default;
 }
 
 .pbase__prompt-field {
@@ -163,7 +242,62 @@ async function copyToClipboard(): Promise<void> {
   min-width: 100%;
   min-height: min-content;
   height: auto;
-  max-height: 300px;
   outline: none;
+  font-size: var(--text-medium);
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.pbase__prompt-field:focus {
+  background-color: var(--secondary-color-darker);
+}
+
+.pbase__active-prompt-heading {
+  font-family: var(--font-heading);
+  font-size: var(--h1-size);
+  font-weight: var(--text-bold);
+  padding: 10px 5px;
+  box-sizing: border-box;
+}
+
+.pbase__prompt-variants-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 5px;
+  box-sizing: border-box;
+  font-size: var(--text-small);
+  line-height: var(--text-line-heigth-16);
+}
+
+.pbase__prompt-variant-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.pbase__prompt-variant {
+  border-bottom: dashed 1px var(--background-color);
+  cursor: pointer;
+}
+
+.pbase__prompt-variant-separator {
+  rotate: -90deg;
+  font-size: var(--h1-size);
+  display: inline-block;
+  background-color: red;
+}
+
+.pbase__add-btn-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+  font-weight: var(--text-bold);
+  word-spacing: -2px;
 }
 </style>

@@ -78,7 +78,7 @@ const handleRoot = (name: string): void => {
   }
 
   .pbase__icon {
-    font-size: var(--text-medium);
+    font-size: var(--text-default-size);
     line-height: 30px;
     background-color: var(--secondary-color);
     color: var(--text-color);

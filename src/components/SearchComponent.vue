@@ -3,6 +3,7 @@
     <div class="pbase__search-input-container">
       <span class="material-symbols-outlined pbase__icon">search</span>
       <input
+        placeholder="Search..."
         :value="props.modelValue.searchString"
         @input="
           emit('update:modelValue', updateSearchString(($event.target as HTMLInputElement).value))
@@ -58,7 +59,7 @@ const handleTagSelect = (tagsSelected: string[]): void => {
 }
 
 .pbase__icon {
-  font-size: var(--text-medium);
+  font-size: var(--text-default-size);
   line-height: 30px;
   background-color: var(--secondary-color);
   color: var(--text-color);
