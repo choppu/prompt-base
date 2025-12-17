@@ -14,6 +14,7 @@ function handleSubTag(tag: string): string[] {
 </script>
 <style scoped>
 .pbase__tag {
+  display: inline-block;
   border: solid 2px var(--background-color);
   border-radius: var(--tag-border-radius);
   box-sizing: border-box;

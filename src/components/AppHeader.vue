@@ -34,6 +34,12 @@ const handleRoot = (name: string): void => {
   padding: 20px 40px;
   box-sizing: border-box;
   box-shadow: var(--menu-box-shadow);
+  background-color: var(--background-color-transparent);
+  backdrop-filter: var(--blur-effect);
+  position: sticky;
+  top: 0;
+  z-index: 33;
+  height: 100px;
 
   .pbase__logo-container {
     width: 20%;

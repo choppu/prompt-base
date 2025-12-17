@@ -21,9 +21,9 @@ const updateSelectedTags = (tag: string): void => {
   const index = selectedTags.value.indexOf(tag)
 
   if (index == -1) {
-    selectedTags.value = [...selectedTags.value, tag]
+    selectedTags.value.push(tag)
   } else {
-    selectedTags.value = selectedTags.value.filter((_, i) => index != i)
+    selectedTags.value.splice(index, 1)
   }
 
   emit('tagSelect', selectedTags.value)
@@ -48,7 +48,7 @@ const classForTag = (tag: string): string => {
   flex-wrap: wrap;
 }
 .pbase__selectable-tag {
-  font-size: var(--text-medium);
+  font-size: var(--text-small);
   font-weight: var(--text-line-heigth-16);
   background-color: var(--background-color);
   color: var(--text-color);
