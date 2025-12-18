@@ -64,18 +64,24 @@ const handleDragLeave = () => {
 
 const handleDrop = (e: DragEvent) => {
   isDragOver.value = false
-  processFiles(e.dataTransfer!.files[0]!)
+  if (e.dataTransfer?.files.length) {
+    processFiles(e.dataTransfer.files[0]!)
+  }
 }
 
 const handleFileSelect = (e: Event) => {
   const target = e.target as HTMLInputElement
-  processFiles(target.files![0]!)
+  if (target.files?.length) {
+    processFiles(target.files[0]!)
+  }
 }
 
 const processFiles = (pngFile: File) => {
   if (pngFile.type !== 'image/png') {
     return;
   }
+
+  workflowUrl.value = null
 
   pngFile.arrayBuffer().then((pngData: ArrayBuffer) => {
     selectedFile.value = PNGMetadata.load(new Uint8Array(pngData))
