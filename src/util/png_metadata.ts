@@ -105,27 +105,32 @@ export default class PNGMetadata {
     return b1 | b2 | b3 | b4
   }
 
-  private readPromptInput = (nodes: any, id: string, key: string, candidateSubkeys: string[], defValue: any): any => {
-    const inputs = nodes[id]["inputs"]
+  private isZeroingNode = (node: any): boolean => {
+    return node["class_type"] == "ConditioningZeroOut"
+  }
 
-    if (!Array.isArray(inputs[key])) {
-      return inputs[key]
+  private readPromptInput = (node: any, nodes: any, candidateKeys: string[], defValue: any): any => {
+    if (this.isZeroingNode(node)) {
+      return defValue
     }
 
-    const pointedNodeId = inputs[key][0]
-    const pointedNode = nodes[pointedNodeId]["inputs"]
+    const inputs = node["inputs"]
     
-    for (const subkey of candidateSubkeys) {
-      if (typeof pointedNode[subkey] !== "undefined") {
-        return this.readPromptInput(nodes, pointedNodeId, subkey, candidateSubkeys, defValue)
+    for (const key of candidateKeys) {
+      if (typeof inputs[key] !== "undefined") {
+        if (!Array.isArray(inputs[key])) {
+          return inputs[key]
+        } else {
+          return this.readPromptInput(nodes[inputs[key][0]], nodes, candidateKeys, defValue)
+        }
       }
     }
 
     return defValue
   }
 
-  private isKSampler = (node: any): boolean => {
-    return (node["class_type"] == "KSampler") || (node["class_type"] == "KSamplerAdvanced")
+  private isSampler = (node: any): boolean => {
+    return (node["class_type"] == "KSampler") || (node["class_type"] == "KSamplerAdvanced") || (node["class_type"] == "SamplerCustom") || (node["class_type"] == "SamplerCustomAdvanced")
   }
 
   public getGenerationParams = (): GenerationParams[] => {
@@ -136,22 +141,26 @@ export default class PNGMetadata {
     }
 
     const prompt = JSON.parse(this.text.prompt)
-
-    for (const key of Object.keys(prompt)) {
-      if (this.isKSampler(prompt[key])) {
+    Object.values(prompt).forEach((node) => {
+      if (this.isSampler(node)) {
         const params: GenerationParams = {seed: 0, sampler: "", scheduler: "", steps: 0, cfg: 0, positive_prompt: "", negative_prompt: ""}
 
-        params.seed = this.readPromptInput(prompt, key, "seed", ["seed", "noise_seed", "value"], 0)
-        params.scheduler = this.readPromptInput(prompt, key, "scheduler", ["scheduler", "text", "value"], "")
-        params.sampler = this.readPromptInput(prompt, key, "sampler_name", ["sampler_name", "sampler", "text", "value"], "")
-        params.steps = this.readPromptInput(prompt, key, "steps", ["steps", "value"], 0)
-        params.cfg = this.readPromptInput(prompt, key, "cfg", ["cfg", "value"], 0)
-        params.positive_prompt = this.readPromptInput(prompt, key, "positive", ["text", "prompt", "conditioning"], "")
-        params.negative_prompt = this.readPromptInput(prompt, key, "negative", ["text", "prompt", "conditioning"], "")
+        // this method of searching is prone to give false positives but maximizes the chances to extract metadata without handling all possible nodes explicitly
+        params.seed = this.readPromptInput(node, prompt, ["seed", "noise", "noise_seed", "value"], 0)
+        params.scheduler = this.readPromptInput(node, prompt, ["scheduler", "sigmas", "text", "value"], "")
+        params.sampler = this.readPromptInput(node, prompt, ["sampler_name", "sampler", "text", "value"], "")
+        params.steps = this.readPromptInput(node, prompt, ["steps", "sigmas", "value"], 0)
+        params.cfg = this.readPromptInput(node, prompt, ["cfg", "guider", "value"], 0)
+        params.positive_prompt = this.readPromptInput(node, prompt, ["positive", "guider", "prompt", "conditioning", "text", "populated_text"], "")
+        params.negative_prompt = this.readPromptInput(node, prompt, ["negative", "guider", "prompt", "conditioning", "text", "populated_text"], "")
+        
+        if (params.negative_prompt == params.positive_prompt) {
+          params.negative_prompt = ""
+        }
 
         res.push(params)
       }
-    }
+    })
 
     return res
   }
