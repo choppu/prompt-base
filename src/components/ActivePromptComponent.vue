@@ -6,29 +6,12 @@
         <h3 class="pbase__active-prompt-heading">{{ props.activePrompt.name }}</h3>
         <div class="pbase__prompt-context-container">
           <div class="pbase__prompt-field-container">
-            <p
+            <textarea
               v-if="props.activePrompt.prompts"
+              v-model="selectedPromptText"
               class="pbase__prompt-field"
-              ref="selected-prompt"
-              contentEditable="false"
-              @click="makeEditable"
             >
-              {{
-                props.activePrompt.prompts[selectedPromptType]
-                  ? props.activePrompt.prompts[selectedPromptType]
-                  : 'Change me...'
-              }}
-            </p>
-          </div>
-          <div class="pbase__action-btns-container">
-            <button class="pbase__action-btn" @click="copyToClipboard()">
-              <span class="material-symbols-outlined pbase__icon">content_copy</span>
-              <span>Copy</span>
-            </button>
-            <button class="pbase__action-btn" @click="updatePrompt">
-              <span class="material-symbols-outlined pbase__icon">check</span>
-              <span>Save</span>
-            </button>
+            </textarea>
           </div>
         </div>
         <div class="pbase__prompt-variants-container">
@@ -46,39 +29,58 @@
             </div>
           </div>
           <div class="pbase__new-prompt-variant-name-container">
-            <span class="pbase__new-prompt-variant-name" ref="new-variant-name"></span>
+            <input
+              v-if="addingNewVariant"
+              v-model="selectedPromptType"
+              class="pbase__new-prompt-variant-name"
+            />
           </div>
           <span class="pbase__add-btn-container" @click="addNewPromptVariant">
             <span class="material-symbols-outlined pbase__icon">library_add</span>
             <span>Add new prompt variant</span>
           </span>
         </div>
+        <div class="pbase__action-btns-container">
+          <button class="pbase__action-btn" @click="copyToClipboard">
+            <span class="material-symbols-outlined pbase__icon">content_copy</span>
+            <span>Copy</span>
+          </button>
+          <button class="pbase__action-btn" @click="updatePrompt">
+            <span class="material-symbols-outlined pbase__icon">edit</span>
+            <span>Edit</span>
+          </button>
+          <button class="pbase__action-btn" @click="deletePromptVariant">
+            <span class="material-symbols-outlined pbase__icon">delete</span>
+            <span>Delete</span>
+          </button>
+        </div>
         <div class="pbase__tags-list">
           <TagList :tags="props.activePrompt.tags" />
         </div>
       </div>
-    </div>
-    <div class="pbase__icon-close-container">
-      <span class="material-symbols-outlined pbase__icon-close" @click="closeActivePrompt()"
-        >close</span
-      >
+      <div class="pbase__icon-close-container">
+        <span class="material-symbols-outlined pbase__icon-close" @click="closeActivePrompt()"
+          >close</span
+        >
+      </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
-import { ref, toRaw, useTemplateRef } from 'vue'
+import { ref, toRaw } from 'vue'
 import TagList from './TagComponent.vue'
 import * as DB from '@/data/db'
 
 const props = defineProps(['activePrompt'])
 const emit = defineEmits(['close'])
-const selectedPromptText = useTemplateRef('selected-prompt')
-const selectedPromptType = ref("ZIT")
-const newVariantName = useTemplateRef('new-variant-name')
+const selectedPromptType = ref('ZIT')
+const selectedPromptText = ref(props.activePrompt.prompts[selectedPromptType.value])
+const addingNewVariant = ref(false)
 
 function addNewPromptVariant(): void {
-  newVariantName.value!.innerHTML = 'Prompt Variant 1'
-  selectedPromptType.value = newVariantName.value!.innerText
+  addingNewVariant.value = true
+  selectedPromptType.value = 'New Prompt Variant'
+  selectedPromptText.value = 'Change me..'
 }
 
 function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
@@ -90,26 +92,46 @@ function closeActivePrompt(): void {
 }
 
 function updateSelectedPromptType(t: string): void {
+  if (addingNewVariant.value) {
+    addingNewVariant.value = false
+  }
   selectedPromptType.value = t
-}
-
-function makeEditable(): void {
-  ;(selectedPromptText.value as HTMLParagraphElement).contentEditable = 'true'
+  selectedPromptText.value = props.activePrompt.prompts[selectedPromptType.value]
 }
 
 async function updatePrompt(): Promise<void> {
   const updatedPrompts = {
     ...props.activePrompt.prompts,
-    [selectedPromptType.value as string]: selectedPromptText.value?.innerHTML,
+    [selectedPromptType.value as string]: selectedPromptText.value,
   }
   const updatedPrompt = { ...props.activePrompt, prompts: updatedPrompts }
   updatedPrompt.tags = toRaw(updatedPrompt.tags)
-  await DB.putPrompt(updatedPrompt)
-  ;(selectedPromptText.value as HTMLParagraphElement).contentEditable = 'false'
+  await DB.putPrompt(toRaw(updatedPrompt))
+  props.activePrompt!.prompts = updatedPrompts
+
+  if (addingNewVariant.value) {
+    addingNewVariant.value = false
+  }
 }
 
 async function copyToClipboard(): Promise<void> {
   await navigator.clipboard.writeText(selectedPromptText.value?.innerText as string)
+}
+
+async function deletePromptVariant(): Promise<void> {
+  if (!addingNewVariant.value && selectedPromptType.value != 'ZIT') {
+    const updatedPrompt = props.activePrompt
+    const promtVariantsKeys = Object.keys(updatedPrompt.prompts)
+    const promptVariantToShow =
+      promtVariantsKeys[promtVariantsKeys.indexOf(selectedPromptType.value) - 1]
+    delete updatedPrompt.prompts[selectedPromptType.value]
+    updatedPrompt.tags = toRaw(updatedPrompt.tags)
+    await DB.putPrompt(toRaw(updatedPrompt))
+    updateSelectedPromptType(promptVariantToShow as string)
+    props.activePrompt!.prompts = updatedPrompt.prompts
+  }
+
+  addingNewVariant.value = addingNewVariant.value == false ? addingNewVariant.value : false
 }
 </script>
 <style scoped>
@@ -132,6 +154,7 @@ async function copyToClipboard(): Promise<void> {
 }
 
 .pbase__prompt-container {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -164,19 +187,20 @@ async function copyToClipboard(): Promise<void> {
 }
 
 .pbase__icon-close-container {
-  width: 50px;
-  height: 80px;
-  box-sizing: border-box;
-  border-left: solid 1px var(--text-color);
   position: absolute;
-  right: 10px;
-  top: -15px;
-  rotate: -52deg;
+  top: 0;
+  right: 0;
+  width: min-content;
+  height: min-content;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  cursor: pointer;
+  justify-content: center;
+  background-color: red;
+}
+
+.pbase__icon-close {
 }
 
 .pbase__action-btns-container {
@@ -214,11 +238,6 @@ async function copyToClipboard(): Promise<void> {
 
 .pbase__icon {
   font-size: var(--h2-size);
-}
-
-.pbase__icon-close {
-  margin-top: 10px;
-  rotate: 52deg;
 }
 
 .pbase__prompt-field-container {

@@ -5,7 +5,7 @@
     <div>
       <div class="pbase__prompts-container">
         <PromptComponent
-          @prompt-selected="(val) => activePrompt = val"
+          @prompt-selected="(val) => (activePrompt = val)"
           v-for="(prompt, id) in promptGroup"
           :key="id"
           :prompt="prompt"
