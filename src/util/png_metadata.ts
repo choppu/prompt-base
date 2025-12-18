@@ -166,12 +166,8 @@ export default class PNGMetadata {
     })
   }
   
-  private parseAutomatic1111Parameters = (out: GenerationParams[]) => {
-    if (typeof this.text.parameters === "undefined") {
-      return
-    }
-    
-    const lines = this.text.parameters.trim().split("\n")
+  private parseAutomatic1111Parameters = (parameterString: string, out: GenerationParams[]) => {
+    const lines = parameterString.trim().split("\n")
     const lastLine = lines.pop() || ''
   
     let prompt = ""
@@ -229,11 +225,39 @@ export default class PNGMetadata {
     
     out.push(params)
   }
-  
+
+  private parseSwarmUI = (parameterString: string, out: GenerationParams[]) => {
+    const json = JSON.parse(parameterString)["sui_image_params"]
+    
+    const params: GenerationParams = {}
+    params.positive_prompt = json["prompt"]
+    params.negative_prompt = json["negativeprompt"]
+    params.model = json["model"]
+    params.seed = json["seed"]
+    params.sampler = json["sampler"]
+    params.scheduler = json["schedule"]
+    params.steps = json["steps"]
+    params.cfg = json["cfgscale"]
+    out.push(params)
+  }
+
+  private parseParameters = (out: GenerationParams[]) => {
+    const parameterString = this.text.parameters
+    if (typeof parameterString === "undefined") {
+      return
+    }
+
+    try {
+      this.parseSwarmUI(parameterString, out)
+    } catch {
+      this.parseAutomatic1111Parameters(parameterString, out)
+    }
+  }
+
   public getGenerationParams = (): GenerationParams[] => {
     const res: GenerationParams[] = []
     
-    this.parseAutomatic1111Parameters(res);
+    this.parseParameters(res);
     this.parseComfyUIPrompt(res)
     
     return res
