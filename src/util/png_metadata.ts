@@ -228,7 +228,6 @@ export default class PNGMetadata {
     params.cfg = meta["cfg scale"]
     
     out.push(params)
-    console.log(meta)
   }
   
   public getGenerationParams = (): GenerationParams[] => {
