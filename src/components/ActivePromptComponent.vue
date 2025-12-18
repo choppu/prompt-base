@@ -117,7 +117,7 @@ async function updatePrompt(): Promise<void> {
 }
 
 async function copyToClipboard(): Promise<void> {
-  await navigator.clipboard.writeText(selectedPromptText.value?.innerText as string)
+  await navigator.clipboard.writeText(props.activePrompt.prompts[selectedPromptType.value])
 }
 
 async function deletePromptVariant(): Promise<void> {
