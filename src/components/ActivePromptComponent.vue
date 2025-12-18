@@ -4,17 +4,8 @@
       <img :src="imageDataToURL(props.activePrompt.image)" class="pbase__prompt-image" />
       <div class="pbase__active-prompt-context-container">
         <h3 class="pbase__active-prompt-heading">{{ props.activePrompt.name }}</h3>
-        <div class="pbase__prompt-context-container">
-          <div class="pbase__prompt-field-container">
-            <textarea
-              v-if="props.activePrompt.prompts"
-              v-model="selectedPromptText"
-              class="pbase__prompt-field"
-            >
-            </textarea>
-          </div>
-        </div>
         <div class="pbase__prompt-variants-container">
+          <h3 class="pbase__prompt-variants-label">Prompt variants</h3>
           <div v-if="props.activePrompt.prompts" class="pbase__prompt-variant-container">
             <div
               v-for="promptType in Object.keys(props.activePrompt.prompts)"
@@ -26,6 +17,8 @@
               {{ promptType }}
             </div>
           </div>
+        </div>
+        <div class="pbase__prompt-context-container">
           <div class="pbase__new-prompt-variant-name-container">
             <input
               v-if="addingNewVariant"
@@ -33,21 +26,30 @@
               class="pbase__new-prompt-variant-name"
             />
           </div>
-          <span class="pbase__add-btn-container" @click="addNewPromptVariant">
-            <span class="material-symbols-outlined pbase__icon">library_add</span>
-            <span>Add prompt variant</span>
-          </span>
+          <h3 class="pbase__prompt-variants-label">Prompt text</h3>
+          <div class="pbase__prompt-field-container">
+            <textarea
+              v-if="props.activePrompt.prompts"
+              v-model="selectedPromptText"
+              class="pbase__prompt-field"
+            >
+            </textarea>
+          </div>
         </div>
         <div class="pbase__action-btns-container">
+          <button class="pbase__action-btn" @click="addNewPromptVariant" ref="btn-add">
+            <span class="material-symbols-outlined pbase__icon">library_add</span>
+            <span>Add prompt variant</span>
+          </button>
           <button class="pbase__action-btn" @click="copyToClipboard">
             <span class="material-symbols-outlined pbase__icon">content_copy</span>
             <span>Copy</span>
           </button>
           <button class="pbase__action-btn" @click="updatePrompt">
-            <span class="material-symbols-outlined pbase__icon">edit</span>
-            <span>Edit</span>
+            <span class="material-symbols-outlined pbase__icon">check</span>
+            <span>Save</span>
           </button>
-          <button class="pbase__action-btn" @click="deletePromptVariant">
+          <button class="pbase__action-btn pbase__btn-delete" @click="deletePromptVariant">
             <span class="material-symbols-outlined pbase__icon">delete</span>
             <span>Delete</span>
           </button>
@@ -65,7 +67,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ref, toRaw } from 'vue'
+import { ref, toRaw, useTemplateRef } from 'vue'
 import TagList from './TagComponent.vue'
 import * as DB from '@/data/db'
 
@@ -74,11 +76,13 @@ const emit = defineEmits(['close'])
 const selectedPromptType = ref('ZIT')
 const selectedPromptText = ref(props.activePrompt.prompts[selectedPromptType.value])
 const addingNewVariant = ref(false)
+const addBtn = useTemplateRef('btn-add')
 
 function addNewPromptVariant(): void {
   addingNewVariant.value = true
   selectedPromptType.value = 'New Prompt Variant'
   selectedPromptText.value = 'Change me..'
+  addBtn.value!.disabled = true
 }
 
 function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
@@ -113,6 +117,7 @@ async function updatePrompt(): Promise<void> {
 
   if (addingNewVariant.value) {
     addingNewVariant.value = false
+    addBtn.value!.disabled = false
   }
 }
 
@@ -133,7 +138,11 @@ async function deletePromptVariant(): Promise<void> {
     props.activePrompt!.prompts = updatedPrompt.prompts
   }
 
-  addingNewVariant.value = addingNewVariant.value == false ? addingNewVariant.value : false
+  if (addingNewVariant.value) {
+    addingNewVariant.value = false
+    addBtn.value!.disabled = false
+    updateSelectedPromptType('ZIT')
+  }
 }
 </script>
 <style scoped>
@@ -169,7 +178,7 @@ async function deletePromptVariant(): Promise<void> {
   padding: 20px;
   box-sizing: border-box;
   margin: 0 auto;
-  gap: 30px;
+  gap: 15px;
   align-self: center;
 }
 
@@ -211,8 +220,8 @@ async function deletePromptVariant(): Promise<void> {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 5px;
+  gap: 4px;
+  padding: 0 5px;
   box-sizing: border-box;
 }
 
@@ -240,53 +249,64 @@ async function deletePromptVariant(): Promise<void> {
   background-color: var(--secondary-color-brighter);
 }
 
+.pbase__btn-delete {
+  background-color: var(--warning-color);
+}
+
 .pbase__icon {
   font-size: var(--h2-size);
 }
 
 .pbase__prompt-field-container {
-  max-height: 300px;
-  overflow-y: scroll;
-  padding: 0 0 10px 0;
-  cursor: default;
+  width: 100%;
+  height: auto;
+  padding: 0;
 }
 
 .pbase__prompt-field {
   width: 100%;
-  max-width: 100%;
   min-width: 100%;
-  min-height: min-content;
-  height: auto;
+  max-width: 100%;
+  height: 200px;
+  min-height: 200px;
+  max-height: 250px;
   outline: none;
   font-size: var(--text-medium);
   padding: 5px;
   box-sizing: border-box;
+  margin: 0;
+  border: none;
+  border-top: dashed 1px var(--background-color);
+  border-bottom: dashed 1px var(--background-color);
+  background-color: var(--secondary-color-darker);
+  resize: none;
 }
 
 .pbase__prompt-field:focus {
-  background-color: var(--secondary-color-darker);
+  background-color: var(--text-color);
 }
 
 .pbase__active-prompt-heading {
   font-family: var(--font-heading);
   font-size: var(--h1-size);
   font-weight: var(--text-bold);
-  padding: 10px 5px;
+  padding: 5px;
   box-sizing: border-box;
 }
 
 .pbase__prompt-variants-container {
   width: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-  padding: 10px 5px;
+  justify-content: center;
   box-sizing: border-box;
-  border-top: dashed 1px var(--background-color);
-  border-bottom: dashed 1px var(--background-color);
-  row-gap: 8px;
-  column-gap: 4px;
+}
+
+.pbase__prompt-variants-label {
+  font-size: var(--h3-size);
+  font-weight: var(--text-bold);
+  margin-bottom: 4px;
 }
 
 .pbase__prompt-variant-container {
@@ -294,8 +314,10 @@ async function deletePromptVariant(): Promise<void> {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 10px 5px;
   gap: 4px;
+  border-top: dashed 1px var(--background-color);
+  border-bottom: dashed 1px var(--background-color);
 }
 
 .pbase__prompt-variant {
@@ -308,41 +330,21 @@ async function deletePromptVariant(): Promise<void> {
   line-height: var(--text-line-heigth-16);
 }
 
-.pbase__add-btn-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2px;
-  font-weight: var(--text-bold);
-  word-spacing: -2px;
-  cursor: pointer;
-  font-family: var(--font-main);
-  font-size: var(--text-small);
-  line-height: var(--text-line-heigth-16);
-}
-
 .pbase__new-prompt-variant-name-container {
-  width: max-content;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .pbase__new-prompt-variant-name {
-  max-width: 200px;
-  field-sizing: content;
-  border: solid 2px var(--background-color);
-  padding: 0px 5px;
-  box-sizing: border-box;
-  font-weight: var(--text-bold);
+  width: 100%;
+  outline: none;
+  font-size: var(--text-small);
+  padding: 10px 5px;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 4px;
   background-color: var(--secondary-color-darker);
   font-family: var(--font-main);
-  font-size: var(--text-small);
-  line-height: var(--text-line-heigth-16);
-  outline: none;
 }
 
 .active {
