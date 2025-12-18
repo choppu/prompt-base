@@ -52,7 +52,7 @@ const handleRoot = (name: string): void => {
     gap: 8px;
     align-items: center;
     font-family: var(--font-heading);
-    font-size: var(--h1-size);
+    font-size: var(--h2-size);
   }
 
   .pbase__logo-img {

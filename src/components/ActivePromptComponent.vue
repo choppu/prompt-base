@@ -307,6 +307,7 @@ async function deletePromptVariant(): Promise<void> {
   font-size: var(--h3-size);
   font-weight: var(--text-bold);
   margin-bottom: 4px;
+  font-family: var(--font-heading);
 }
 
 .pbase__prompt-variant-container {

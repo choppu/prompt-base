@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600=swap');
-@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300,0..1,-50..200');
 
 :root {
@@ -15,7 +15,7 @@
   --secondary-color-brighter: #082a45cc;
   --border-color: var(--background-color);
   --font-main: 'IBM Plex Mono', monospace;
-  --font-heading: 'Doto', sans-serif;
+  --font-heading: 'DM Sans', sans-serif;
   --icons-font: 'Material Symbols Outlined', monospace;
   --icon-normal: 1em;
   --text-default-line-heigth: 1.4em;
@@ -32,8 +32,8 @@
   --text-medium: 0.9em;
   --text-weight-200: 200;
   --text-default-weight: 300;
-  --text-semibold: 500;
-  --text-bold: 700;
+  --text-semibold: 400;
+  --text-bold: 600;
   --tag-border-radius: 1.25em;
   --shadow-color: rgba(100, 100, 111, 0.2);
   --box-shadow: var(--shadow-color) 0px 7px 29px 0px;

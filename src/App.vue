@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import AppHeader from './components/AppHeader.vue'
+import Footer from './components/FooterComponent.vue'
 </script>
 <template>
   <AppHeader />
   <main class="pbase__main-container">
     <RouterView />
   </main>
+  <Footer />
 </template>
 <style scoped>
 @import './assets/css/base.css';
