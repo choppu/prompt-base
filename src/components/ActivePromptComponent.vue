@@ -20,12 +20,10 @@
               v-for="promptType in Object.keys(props.activePrompt.prompts)"
               :key="promptType"
               @click="updateSelectedPromptType(promptType)"
+              :class="isActiveElement(promptType)"
               class="pbase__prompt-variant"
             >
               {{ promptType }}
-              <span class="material-symbols-outlined pbase__prompt-variant-separator">
-                horizontal_rule</span
-              >
             </div>
           </div>
           <div class="pbase__new-prompt-variant-name-container">
@@ -37,7 +35,7 @@
           </div>
           <span class="pbase__add-btn-container" @click="addNewPromptVariant">
             <span class="material-symbols-outlined pbase__icon">library_add</span>
-            <span>Add new prompt variant</span>
+            <span>Add prompt variant</span>
           </span>
         </div>
         <div class="pbase__action-btns-container">
@@ -89,6 +87,10 @@ function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
 
 function closeActivePrompt(): void {
   emit('close')
+}
+
+function isActiveElement(promptType: string): string {
+  return promptType == selectedPromptType.value ? 'active' : ''
 }
 
 function updateSelectedPromptType(t: string): void {
@@ -188,19 +190,21 @@ async function deletePromptVariant(): Promise<void> {
 
 .pbase__icon-close-container {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: min-content;
-  height: min-content;
+  top: 15px;
+  right: 15px;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  color: var(--background-color);
+  cursor: pointer;
 }
 
 .pbase__icon-close {
+  width: 100%;
 }
 
 .pbase__action-btns-container {
@@ -272,34 +276,36 @@ async function deletePromptVariant(): Promise<void> {
 }
 
 .pbase__prompt-variants-container {
+  width: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 5px;
+  padding: 10px 5px;
   box-sizing: border-box;
-  font-size: var(--text-small);
-  line-height: var(--text-line-heigth-16);
+  border-top: dashed 1px var(--background-color);
+  border-bottom: dashed 1px var(--background-color);
+  row-gap: 8px;
+  column-gap: 4px;
 }
 
 .pbase__prompt-variant-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  gap: 4px;
 }
 
 .pbase__prompt-variant {
-  border-bottom: dashed 1px var(--background-color);
+  border: solid 2px var(--background-color);
+  padding: 0 5px;
+  box-sizing: border-box;
   cursor: pointer;
-}
-
-.pbase__prompt-variant-separator {
-  rotate: -90deg;
-  font-size: var(--h1-size);
-  display: inline-block;
-  background-color: red;
+  font-weight: var(--text-bold);
+  font-size: var(--text-small);
+  line-height: var(--text-line-heigth-16);
 }
 
 .pbase__add-btn-container {
@@ -310,5 +316,37 @@ async function deletePromptVariant(): Promise<void> {
   gap: 2px;
   font-weight: var(--text-bold);
   word-spacing: -2px;
+  cursor: pointer;
+  font-family: var(--font-main);
+  font-size: var(--text-small);
+  line-height: var(--text-line-heigth-16);
+}
+
+.pbase__new-prompt-variant-name-container {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pbase__new-prompt-variant-name {
+  max-width: 200px;
+  field-sizing: content;
+  border: solid 2px var(--background-color);
+  padding: 0px 5px;
+  box-sizing: border-box;
+  font-weight: var(--text-bold);
+  background-color: var(--secondary-color-darker);
+  font-family: var(--font-main);
+  font-size: var(--text-small);
+  line-height: var(--text-line-heigth-16);
+  outline: none;
+}
+
+.active {
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 </style>
