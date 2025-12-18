@@ -31,11 +31,13 @@
       <div class="file-info">
         <p>Resolution: {{ selectedFile.width }} x {{ selectedFile.height }}</p>
         <div v-for="(params, i) of selectedFile.getGenerationParams()" :key="i">
-          <p>Seed: {{ params.seed }}</p>
-          <p>Sampler: {{ params.sampler }}</p>
-          <p>Scheduler: {{ params.scheduler }}</p>
-          <p>Steps: {{ params.steps }}</p>
-          <p>CFG: {{ params.cfg }}</p>
+          <p v-if="params.model">Model: {{ params.model }}</p>
+          <p v-if="params.clip_skip">Clip skip: {{ params.clip_skip }}</p>
+          <p v-if="params.seed">Seed: {{ params.seed }}</p>
+          <p v-if="params.sampler">Sampler: {{ params.sampler }}</p>
+          <p v-if="params.scheduler">Scheduler: {{ params.scheduler }}</p>
+          <p v-if="params.steps">Steps: {{ params.steps }}</p>
+          <p v-if="params.cfg">CFG: {{ params.cfg }}</p>
           <p v-if="params.positive_prompt">Positive Prompt: {{ params.positive_prompt }}</p>
           <p v-if="params.negative_prompt">Negative Prompt: {{ params.negative_prompt }}</p>
         </div>
