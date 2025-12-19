@@ -8,13 +8,13 @@
     >
       <div class="pbase__drop-area-content" :class="{ 'drag-over': isDragOver }">
         <span class="material-symbols-outlined pb__icon">photo_library</span>
-        <p class="pbase__drop-area-content-text">Drag & drop PNG files here</p>
+        <p class="pbase__drop-area-content-text">Drag & drop PNG/JPEG files here</p>
         <label class="pbase__file-input-label">
           <input
             type="file"
             ref="fileInput"
             @change="handleFileSelect"
-            accept=".png"
+            accept="image/png,image/jpeg"
             class="pbase__file-input"
           />
           <span class="pbase__browse-btn">Browse Files</span>
@@ -30,15 +30,15 @@
       </div>
       <div class="pbase__file-info-container">
         <div class="pbase__pbase__file-info-seed-container">
-          {{ generationParamsLength }}
-          <div v-for="i in generationParamsLength" :key="i" class="pbase__file-info">
+          {{ generationParams.length }}
+          <div v-for="i in generationParams.length" :key="i" class="pbase__file-info">
             <div class="pbase__file-info-selector-element">
-              <span class="pbase__file-info-selector">Metadata {{ generationParamsLength }}</span>
+              <span class="pbase__file-info-selector">Metadata {{ generationParams.length }}</span>
             </div>
           </div>
           <div
             class="pbase__file-info-collapsable"
-            v-for="(params, i) of selectedFile.getGenerationParams()"
+            v-for="(params, i) of generationParams"
             :key="i"
           >
             <div v-if="params.model" class="pbase__file-info-element">
@@ -88,14 +88,14 @@
 </template>
 
 <script setup lang="ts">
-import PNGMetadata from '@/util/png_metadata'
+import IMGMetadata, { type GenerationParams } from '@/util/img_metadata'
 import { ref } from 'vue'
 
 const isDragOver = ref<boolean>(false)
-const selectedFile = ref<PNGMetadata | null>(null)
+const selectedFile = ref<IMGMetadata | null>(null)
 const previewUrl = ref<string | null>(null)
 const workflowUrl = ref<string | null>(null)
-const generationParamsLength = ref(0)
+const generationParams = ref<GenerationParams[]>([])
 
 const handleDragOver = () => {
   isDragOver.value = true
@@ -119,23 +119,23 @@ const handleFileSelect = (e: Event) => {
   }
 }
 
-const processFiles = (pngFile: File) => {
-  if (pngFile.type !== 'image/png') {
+const processFiles = (imgFile: File) => {
+  if (imgFile.type !== 'image/png' && (imgFile.type !== 'image/jpeg')) {
     return
   }
 
   workflowUrl.value = null
 
-  pngFile.arrayBuffer().then((pngData: ArrayBuffer) => {
-    selectedFile.value = PNGMetadata.load(new Uint8Array(pngData))
+  imgFile.arrayBuffer().then((imgData: ArrayBuffer) => {
+    selectedFile.value = IMGMetadata.load(new Uint8Array(imgData))
+    generationParams.value = selectedFile.value!.getGenerationParams()
     const wf = selectedFile.value.getWorkflow()
     if (wf) {
       workflowUrl.value = URL.createObjectURL(new Blob([wf], { type: 'application/json' }))
     }
   })
 
-  previewUrl.value = URL.createObjectURL(pngFile)
-  generationParamsLength.value = selectedFile.value!.getGenerationParams().length
+  previewUrl.value = URL.createObjectURL(imgFile)
 }
 </script>
 
@@ -329,11 +329,11 @@ const processFiles = (pngFile: File) => {
 }
 
 .pbase__file-info-collapsable {
-  display: none;
+  display: inherit;
 }
 
 .pbase__file-info-collapsed {
-  display: none;
+  display: inherit;
 }
 
 .active {

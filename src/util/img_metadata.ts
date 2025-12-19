@@ -1,7 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const PNG_HEADER = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0xa, 0x1a, 0x0a]
+const JPEG_SOI_MARKER = [0xff, 0xd8]
+const UNICODE_STRING = [0x55, 0x4e, 0x49, 0x43, 0x4f, 0x44, 0x45, 0x00]
 
-type GenerationParams = {
+export type GenerationParams = {
   seed?: number
   sampler?: string
   scheduler?: string
@@ -13,8 +15,13 @@ type GenerationParams = {
   negative_prompt?: string
 }
 
-export default class PNGMetadata {
-  static load = (data: Uint8Array) => new PNGMetadata(data)
+enum HeaderType {
+  PNG,
+  JPEG,
+}
+
+export default class IMGMetadata {
+  static load = (data: Uint8Array) => new IMGMetadata(data)
   
   width: number
   height: number
@@ -28,10 +35,42 @@ export default class PNGMetadata {
     this.pos = 0
     this.width = 0
     this.height = 0
-    this.checkHeader()
+    const fileType = this.readHeader()
     
     this.text = {}
     
+    if (fileType == HeaderType.PNG) {
+      this.readPNG()
+    } else {
+      this.readJPEG()
+    }
+  }
+
+  private readHeader = (): HeaderType => {
+    try {
+      this.readPNGHeader()
+      return HeaderType.PNG
+    } catch {}
+
+    this.pos = 0
+
+    try {
+      this.readJPEGHeader()
+      return HeaderType.JPEG
+    } catch {}
+
+    throw new Error('The file is neither a PNG nor a JPEG')
+  }
+
+  private readPNGHeader = () => {
+    for (let i = 0; i < PNG_HEADER.length; i++) {
+      if (PNG_HEADER[i] != this.data[this.pos++]) {
+        throw new Error('Not a PNG file')
+      }
+    }
+  }
+
+  private readPNG = () => {
     const utf8Decoder = new TextDecoder('utf-8')
     const latin1Decoder = new TextDecoder('latin1')
     
@@ -84,21 +123,102 @@ export default class PNGMetadata {
       }
     }
   }
+
+  private readJPEGHeader = () => {
+    if (this.data[0] !== JPEG_SOI_MARKER[0] || this.data[1] !== JPEG_SOI_MARKER[1]) {
+      throw new Error('Not a JPEG file')
+    }
+
+    this.pos = 2
+  }
   
-  private checkHeader = () => {
-    for (let i = 0; i < PNG_HEADER.length; i++) {
-      if (PNG_HEADER[i] != this.data[this.pos++]) {
-        throw new Error('Not a PNG file')
+  private readJPEG = () => {
+    while (this.pos < this.data.length - 1) {
+      const marker = this.data[this.pos]
+      if (marker !== 0xff) {
+        console.log(this.pos)
+        break;
+      }
+      
+      const segmentType = this.data[this.pos + 1]
+      this.pos += 2
+      
+      const segmentLen = this.readUInt16() - 2
+
+      switch (segmentType) {
+        case 0xc0: // SOF0 (Start of Frame 0)
+          this.pos++
+          this.height = this.readUInt16()
+          this.width = this.readUInt16()
+          this.pos += (segmentLen - 5)
+          break      
+        case 0xe1: // APP1
+          const app1 = this.read(segmentLen)
+          this.parseAPP1(app1)
+          break
+        case 0xda: // Image data beings  
+        case 0xd9: // EOI (End of Image)
+          this.data = Uint8Array.from([])
+          return
+        default:
+          this.pos += segmentLen
+          break
       }
     }
+
+    throw new Error('Malformed JPEG file')
   }
+  
+  private parseAPP1 = (app1: Uint8Array) => {
+    if (app1.length < 8) {
+      return
+    }
+
+    const latin1Decoder = new TextDecoder('latin1')
+    const identifier = latin1Decoder.decode(app1.slice(0, 6))
+
+    if (identifier === 'Exif\0\0') {
+      this.parseExif(app1.slice(6))
+    }  
+  }
+  
+  private parseExif = (exif: Uint8Array) => {
+    let i: number
+    while(((i = exif.indexOf(UNICODE_STRING[0]!)) != -1)) {
+      if (exif.length < (i + UNICODE_STRING.length)) {
+        return
+      }
+
+      let matches = true
+      for (let j = 1; j < UNICODE_STRING.length; j++) {
+        if (UNICODE_STRING[j] != exif[i + j]) {
+          matches = false
+          break;
+        }
+      }
+
+      if (matches) {
+        i += UNICODE_STRING.length
+        break
+      }
+    }
+
+    const utf16Decoder = new TextDecoder('utf-16be')
+    this.text["parameters"] = utf16Decoder.decode(exif.slice(i))
+  }  
   
   private read = (numBytes: number): Uint8Array => {
     const res = this.data.slice(this.pos, (this.pos + numBytes))
     this.pos += numBytes
     return res
   }
-  
+
+  private readUInt16 = (): number => {
+    const b1 = this.data[this.pos++]! << 8
+    const b2 = this.data[this.pos++]!
+    return b1 | b2
+  }
+
   private readUInt32 = (): number => {
     const b1 = this.data[this.pos++]! << 24
     const b2 = this.data[this.pos++]! << 16
