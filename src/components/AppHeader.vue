@@ -53,6 +53,7 @@ const handleRoot = (name: string): void => {
     align-items: center;
     font-family: var(--font-heading);
     font-size: var(--h2-size);
+    border: none;
   }
 
   .pbase__logo-img {
@@ -95,6 +96,7 @@ const handleRoot = (name: string): void => {
     cursor: pointer;
     line-height: var(--text-line-heigth-14);
     font-weight: var(--text-bold);
+    color: var(--background-color);
   }
 
   .pbase__menu-link:hover {

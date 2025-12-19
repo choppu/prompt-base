@@ -27,61 +27,65 @@
         <p class="pbase__resolution">
           Resolution: {{ selectedFile.width }} x {{ selectedFile.height }}
         </p>
+        <a
+          class="pbase__download-workflow"
+          v-if="workflowUrl"
+          :href="workflowUrl"
+          download="extracted-workflow.json"
+          >Download workflow</a
+        >
       </div>
       <div class="pbase__file-info-container">
-        <div class="pbase__pbase__file-info-seed-container">
-          {{ generationParams.length }}
-          <div v-for="i in generationParams.length" :key="i" class="pbase__file-info">
-            <div class="pbase__file-info-selector-element">
-              <span class="pbase__file-info-selector">Metadata {{ generationParams.length }}</span>
-            </div>
+        <div class="pbase__pbase__file-info-selectors-container">
+          <span v-if="generationParams.length == 0">No metadata found</span>
+          <div v-for="(params, i) in generationParams" :key="i" class="pbase__file-info">
+            <span :class="tabClass(params)" @click="handleSelectedMetadata(i)"
+              >Metadata {{ i + 1 }}</span
+            >
           </div>
-          <div
-            class="pbase__file-info-collapsable"
-            v-for="(params, i) of generationParams"
-            :key="i"
-          >
-            <div v-if="params.model" class="pbase__file-info-element">
+          <div class="pbase__file-info-collapsable" v-if="selectedMetadata">
+            <div v-if="selectedMetadata.model" class="pbase__file-info-element">
               <span class="pbase__file-info-element-label">Model</span>
-              <span class="pbase__file-info-element-content">{{ params.model }}</span>
+              <span class="pbase__file-info-element-content">{{ selectedMetadata.model }}</span>
             </div>
-            <div v-if="params.seed" class="pbase__file-info-element">
+            <div v-if="selectedMetadata.seed" class="pbase__file-info-element">
               <span class="pbase__file-info-element-label">Seed</span>
-              <span class="pbase__file-info-element-content">{{ params.seed }}</span>
+              <span class="pbase__file-info-element-content">{{ selectedMetadata.seed }}</span>
             </div>
-            <div v-if="params.clip_skip" class="pbase__file-info-element">
+            <div v-if="selectedMetadata.clip_skip" class="pbase__file-info-element">
               <span class="pbase__file-info-element-label">Clip skip</span>
-              <span class="pbase__file-info-element-content">{{ params.clip_skip }}</span>
+              <span class="pbase__file-info-element-content">{{ selectedMetadata.clip_skip }}</span>
             </div>
-            <div v-if="params.sampler" class="pbase__file-info-element">
+            <div v-if="selectedMetadata.sampler" class="pbase__file-info-element">
               <span class="pbase__file-info-element-label">Sampler</span>
-              <span class="pbase__file-info-element-content">{{ params.sampler }}</span>
+              <span class="pbase__file-info-element-content">{{ selectedMetadata.sampler }}</span>
             </div>
-            <div v-if="params.scheduler" class="pbase__file-info-element">
+            <div v-if="selectedMetadata.scheduler" class="pbase__file-info-element">
               <span class="pbase__file-info-element-label">Scheduler</span>
-              <span class="pbase__file-info-element-content">{{ params.scheduler }}</span>
+              <span class="pbase__file-info-element-content">{{ selectedMetadata.scheduler }}</span>
             </div>
-            <div v-if="params.steps" class="pbase__file-info-element">
+            <div v-if="selectedMetadata.steps" class="pbase__file-info-element">
               <span class="pbase__file-info-element-label">Steps</span>
-              <span class="pbase__file-info-element-content">{{ params.steps }}</span>
+              <span class="pbase__file-info-element-content">{{ selectedMetadata.steps }}</span>
             </div>
-            <div v-if="params.cfg" class="pbase__file-info-element">
+            <div v-if="selectedMetadata.cfg" class="pbase__file-info-element">
               <span class="pbase__file-info-element-label">CFG</span>
-              <span class="pbase__file-info-element-content">{{ params.cfg }}</span>
+              <span class="pbase__file-info-element-content">{{ selectedMetadata.cfg }}</span>
             </div>
-            <div v-if="params.positive_prompt" class="pbase__file-info-element">
+            <div v-if="selectedMetadata.positive_prompt" class="pbase__file-info-element">
               <span class="pbase__file-info-element-label">Positive Prompt</span>
-              <span class="pbase__file-info-element-content">{{ params.positive_prompt }}</span>
+              <span class="pbase__file-info-element-content">{{
+                selectedMetadata.positive_prompt
+              }}</span>
             </div>
-            <div v-if="params.negative_prompt" class="pbase__file-info-element">
+            <div v-if="selectedMetadata.negative_prompt" class="pbase__file-info-element">
               <span class="pbase__file-info-element-label">Negative Prompt</span>
-              <span class="pbase__file-info-element-content">{{ params.negative_prompt }}</span>
+              <span class="pbase__file-info-element-content">{{
+                selectedMetadata.negative_prompt
+              }}</span>
             </div>
           </div>
         </div>
-        <a v-if="workflowUrl" :href="workflowUrl" download="extracted-workflow.json"
-          >Download workflow</a
-        >
       </div>
     </div>
   </div>
@@ -96,6 +100,13 @@ const selectedFile = ref<IMGMetadata | null>(null)
 const previewUrl = ref<string | null>(null)
 const workflowUrl = ref<string | null>(null)
 const generationParams = ref<GenerationParams[]>([])
+const selectedMetadata = ref<GenerationParams | null>(null)
+
+const tabClass = (params: GenerationParams): string => {
+  return params === selectedMetadata.value
+    ? 'pbase__file-info-selector active'
+    : 'pbase__file-info-selector'
+}
 
 const handleDragOver = () => {
   isDragOver.value = true
@@ -120,7 +131,7 @@ const handleFileSelect = (e: Event) => {
 }
 
 const processFiles = (imgFile: File) => {
-  if (imgFile.type !== 'image/png' && (imgFile.type !== 'image/jpeg')) {
+  if (imgFile.type !== 'image/png' && imgFile.type !== 'image/jpeg') {
     return
   }
 
@@ -129,6 +140,12 @@ const processFiles = (imgFile: File) => {
   imgFile.arrayBuffer().then((imgData: ArrayBuffer) => {
     selectedFile.value = IMGMetadata.load(new Uint8Array(imgData))
     generationParams.value = selectedFile.value!.getGenerationParams()
+    if (generationParams.value.length > 0) {
+      selectedMetadata.value = generationParams.value[0]!
+    } else {
+      selectedMetadata.value = null
+    }
+
     const wf = selectedFile.value.getWorkflow()
     if (wf) {
       workflowUrl.value = URL.createObjectURL(new Blob([wf], { type: 'application/json' }))
@@ -136,6 +153,10 @@ const processFiles = (imgFile: File) => {
   })
 
   previewUrl.value = URL.createObjectURL(imgFile)
+}
+
+const handleSelectedMetadata = (i: number): void => {
+  selectedMetadata.value = generationParams.value[i]!
 }
 </script>
 
@@ -155,18 +176,17 @@ const processFiles = (imgFile: File) => {
 
 .pbase__drop-area {
   width: 100%;
-  height: 350px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 40px 20px;
+  padding: 0;
   justify-content: center;
   align-items: center;
 }
 
 .pbase__drop-area-content {
-  width: 320px;
-  height: 280px;
+  width: 100%;
+  height: 200px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -174,10 +194,6 @@ const processFiles = (imgFile: File) => {
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease;
-  background-color: var(--background-color-semitransparent);
-  backdrop-filter: var(--blur-effect);
-  border-radius: var(--tag-border-radius);
-  box-shadow: var(--menu-box-shadow);
 }
 
 .pbase__drop-area-content.drag-over {
@@ -185,7 +201,7 @@ const processFiles = (imgFile: File) => {
 }
 
 .pb__icon {
-  font-size: 70px;
+  font-size: 40px;
 }
 
 .pbase__drop-area-content-text {
@@ -240,7 +256,7 @@ const processFiles = (imgFile: File) => {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
   overflow-y: scroll;
 }
 
@@ -261,7 +277,7 @@ const processFiles = (imgFile: File) => {
 
 .pbase__preview-image {
   max-width: 330px;
-  height: 80%;
+  max-height: 80%;
   box-shadow: var(--menu-box-shadow);
 }
 
@@ -270,21 +286,25 @@ const processFiles = (imgFile: File) => {
   font-size: var(--text-small);
 }
 
+.pbase__download-workflow {
+  font-size: var(--text-small);
+}
+
 .pbase__file-info-container {
   width: calc(100% - 420px);
   flex-grow: calc(100% - 420px);
   flex-basis: calc(100% - 420px);
   height: 100%;
-  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   gap: 10px;
   box-sizing: border-box;
   padding: 15px 0;
   box-sizing: border-box;
+  overflow: scroll;
 }
 
-.pbase__pbase__file-info-seed-container {
+.pbase__pbase__file-info-selectors-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -293,11 +313,12 @@ const processFiles = (imgFile: File) => {
 
 .pbase__file-info {
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .pbase__file-info-selector {
   border: solid 2px var(--background-color);
-  padding: 0 5px;
+  padding: 3px 5px;
   box-sizing: border-box;
   cursor: pointer;
   font-weight: var(--text-bold);
@@ -309,7 +330,7 @@ const processFiles = (imgFile: File) => {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   gap: 4px;
 }
@@ -329,11 +350,11 @@ const processFiles = (imgFile: File) => {
 }
 
 .pbase__file-info-collapsable {
-  display: inherit;
-}
-
-.pbase__file-info-collapsed {
-  display: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4px;
+  height: fit-content;
 }
 
 .active {

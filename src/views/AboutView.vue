@@ -28,11 +28,4 @@
 .pbase__about-text {
   font-size: var(--text-medium);
 }
-
-.pbase__about-link {
-  color: var(--text-color);
-  text-decoration: none;
-  border-bottom: solid 1px var(--text-color);
-  font-weight: var(--text-bold);
-}
 </style>

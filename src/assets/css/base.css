@@ -72,3 +72,10 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: solid 1px var(--text-color);
+  font-weight: var(--text-bold);
+}
