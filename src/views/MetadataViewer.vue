@@ -248,6 +248,7 @@ const handleSelectedMetadata = (i: number): void => {
 .pbase__preview-section {
   width: calc(100% - 80px);
   height: calc(100vh - 220px);
+  height: fit-content;
   margin: 0 40px;
   display: flex;
   background-color: var(--text-color);
@@ -265,7 +266,7 @@ const handleSelectedMetadata = (i: number): void => {
   flex-basis: 380px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
