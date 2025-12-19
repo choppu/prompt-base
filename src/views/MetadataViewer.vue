@@ -302,7 +302,6 @@ const handleSelectedMetadata = (i: number): void => {
   box-sizing: border-box;
   padding: 15px 0;
   box-sizing: border-box;
-  overflow-y: scroll;
 }
 
 .pbase__pbase__file-info-selectors-container {
