@@ -261,7 +261,7 @@ export default class IMGMetadata {
         const params: GenerationParams = {}
         
         // this method of searching is prone to give false positives but maximizes the chances to extract metadata without handling all possible nodes explicitly
-        params.model = this.readPromptInput(node, prompt, ["model", "model_name", "ckpt_name", "unet_name", "opt_model", "text"])
+        params.model = this.readPromptInput(node, prompt, ["model", "model_name", "ckpt_name", "unet_name", "opt_model", "gguf_name", "text"])
         params.seed = this.readPromptInput(node, prompt, ["seed", "noise", "noise_seed", "value"])
         params.scheduler = this.readPromptInput(node, prompt, ["scheduler", "sigmas", "text", "value"])
         params.sampler = this.readPromptInput(node, prompt, ["sampler_name", "sampler", "text", "value"])
