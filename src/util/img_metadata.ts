@@ -136,7 +136,6 @@ export default class IMGMetadata {
     while (this.pos < this.data.length - 1) {
       const marker = this.data[this.pos]
       if (marker !== 0xff) {
-        console.log(this.pos)
         break;
       }
       
@@ -255,20 +254,14 @@ export default class IMGMetadata {
     return (node["class_type"] == "KSampler") || (node["class_type"] == "KSamplerAdvanced") || (node["class_type"] == "SamplerCustom") || (node["class_type"] == "SamplerCustomAdvanced")
   }
   
-  private parseComfyUIPrompt = (out: GenerationParams[]) => {
-    let prompt;
-    
-    try {
-      prompt = JSON.parse(this.text.prompt!)
-    } catch {
-      return
-    }
-    
+  private parseComfyUIPrompt = (promptString: string | undefined, out: GenerationParams[]) => {
+    const prompt = JSON.parse(promptString!)
     Object.values(prompt).forEach((node) => {
       if (this.isSampler(node)) {
         const params: GenerationParams = {}
         
         // this method of searching is prone to give false positives but maximizes the chances to extract metadata without handling all possible nodes explicitly
+        params.model = this.readPromptInput(node, prompt, ["model", "model_name", "ckpt_name", "unet_name", "opt_model", "text"])
         params.seed = this.readPromptInput(node, prompt, ["seed", "noise", "noise_seed", "value"])
         params.scheduler = this.readPromptInput(node, prompt, ["scheduler", "sigmas", "text", "value"])
         params.sampler = this.readPromptInput(node, prompt, ["sampler_name", "sampler", "text", "value"])
@@ -363,22 +356,35 @@ export default class IMGMetadata {
 
   private parseParameters = (out: GenerationParams[]) => {
     const parameterString = this.text.parameters
+    
     if (typeof parameterString === "undefined") {
       return
     }
 
     try {
       this.parseSwarmUI(parameterString, out)
-    } catch {
+      return
+    } catch {}
+
+    try {
+      this.parseComfyUIPrompt(parameterString, out)
+      return
+    } catch {}
+
+    try {
       this.parseAutomatic1111Parameters(parameterString, out)
-    }
+      return
+    } catch {}
   }
 
   public getGenerationParams = (): GenerationParams[] => {
     const res: GenerationParams[] = []
     
     this.parseParameters(res);
-    this.parseComfyUIPrompt(res)
+
+    try {
+      this.parseComfyUIPrompt(this.text.prompt, res)
+    } catch {}
     
     return res
   }
