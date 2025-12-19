@@ -16,5 +16,6 @@ const copyYear = ref(new Date().getFullYear())
   margin: 0 auto;
   font-size: var(--text-small);
   text-align: right;
+  bottom: 0;
 }
 </style>

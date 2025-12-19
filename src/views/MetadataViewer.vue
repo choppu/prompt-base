@@ -24,19 +24,60 @@
     <div v-if="selectedFile" class="pbase__preview-section">
       <div class="pbase__preview-container">
         <img :src="previewUrl!" alt="Preview" class="pbase__preview-image" />
-        <p>Resolution: {{ selectedFile.width }} x {{ selectedFile.height }}</p>
+        <p class="pbase__resolution">
+          Resolution: {{ selectedFile.width }} x {{ selectedFile.height }}
+        </p>
       </div>
-      <div class="file-info">
-        <div v-for="(params, i) of selectedFile.getGenerationParams()" :key="i">
-          <p v-if="params.model">Model: {{ params.model }}</p>
-          <p v-if="params.clip_skip">Clip skip: {{ params.clip_skip }}</p>
-          <p v-if="params.seed">Seed: {{ params.seed }}</p>
-          <p v-if="params.sampler">Sampler: {{ params.sampler }}</p>
-          <p v-if="params.scheduler">Scheduler: {{ params.scheduler }}</p>
-          <p v-if="params.steps">Steps: {{ params.steps }}</p>
-          <p v-if="params.cfg">CFG: {{ params.cfg }}</p>
-          <p v-if="params.positive_prompt">Positive Prompt: {{ params.positive_prompt }}</p>
-          <p v-if="params.negative_prompt">Negative Prompt: {{ params.negative_prompt }}</p>
+      <div class="pbase__file-info-container">
+        <div class="pbase__pbase__file-info-seed-container">
+          {{ generationParamsLength }}
+          <div v-for="i in generationParamsLength" :key="i" class="pbase__file-info">
+            <div class="pbase__file-info-selector-element">
+              <span class="pbase__file-info-selector">Metadata {{ generationParamsLength }}</span>
+            </div>
+          </div>
+          <div
+            class="pbase__file-info-collapsable"
+            v-for="(params, i) of selectedFile.getGenerationParams()"
+            :key="i"
+          >
+            <div v-if="params.model" class="pbase__file-info-element">
+              <span class="pbase__file-info-element-label">Model</span>
+              <span class="pbase__file-info-element-content">{{ params.model }}</span>
+            </div>
+            <div v-if="params.seed" class="pbase__file-info-element">
+              <span class="pbase__file-info-element-label">Seed</span>
+              <span class="pbase__file-info-element-content">{{ params.seed }}</span>
+            </div>
+            <div v-if="params.clip_skip" class="pbase__file-info-element">
+              <span class="pbase__file-info-element-label">Clip skip</span>
+              <span class="pbase__file-info-element-content">{{ params.clip_skip }}</span>
+            </div>
+            <div v-if="params.sampler" class="pbase__file-info-element">
+              <span class="pbase__file-info-element-label">Sampler</span>
+              <span class="pbase__file-info-element-content">{{ params.sampler }}</span>
+            </div>
+            <div v-if="params.scheduler" class="pbase__file-info-element">
+              <span class="pbase__file-info-element-label">Scheduler</span>
+              <span class="pbase__file-info-element-content">{{ params.scheduler }}</span>
+            </div>
+            <div v-if="params.steps" class="pbase__file-info-element">
+              <span class="pbase__file-info-element-label">Steps</span>
+              <span class="pbase__file-info-element-content">{{ params.steps }}</span>
+            </div>
+            <div v-if="params.cfg" class="pbase__file-info-element">
+              <span class="pbase__file-info-element-label">CFG</span>
+              <span class="pbase__file-info-element-content">{{ params.cfg }}</span>
+            </div>
+            <div v-if="params.positive_prompt" class="pbase__file-info-element">
+              <span class="pbase__file-info-element-label">Positive Prompt</span>
+              <span class="pbase__file-info-element-content">{{ params.positive_prompt }}</span>
+            </div>
+            <div v-if="params.negative_prompt" class="pbase__file-info-element">
+              <span class="pbase__file-info-element-label">Negative Prompt</span>
+              <span class="pbase__file-info-element-content">{{ params.negative_prompt }}</span>
+            </div>
+          </div>
         </div>
         <a v-if="workflowUrl" :href="workflowUrl" download="extracted-workflow.json"
           >Download workflow</a
@@ -54,6 +95,7 @@ const isDragOver = ref<boolean>(false)
 const selectedFile = ref<PNGMetadata | null>(null)
 const previewUrl = ref<string | null>(null)
 const workflowUrl = ref<string | null>(null)
+const generationParamsLength = ref(0)
 
 const handleDragOver = () => {
   isDragOver.value = true
@@ -93,6 +135,7 @@ const processFiles = (pngFile: File) => {
   })
 
   previewUrl.value = URL.createObjectURL(pngFile)
+  generationParamsLength.value = selectedFile.value!.getGenerationParams().length
 }
 </script>
 
@@ -198,7 +241,7 @@ const processFiles = (pngFile: File) => {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 40px;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .pbase__preview-container {
@@ -211,20 +254,90 @@ const processFiles = (pngFile: File) => {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: var(--secondary-color-brighter);
+  background-color: var(--background-color-transparent);
+  backdrop-filter: var(--blur-effect);
+  gap: 4px;
 }
 
 .pbase__preview-image {
-  width: 330px;
+  max-width: 330px;
+  height: 80%;
+  box-shadow: var(--menu-box-shadow);
 }
 
-.file-info {
+.pbase__resolution {
+  color: var(--text-color);
+  font-size: var(--text-small);
+}
+
+.pbase__file-info-container {
   width: calc(100% - 420px);
   flex-grow: calc(100% - 420px);
   flex-basis: calc(100% - 420px);
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 15px 0;
+  box-sizing: border-box;
 }
 
-.file-info p {
-  margin: 5px 0;
+.pbase__pbase__file-info-seed-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.pbase__file-info {
+  box-sizing: border-box;
+}
+
+.pbase__file-info-selector {
+  border: solid 2px var(--background-color);
+  padding: 0 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: var(--text-bold);
+  font-size: var(--text-small);
+  line-height: var(--text-line-heigth-16);
+}
+
+.pbase__file-info-element {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  gap: 4px;
+}
+
+.pbase__file-info-element-label {
+  width: fit-content;
+  font-family: var(--font-heading);
+  font-weight: var(--text-bold);
+  font-size: var(--text-small);
+  text-transform: uppercase;
+  border-bottom: dashed 1px var(--background-color);
+  line-height: var(--text-line-heigth-20);
+}
+
+.pbase__file-info-element-content {
+  font-size: var(--text-medium);
+}
+
+.pbase__file-info-collapsable {
+  display: none;
+}
+
+.pbase__file-info-collapsed {
+  display: none;
+}
+
+.active {
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 </style>

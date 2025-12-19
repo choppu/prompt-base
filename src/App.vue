@@ -16,5 +16,6 @@ import Footer from './components/FooterComponent.vue'
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  min-height: 600px;
 }
 </style>
