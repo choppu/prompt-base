@@ -165,7 +165,7 @@ const handleSelectedMetadata = (i: number): void => {
 
 .pbase__uploader-container {
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 220px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,7 +247,7 @@ const handleSelectedMetadata = (i: number): void => {
 
 .pbase__preview-section {
   width: calc(100% - 80px);
-  height: 500px;
+  height: calc(100vh - 220px);
   margin: 0 40px;
   display: flex;
   background-color: var(--text-color);
@@ -257,7 +257,6 @@ const handleSelectedMetadata = (i: number): void => {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  overflow-y: scroll;
 }
 
 .pbase__preview-container {
@@ -273,6 +272,7 @@ const handleSelectedMetadata = (i: number): void => {
   background-color: var(--background-color-transparent);
   backdrop-filter: var(--blur-effect);
   gap: 4px;
+  overflow-y: hidden;
 }
 
 .pbase__preview-image {
@@ -301,7 +301,7 @@ const handleSelectedMetadata = (i: number): void => {
   box-sizing: border-box;
   padding: 15px 0;
   box-sizing: border-box;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .pbase__pbase__file-info-selectors-container {
