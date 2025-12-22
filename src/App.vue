@@ -13,9 +13,11 @@ import Footer from './components/FooterComponent.vue'
 @import './assets/css/base.css';
 .pbase__main-container {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   min-height: 600px;
+  position: relative;
 }
 </style>

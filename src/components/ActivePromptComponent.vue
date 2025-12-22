@@ -154,10 +154,11 @@ async function deletePromptVariant(): Promise<void> {
   left: 0;
   right: 0;
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: 100%;
   margin-top: 100px;
   background-color: var(--background-color-semitransparent);
   backdrop-filter: var(--blur-effect);
+  overflow: hidden;
 }
 
 .pbase__prompt-container {
