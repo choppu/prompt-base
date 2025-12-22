@@ -37,11 +37,13 @@
       </div>
       <div class="pbase__file-info-container">
         <div class="pbase__pbase__file-info-selectors-container">
-          <span v-if="generationParams.length == 0">No metadata found</span>
-          <div v-for="(params, i) in generationParams" :key="i" class="pbase__file-info">
-            <span :class="tabClass(params)" @click="handleSelectedMetadata(i)"
-              >Metadata {{ i + 1 }}</span
-            >
+          <div class="pbase__metadata-container">
+            <span v-if="generationParams.length == 0">No metadata found</span>
+            <div v-for="(params, i) in generationParams" :key="i" class="pbase__file-info">
+              <span :class="tabClass(params)" @click="handleSelectedMetadata(i)"
+                >Metadata {{ i + 1 }}</span
+              >
+            </div>
           </div>
           <div class="pbase__file-info-collapsable" v-if="selectedMetadata">
             <div v-if="selectedMetadata.model" class="pbase__file-info-element">
@@ -302,6 +304,14 @@ const handleSelectedMetadata = (i: number): void => {
   box-sizing: border-box;
   padding: 15px 0;
   box-sizing: border-box;
+}
+
+.pbase__metadata-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
 .pbase__pbase__file-info-selectors-container {
