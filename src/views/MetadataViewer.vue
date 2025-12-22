@@ -312,6 +312,7 @@ const handleSelectedMetadata = (i: number): void => {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 4px;
+  box-sizing: border-box;
 }
 
 .pbase__pbase__file-info-selectors-container {
@@ -319,6 +320,7 @@ const handleSelectedMetadata = (i: number): void => {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 4px;
+  box-sizing: border-box;
 }
 
 .pbase__file-info {
@@ -342,6 +344,7 @@ const handleSelectedMetadata = (i: number): void => {
   flex-direction: column;
   margin-bottom: 10px;
   box-sizing: border-box;
+  padding: 0 10px;
   gap: 4px;
 }
 
@@ -357,6 +360,7 @@ const handleSelectedMetadata = (i: number): void => {
 
 .pbase__file-info-element-content {
   font-size: var(--text-medium);
+  width: 100%;
 }
 
 .pbase__file-info-collapsable {
