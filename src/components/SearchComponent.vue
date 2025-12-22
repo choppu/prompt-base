@@ -78,4 +78,14 @@ const handleTagSelect = (tagsSelected: string[]): void => {
   background-color: transparent;
   outline: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .pbase__search-container {
+    padding: 20px 0;
+  }
+
+  .pbase__search-input-container {
+    width: 90%;
+  }
+}
 </style>

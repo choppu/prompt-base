@@ -61,4 +61,10 @@ const classForTag = (tag: string): string => {
   background-color: var(--text-color-darker);
   color: var(--background-color);
 }
+
+@media only screen and (max-width: 600px) {
+  .pbase__selectable-tags-list {
+    width: 100%;
+  }
+}
 </style>

@@ -64,12 +64,39 @@ const activePrompt = ref<Prompt | null>(null)
 }
 
 .pbase__prompts-container {
-  width: 97%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-  margin: 20px auto;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .pbase__prompts-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pbase__prompts-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .pbase__pbase__prompt-group-heading {
+    font-size: var(--h2-size);
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+  .pbase__prompts-container {
+    width: 100vw;
+    gap: 4px;
+    padding: 0 20px;
+  }
 }
 </style>

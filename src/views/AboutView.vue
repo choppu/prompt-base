@@ -28,4 +28,10 @@
 .pbase__about-text {
   font-size: var(--text-medium);
 }
+
+@media only screen and (max-width: 600px) {
+  .pbase__about-container {
+    padding: 20px;
+  }
+}
 </style>
