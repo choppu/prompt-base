@@ -66,5 +66,9 @@ const classForTag = (tag: string): string => {
   .pbase__selectable-tags-list {
     width: 100%;
   }
+
+  .pbase__selectable-tag {
+    font-size: var(--text-small-mobile);
+  }
 }
 </style>

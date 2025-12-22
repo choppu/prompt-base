@@ -295,7 +295,6 @@ const handleSelectedMetadata = (i: number): void => {
 
 .pbase__file-info-container {
   width: calc(100% - 420px);
-  flex-grow: calc(100% - 420px);
   flex-basis: calc(100% - 420px);
   height: 100%;
   display: flex;
@@ -370,5 +369,31 @@ const handleSelectedMetadata = (i: number): void => {
 .active {
   color: var(--text-color);
   background-color: var(--background-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .pbase__preview-section {
+    width: 95%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+
+  .pbase__preview-container {
+    width: 100%;
+  }
+
+  .pbase__preview-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .pbase__file-info-container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
 }
 </style>

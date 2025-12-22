@@ -23,7 +23,6 @@ function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
   flex-direction: column;
   width: calc(25% - 8px);
   max-width: calc(25% - 8px);
-  flex-grow: calc(25% - 8px);
   flex-basis: calc(25% - 8px);
   background: var(--background-white);
   padding: 15px 20px 0 20px;
@@ -87,7 +86,6 @@ function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
   .pbase__prompt-container {
     width: 100%;
     max-width: 100%;
-    flex-grow: 100%;
     flex-basis: 100%;
   }
 
@@ -101,17 +99,23 @@ function imageDataToURL(img: Uint8Array<ArrayBuffer>): string {
   .pbase__prompt-container {
     width: calc(33.33% - 4px);
     max-width: calc(33.33% - 4px);
-    flex-grow: calc(33.33% - 4px);
     flex-basis: calc(33.33% - 4px);
   }
 }
 
 @media only screen and (min-width: 1800px) {
   .pbase__prompt-container {
-    width: calc(12.5% - 8px);
-    max-width: 280px;
-    flex-grow: calc(12.5% - 8px);
-    flex-basis: calc(12.5% - 8px);
+    width: calc(12.5% - 7px);
+    max-width: 350px;
+    flex-basis: calc(12.5% - 7px);
+  }
+}
+
+@media only screen and (min-width: 3000px) {
+  .pbase__prompt-container {
+    width: calc(12% - 7px);
+    max-width: 332px;
+    flex-basis: calc(12% - 7px);
   }
 }
 </style>

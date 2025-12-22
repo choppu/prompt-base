@@ -54,9 +54,6 @@
             <span>Delete</span>
           </button>
         </div>
-        <div class="pbase__tags-list">
-          <TagList :tags="props.activePrompt.tags" />
-        </div>
       </div>
       <div class="pbase__icon-close-container">
         <span class="material-symbols-outlined pbase__icon-close" @click="closeActivePrompt()"
@@ -68,7 +65,6 @@
 </template>
 <script setup lang="ts">
 import { ref, toRaw, useTemplateRef } from 'vue'
-import TagList from './TagComponent.vue'
 import * as DB from '@/data/db'
 
 const props = defineProps(['activePrompt'])
@@ -351,5 +347,19 @@ async function deletePromptVariant(): Promise<void> {
 .active {
   color: var(--text-color);
   background-color: var(--background-color);
+}
+
+@media only screen and (max-width: 480px) {
+  .pbase__prompt-container {
+    flex-direction: column;
+  }
+
+  .pbase__prompt-image {
+    display: none;
+  }
+
+  .pbase__active-prompt-context-container {
+    width: 100%;
+  }
 }
 </style>
