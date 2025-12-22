@@ -1,6 +1,6 @@
 # PromptBase
 
-PromptBase is a prompt manager that fully runs in your browser. It downloads in your browser the remote database but any edit you do will remain in your local storage. The project is WIP and in active development.
+[PromptBase](https://choppu.github.io/prompt-base/) is a prompt manager that fully runs in your browser. It downloads in your browser the remote database but any edit you do will remain in your local storage. The project is WIP and in active development.
 
 NOTE: on first start it will need to download the database, so please be patient until it is done (images will appear dynamically).
 
