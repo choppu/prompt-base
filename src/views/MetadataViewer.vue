@@ -178,6 +178,7 @@ const handleSelectedMetadata = (i: number): void => {
 
 .pbase__drop-area {
   width: 100%;
+  height: max-content;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -372,6 +373,10 @@ const handleSelectedMetadata = (i: number): void => {
 }
 
 @media only screen and (max-width: 600px) {
+  .pbase__uploader-container {
+    min-height: min-content;
+  }
+
   .pbase__preview-section {
     width: 95%;
     margin: 20px auto;
