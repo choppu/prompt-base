@@ -174,6 +174,7 @@ const handleSelectedMetadata = (i: number): void => {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .pbase__drop-area {
@@ -257,7 +258,6 @@ const handleSelectedMetadata = (i: number): void => {
   background-color: var(--text-color);
   color: var(--background-color);
   margin: 0 auto;
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
@@ -383,16 +383,20 @@ const handleSelectedMetadata = (i: number): void => {
 
   .pbase__preview-section {
     width: 95%;
+    height: auto;
     margin: 20px auto;
     box-sizing: border-box;
     flex-direction: column;
     padding: 0;
     gap: 0;
+    flex-wrap: nowrap;
   }
 
   .pbase__preview-container {
     width: 100%;
-    height: max-content;
+    flex-basis: 300px;
+    flex-grow: 100%;
+    min-height: max-content;
   }
 
   .pbase__preview-image {
