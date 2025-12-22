@@ -383,11 +383,12 @@ const handleSelectedMetadata = (i: number): void => {
 
   .pbase__preview-container {
     width: 100%;
+    height: max-content;
   }
 
   .pbase__preview-image {
     max-width: 100%;
-    height: auto;
+    height: 80%;
   }
 
   .pbase__file-info-container {
