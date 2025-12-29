@@ -365,10 +365,12 @@ const handleSelectedMetadata = (i: number): void => {
 
 .pbase__file-info-collapsable {
   display: flex;
+  width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 4px;
   height: fit-content;
+  overflow-wrap: break-word;
 }
 
 .active {
@@ -382,20 +384,16 @@ const handleSelectedMetadata = (i: number): void => {
   }
 
   .pbase__preview-section {
-    width: 95%;
     height: auto;
     margin: 20px auto;
     box-sizing: border-box;
-    flex-direction: column;
+    display: inherit;
     padding: 0;
     gap: 0;
-    flex-wrap: nowrap;
   }
 
   .pbase__preview-container {
     width: 100%;
-    flex-basis: 300px;
-    flex-grow: 100%;
     min-height: max-content;
   }
 
@@ -408,6 +406,9 @@ const handleSelectedMetadata = (i: number): void => {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    flex-basis: 100%;
+    height: 100%;
+    overflow-x: scroll;
   }
 }
 </style>
