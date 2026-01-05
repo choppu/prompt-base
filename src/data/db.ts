@@ -115,7 +115,11 @@ export const getPrompts = async (
       .filter(searchByName)
       .sortBy('tags')
   } else {
-    query_res = await glob_db.prompts.orderBy('tags').filter(searchByTagsAndName).toArray()
+    query_res = await glob_db.prompts
+      .orderBy('tags')
+      .distinct()
+      .filter(searchByTagsAndName)
+      .toArray()
   }
 
   query_res.forEach(groupPrompts)

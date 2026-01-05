@@ -3,9 +3,14 @@
     <div class="pbase__prompt-container">
       <img :src="imageDataToURL(props.activePrompt.image)" class="pbase__prompt-image" />
       <div class="pbase__active-prompt-context-container">
-        <h3 class="pbase__active-prompt-heading">{{ props.activePrompt.name }}</h3>
+        <input
+          type="text"
+          class="pbase__active-prompt-heading"
+          v-model="promptName"
+          @change="updatePrompt"
+        />
         <div class="pbase__prompt-variants-container">
-          <h3 class="pbase__prompt-variants-label">Prompt variants</h3>
+          <h3 class="pbase__prompt-form-label">Prompt variants</h3>
           <div v-if="props.activePrompt.prompts" class="pbase__prompt-variant-container">
             <div
               v-for="promptType in Object.keys(props.activePrompt.prompts)"
@@ -26,7 +31,7 @@
               class="pbase__new-prompt-variant-name"
             />
           </div>
-          <h3 class="pbase__prompt-variants-label">Prompt text</h3>
+          <h3 class="pbase__prompt-form-label">Prompt text</h3>
           <div class="pbase__prompt-field-container">
             <textarea
               v-if="props.activePrompt.prompts"
@@ -54,6 +59,26 @@
             <span>Delete</span>
           </button>
         </div>
+        <div class="pbase__prompt-tags-container">
+          <h3 class="pbase__prompt-form-label">Tags</h3>
+          <div v-if="props.activePrompt.tags" class="pbase__prompt-tags">
+            <div class="pbase__prompt-tag" v-for="tag in props.activePrompt.tags" :key="tag">
+              <span class="pbase__prompt-tag-name">{{ tag }}</span>
+              <span
+                class="material-symbols-outlined pbase__prompt-tag-delete"
+                @click="deleteTag(tag)"
+                >close_small</span
+              >
+            </div>
+            <input
+              type="text"
+              v-model="newTag"
+              @change="updatePrompt"
+              class="pbase__prompt-tag-input"
+              placeholder="Add tag..."
+            />
+          </div>
+        </div>
       </div>
       <div class="pbase__icon-close-container">
         <span class="material-symbols-outlined pbase__icon-close" @click="closeActivePrompt()"
@@ -71,6 +96,8 @@ const props = defineProps(['activePrompt'])
 const emit = defineEmits(['close'])
 const selectedPromptType = ref('ZIT')
 const selectedPromptText = ref(props.activePrompt.prompts[selectedPromptType.value])
+const newTag = ref('')
+const promptName = ref(props.activePrompt.name)
 const addingNewVariant = ref(false)
 const addBtn = useTemplateRef('btn-add')
 
@@ -106,7 +133,17 @@ async function updatePrompt(): Promise<void> {
     ...props.activePrompt.prompts,
     [selectedPromptType.value as string]: selectedPromptText.value,
   }
-  const updatedPrompt = { ...props.activePrompt, prompts: updatedPrompts }
+
+  const updatedPrompt = {
+    ...props.activePrompt,
+    name: promptName.value,
+    prompts: updatedPrompts,
+  }
+
+  if (newTag.value != '') {
+    updatedPrompt.tags.push(newTag.value)
+  }
+
   updatedPrompt.tags = toRaw(updatedPrompt.tags)
   await DB.putPrompt(toRaw(updatedPrompt))
   props.activePrompt!.prompts = updatedPrompts
@@ -140,6 +177,15 @@ async function deletePromptVariant(): Promise<void> {
     updateSelectedPromptType('ZIT')
   }
 }
+
+async function deleteTag(tag: string): Promise<void> {
+  const updatedPrompt = props.activePrompt
+  if (updatedPrompt.tags.length > 1) {
+    updatedPrompt.tags.splice(updatedPrompt.tags.indexOf(tag), 1)
+  }
+  updatedPrompt.tags = toRaw(updatedPrompt.tags)
+  await DB.putPrompt(toRaw(updatedPrompt))
+}
 </script>
 <style scoped>
 @import '../assets/css/base.css';
@@ -148,6 +194,7 @@ async function deletePromptVariant(): Promise<void> {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -155,7 +202,6 @@ async function deletePromptVariant(): Promise<void> {
   right: 0;
   width: 100vw;
   height: 100%;
-  margin-top: 100px;
   background-color: var(--background-color-semitransparent);
   backdrop-filter: var(--blur-effect);
   overflow: hidden;
@@ -197,7 +243,7 @@ async function deletePromptVariant(): Promise<void> {
 .pbase__icon-close-container {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 10px;
   width: auto;
   height: auto;
   display: flex;
@@ -287,8 +333,11 @@ async function deletePromptVariant(): Promise<void> {
   font-family: var(--font-heading);
   font-size: var(--h1-size);
   font-weight: var(--text-bold);
-  padding: 5px;
+  padding: 0;
   box-sizing: border-box;
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
 .pbase__prompt-variants-container {
@@ -300,7 +349,7 @@ async function deletePromptVariant(): Promise<void> {
   box-sizing: border-box;
 }
 
-.pbase__prompt-variants-label {
+.pbase__prompt-form-label {
   font-size: var(--h3-size);
   font-weight: var(--text-bold);
   margin-bottom: 4px;
@@ -348,6 +397,55 @@ async function deletePromptVariant(): Promise<void> {
 .active {
   color: var(--text-color);
   background-color: var(--background-color);
+}
+
+.pbase__prompt-tags {
+  width: 100%;
+  height: max-content;
+  font-size: var(--text-small);
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  border-top: dashed 1px var(--background-color);
+  border-bottom: dashed 1px var(--background-color);
+  background-color: var(--secondary-color-darker);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.pbase__prompt-tag {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 3px 2px 3px 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: var(--text-bold);
+  line-height: var(--text-line-heigth-16);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: var(--icon-rounded);
+  gap: 4px;
+}
+
+.pbase__prompt-tag-delete {
+  background-color: var(--warning-color);
+  font-size: var(--h2-size);
+  font-weight: var(--text-bold);
+  border-radius: var(--icon-rounded);
+}
+
+.pbase__prompt-tag-input {
+  font-family: var(--font-main);
+  font-size: inherit;
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 480px) {

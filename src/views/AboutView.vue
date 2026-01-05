@@ -2,7 +2,7 @@
 <template>
   <div class="pbase__about-container">
     <p class="pbase__about-text">
-      Created by: <a href="https://github.com/choppu" class="pbase__about-link">@choppu</a> and
+      Created by <a href="https://github.com/choppu" class="pbase__about-link">@choppu</a> and
       <a href="https://github.com/choppu" class="pbase__about-link">@bitgamma</a>.
     </p>
     <p class="pbase__about-text">

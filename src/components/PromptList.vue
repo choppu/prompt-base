@@ -44,6 +44,7 @@ const activePrompt = ref<Prompt | null>(null)
 @import '../assets/css/base.css';
 .pbase__prompt-group-container {
   width: 100%;
+  height: fit-content;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -52,7 +53,6 @@ const activePrompt = ref<Prompt | null>(null)
   justify-content: center;
   margin: 0 auto;
   padding: 20px 0;
-  box-sizing: border-box;
 }
 
 .pbase__pbase__prompt-group-heading {
@@ -80,7 +80,7 @@ const activePrompt = ref<Prompt | null>(null)
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 481px) and (max-width: 600px) {
   .pbase__prompts-container {
     width: 100%;
     padding: 20px;

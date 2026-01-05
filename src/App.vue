@@ -23,7 +23,7 @@ import Footer from './components/FooterComponent.vue'
 
 @media only screen and (max-width: 480px) {
   .pbase__main-container {
-    height: 100vh;
+    height: calc(100vh - 200px);
     overflow: scroll;
   }
 }

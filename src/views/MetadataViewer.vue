@@ -183,9 +183,9 @@ const handleSelectedMetadata = (i: number): void => {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 0;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .pbase__drop-area-content {
@@ -228,9 +228,9 @@ const handleSelectedMetadata = (i: number): void => {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 3px;
-  cursor: pointer;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   background-color: none;
   padding: 5px 8px;
   box-sizing: border-box;
@@ -251,32 +251,29 @@ const handleSelectedMetadata = (i: number): void => {
 
 .pbase__preview-section {
   width: calc(100% - 80px);
-  height: calc(100vh - 220px);
   height: fit-content;
-  margin: 0 40px;
   display: flex;
-  background-color: var(--text-color);
-  color: var(--background-color);
-  margin: 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  margin: 0 auto;
 }
 
 .pbase__preview-container {
-  width: 380px;
-  flex-grow: 380px;
+  height: auto;
   flex-basis: 380px;
   display: flex;
   flex-direction: column;
-  height: auto;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 4px;
   background-color: var(--background-color-transparent);
   backdrop-filter: var(--blur-effect);
-  gap: 4px;
   overflow-y: hidden;
+  box-sizing: border-box;
 }
 
 .pbase__preview-image {
@@ -295,15 +292,14 @@ const handleSelectedMetadata = (i: number): void => {
 }
 
 .pbase__file-info-container {
-  width: calc(100% - 420px);
   flex-basis: calc(100% - 420px);
   height: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
   box-sizing: border-box;
   padding: 15px 0;
-  box-sizing: border-box;
 }
 
 .pbase__metadata-container {
@@ -342,10 +338,10 @@ const handleSelectedMetadata = (i: number): void => {
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 4px;
   margin-bottom: 10px;
   box-sizing: border-box;
   padding: 0 10px;
-  gap: 4px;
 }
 
 .pbase__file-info-element-label {
@@ -380,35 +376,31 @@ const handleSelectedMetadata = (i: number): void => {
 
 @media only screen and (max-width: 600px) {
   .pbase__uploader-container {
-    min-height: min-content;
+    height: 100%;
+    min-height: fit-content;
   }
 
   .pbase__preview-section {
-    height: auto;
-    margin: 20px auto;
-    box-sizing: border-box;
-    display: inherit;
-    padding: 0;
-    gap: 0;
+    width: calc(100% - 40px);
+    margin: 20px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .pbase__preview-container {
     width: 100%;
-    min-height: max-content;
+    padding: 20px 0;
   }
 
-  .pbase__preview-image {
-    max-width: 100%;
-    height: 80%;
+  .pbase__metadata-container {
+    padding: 10px;
   }
 
   .pbase__file-info-container {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
     flex-basis: 100%;
-    height: 100%;
-    overflow-x: scroll;
   }
 }
 </style>

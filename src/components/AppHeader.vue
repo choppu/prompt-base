@@ -1,16 +1,22 @@
 <template>
   <header class="pbase__header">
-    <div class="pbase__logo-container">
-      <a class="pbase__logo" @click="handleRoot('home')">
-        <img src="../assets/img/logo.png" class="pbase__logo-img" />
-        <span class="pbase__logo-text">PromptBase</span>
-      </a>
-    </div>
     <div class="pbase__menu-container">
       <a @click="handleRoot('home')" class="pbase__menu-link">
         <span class="material-symbols-outlined pbase__icon">imagesmode</span>
         <span class="pbase__menu-link-text">Gallery</span>
       </a>
+      <a @click="handleRoot('add-prompt')" class="pbase__menu-link">
+        <span class="material-symbols-outlined pbase__icon">library_add</span>
+        <span class="pbase__menu-link-text">Add prompt</span>
+      </a>
+    </div>
+    <div class="pbase__logo-container">
+      <a class="pbase__logo" @click="handleRoot('home')">
+        <img src="../assets/img/logo.png" class="pbase__logo-img" />
+        <span class="pbase__logo-text">promptBase</span>
+      </a>
+    </div>
+    <div class="pbase__menu-container">
       <a @click="handleRoot('metadata-viewer')" class="pbase__menu-link">
         <span class="material-symbols-outlined pbase__icon">code_blocks</span>
         <span class="pbase__menu-link-text">Metadata Viewer</span>
@@ -33,25 +39,27 @@ const handleRoot = (name: string): void => {
 @import '../assets/css/base.css';
 
 .pbase__header {
-  width: 100%;
+  width: 70%;
+  margin: 10px auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
   box-sizing: border-box;
   box-shadow: var(--menu-box-shadow);
   background-color: var(--background-color-transparent);
   backdrop-filter: var(--blur-effect);
+  border-radius: var(--container-border-radius);
   position: sticky;
   z-index: 33;
-  height: 100px;
-  top: 0px;
+  height: 60px;
+  top: 10px;
 }
 
 .pbase__logo-container {
-  width: 20%;
+  width: auto;
 }
 
 .pbase__logo {
@@ -60,32 +68,29 @@ const handleRoot = (name: string): void => {
   flex-direction: row;
   gap: 8px;
   align-items: center;
-  font-family: var(--font-heading);
+  font-family: var(--font-logo);
   font-size: var(--h2-size);
   border: none;
+  cursor: pointer;
 }
 
 .pbase__logo-img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .pbase__menu-container {
-  width: 320px;
-  flex-grow: 320px;
-  background-color: var(--text-color);
-  color: var(--background-color);
+  width: 250px;
+  flex-grow: 250px;
+  color: var(--text-color);
   font-family: var(--font-heading);
   font-size: var(--heading-text-small);
-  padding: 12px;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-radius: var(--container-border-radius);
-  box-shadow: var(--menu-box-shadow);
   gap: 10px;
 }
 
@@ -98,7 +103,7 @@ const handleRoot = (name: string): void => {
   border-bottom: solid 1px transparent;
   box-sizing: border-box;
   cursor: pointer;
-  color: var(--background-color);
+  color: var(--text-color);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -114,6 +119,11 @@ const handleRoot = (name: string): void => {
 
 .pbase__menu-link:hover {
   border-bottom: solid 1px var(--background-color);
+}
+
+.pbase__actions-container {
+  font-family: var(--font-heading);
+  font-size: var(--heading-text-small);
 }
 
 @media only screen and (max-width: 600px) {

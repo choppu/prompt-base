@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 :root {
   --warning-color: #c51d34;
@@ -17,6 +18,7 @@
   --border-color: var(--background-color);
   --font-main: 'IBM Plex Mono', monospace;
   --font-heading: 'DM Sans', sans-serif;
+  --font-logo: 'Pixelify Sans', sans-serif;
   --icons-font: 'Material Symbols Outlined', monospace;
   --icon-normal: 1em;
   --text-default-line-heigth: 1.4em;
