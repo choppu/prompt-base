@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const PNG_HEADER = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0xa, 0x1a, 0x0a]
 const JPEG_SOI_MARKER = [0xff, 0xd8]
+const WEBP_HEADER = [0x52, 0x49, 0x46, 0x46] // "RIFF"
+const WEBP_MAGIC = [0x57, 0x45, 0x42, 0x50] // "WEBP"
 const UNICODE_STRING = [0x55, 0x4e, 0x49, 0x43, 0x4f, 0x44, 0x45, 0x00]
 
 export type GenerationParams = {
@@ -18,6 +20,7 @@ export type GenerationParams = {
 enum HeaderType {
   PNG,
   JPEG,
+  WEBP,
 }
 
 export default class IMGMetadata {
@@ -41,6 +44,8 @@ export default class IMGMetadata {
     
     if (fileType == HeaderType.PNG) {
       this.readPNG()
+    } else if (fileType == HeaderType.WEBP) {
+      this.readWEBP()
     } else {
       this.readJPEG()
     }
@@ -59,7 +64,141 @@ export default class IMGMetadata {
       return HeaderType.JPEG
     } catch {}
 
-    throw new Error('The file is neither a PNG nor a JPEG')
+    this.pos = 0
+
+    try {
+      this.readWEBPHeader()
+      return HeaderType.WEBP
+    } catch {}
+
+    throw new Error('The file is neither a PNG, JPEG nor a WEBP')
+  }
+
+  private readWEBPHeader = () => {
+    for (let i = 0; i < WEBP_HEADER.length; i++) {
+      if (WEBP_HEADER[i] != this.data[this.pos++]) {
+        throw new Error('Not a WEBP file')
+      }
+    }
+    // Skip file size (4 bytes LE)
+    this.pos += 4
+    // Verify WEBP magic
+    for (let i = 0; i < WEBP_MAGIC.length; i++) {
+      if (WEBP_MAGIC[i] != this.data[this.pos++]) {
+        throw new Error('Not a WEBP file')
+      }
+    }
+  }
+
+  private readWEBP = () => {
+    while (this.pos < this.data.length - 8) {
+      const chunkId = this.readString(4)
+      const chunkSize = this.readUInt32LE()
+
+      switch (chunkId) {
+        case 'VP8X': {
+          this.readVP8XDimensions()
+          break
+        }
+        case 'EXIF': {
+          const exifData = this.read(chunkSize)
+          const userComment = this.parseExifUserComment(exifData)
+          if (userComment) {
+            try {
+              const json = JSON.parse(userComment)
+              if (json.parameters) this.text.parameters = json.parameters
+              if (json.prompt) this.text.prompt = json.prompt
+              if (json.workflow) this.text.workflow = json.workflow
+            } catch {}
+          }
+          break
+        }
+        default: 
+          this.pos += chunkSize
+          break 
+      }
+
+      if (chunkSize % 2 === 1) this.pos++ // padding byte for odd-sized chunks
+    }
+
+    this.data = Uint8Array.from([])
+  }
+
+  private readVP8XDimensions = () => {
+    this.pos += 4
+    this.width = this.readUInt24LE() + 1
+    this.height = this.readUInt24LE() + 1
+  }
+
+  private parseExifUserComment = (exif: Uint8Array): string | undefined => {
+    if (exif.length < 8) return undefined
+
+    const isLE = (exif[0] === 0x49 && exif[1] === 0x49)
+    const isBE = (exif[0] === 0x4D && exif[1] === 0x4D)
+    if (!isLE && !isBE) return undefined
+
+    const magic = isLE ? (exif[2]! | (exif[3]! << 8)) : ((exif[2]! << 8) | exif[3]!)
+    if (magic !== 0x002A) return undefined
+
+    const read16 = (off: number) => isLE
+      ? (exif[off]! | (exif[off + 1]! << 8))
+      : ((exif[off]! << 8) | exif[off + 1]!)
+    const read32 = (off: number) => isLE
+      ? (exif[off]! | (exif[off + 1]! << 8) | (exif[off + 2]! << 16) | (exif[off + 3]! << 24))
+      : ((exif[off]! << 24) | (exif[off + 1]! << 16) | (exif[off + 2]! << 8) | exif[off + 3]!)
+
+    const ifdOffset = read32(4)
+    const typeSizes = [0, 1, 1, 2, 4, 8, 1, 8, 1, 1]
+
+    let offset = ifdOffset
+    for (let depth = 0; depth < 5 && offset > 0; depth++) {
+      if (offset + 2 > exif.length) break
+      const numEntries = read16(offset)
+      offset += 2
+      
+      for (let i = 0; i < numEntries; i++) {
+        if (offset + 12 > exif.length) break
+        const tag = read16(offset)
+        const type = read16(offset + 2)
+        const count = read32(offset + 4)
+        const valueOrOffset = read32(offset + 8)
+        offset += 12
+
+        if (tag == 0x8769) {
+          offset = valueOrOffset;
+        }
+
+        if (tag === 0x9286) { // UserComment
+          const typeSize = typeSizes[type] ?? 1
+          let dataOffset: number
+
+          if (count * typeSize <= 4) {
+            // Inline value
+            dataOffset = isLE ? (offset - 4) : (offset - 4 - (4 - count * typeSize))
+          } else {
+            dataOffset = valueOrOffset
+          }
+
+          if (dataOffset + count > exif.length) return undefined
+          const data = exif.slice(dataOffset, dataOffset + count)
+
+          if (data.length >= 8) {
+            const prefix = new TextDecoder('latin1').decode(data.slice(0, 8))
+            if (prefix === 'ASCII\0\0\0') {
+              return new TextDecoder('utf-8').decode(data.slice(8))
+            }
+            if (prefix === 'UNICODE\0') {
+              return new TextDecoder('utf-16be').decode(data.slice(8))
+            }
+          }
+          return new TextDecoder('utf-8').decode(data)
+        }
+      }
+
+      if (offset + 4 > exif.length) break
+    }
+
+    return undefined
   }
 
   private readPNGHeader = () => {
@@ -224,6 +363,28 @@ export default class IMGMetadata {
     const b3 = this.data[this.pos++]! << 8
     const b4 = this.data[this.pos++]!
     return b1 | b2 | b3 | b4
+  }
+
+  private readUInt32LE = (): number => {
+    const b1 = this.data[this.pos++]!
+    const b2 = this.data[this.pos++]! << 8
+    const b3 = this.data[this.pos++]! << 16
+    const b4 = this.data[this.pos++]! << 24
+    return b1 | b2 | b3 | b4
+  }
+
+  private readUInt24LE = (): number => {
+    const b1 = this.data[this.pos++]!
+    const b2 = this.data[this.pos++]! << 8
+    const b3 = this.data[this.pos++]! << 16
+    return b1 | b2 | b3
+  }
+
+  private readString = (len: number): string => {
+    const decoder = new TextDecoder('latin1')
+    const res = decoder.decode(this.data.slice(this.pos, this.pos + len))
+    this.pos += len
+    return res
   }
   
   private isZeroingNode = (node: any): boolean => {

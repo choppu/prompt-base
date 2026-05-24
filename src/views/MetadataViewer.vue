@@ -8,13 +8,13 @@
     >
       <div class="pbase__drop-area-content" :class="{ 'drag-over': isDragOver }">
         <span class="material-symbols-outlined pb__icon">photo_library</span>
-        <p class="pbase__drop-area-content-text">Drag & drop PNG/JPEG files here</p>
+        <p class="pbase__drop-area-content-text">Drag & drop image files here</p>
         <label class="pbase__file-input-label">
           <input
             type="file"
             ref="fileInput"
             @change="handleFileSelect"
-            accept="image/png,image/jpeg"
+            accept="image/png,image/jpeg,image/webp"
             class="pbase__file-input"
           />
           <span class="pbase__browse-btn">Browse Files</span>
@@ -133,7 +133,7 @@ const handleFileSelect = (e: Event) => {
 }
 
 const processFiles = (imgFile: File) => {
-  if (imgFile.type !== 'image/png' && imgFile.type !== 'image/jpeg') {
+  if (imgFile.type !== 'image/png' && imgFile.type !== 'image/jpeg'  && imgFile.type !== 'image/webp') {
     return
   }
 
